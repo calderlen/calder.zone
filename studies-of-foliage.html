@@ -35,19 +35,23 @@
         .subtitle {
             font-size: 0.75em;
             color: #aaa;
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
             z-index: 20;
+            position: relative;
         }
         .gallery {
             display: block;
         }
+        .photo:not(:last-child) {
+            margin-bottom: 50vh;
+        }
         .photo {
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             position: relative;
@@ -86,30 +90,30 @@
 <body>
     <a href="index.html" class="home-circle">Home</a>
     <div class="gallery">
-        <div class="photo">
+        <div class="photo fade-in">
             <img src="photographs/fs-studies-of-foliage/reclamation.jpg" alt="" loading="lazy" decoding="async">
-            <div class="Duck in Creek"></div>
+            <div class="title"></div>
             <div class="subtitle">January 2024 in New Orleans, LA.</div>
         </div>
-        <div class="photo">
+        <div class="photo fade-in">
             <img src="photographs/fs-studies-of-foliage/forest-path.jpg" alt="" loading="lazy" decoding="async">
             <div class="title"></div>
             <div class="subtitle">May 2022 in Youngstown, OH.</div>
-        </div>   
-        <div class="photo">
+        </div>
+        <div class="photo fade-in">
             <img src="photographs/fs-studies-of-foliage/IMG_5909-Edit.jpg" alt="" loading="lazy" decoding="async">
             <div class="title"></div>
             <div class="subtitle">May 2022 in Youngstown, OH.</div>
         </div>
-        <div class="photo">
+        <div class="photo fade-in">
             <img src="photographs/fs-studies-of-foliage/foliage-polandwoods.jpg" alt="" loading="lazy" decoding="async">
-            <div class="Duck in Creek"></div>
+            <div class="title"></div>
             <div class="subtitle">December 2021 in Youngstown, OH.</div>
         </div>
-    </div>
+        </div>
 
     <script>
-        const photoSections = document.querySelectorAll('.photo');
+        const photoSections = document.querySelectorAll('.photo.fade-in');
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach(entry => {

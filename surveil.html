@@ -34,19 +34,23 @@
         .subtitle {
             font-size: 0.75em;
             color: #aaa;
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
             z-index: 20;
+            position: relative;
         }
         .gallery {
             display: block;
         }
+        .photo:not(:last-child) {
+            margin-bottom: 50vh;
+        }
         .photo {
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             position: relative;
@@ -94,13 +98,23 @@
             <img src="photographs/fs-surveil/encounter.jpg" alt="" loading="lazy" decoding="async">
             <div class="title"></div>
             <div class="subtitle">May 2024 in Columbus, OH.</div>
-        </div>  
+        </div>
         <div class="photo fade-in">
-            <img src="photographs/fs-surveil/DSC00815.jpg" alt="" loading="lazy" decoding="async">
+            <img src="photographs/fs-surveil/cell-tower-19th-ave.jpg" alt="" loading="lazy" decoding="async">
+            <div class="title"></div>
+            <div class="subtitle">April 2024 in Columbus, OH, USA.</div>
+        </div>
+        <div class="photo fade-in">
+            <img src="photographs/fs-surveil/local-creep.jpg" alt="" loading="lazy" decoding="async">
             <div class="title"></div>
             <div class="subtitle">August 2023 in Columbus, OH.</div>
-        </div>  
-    </div>
+        </div>
+        <div class="photo fade-in">
+            <img src="photographs/fs-surveil/full.jpg" alt="" loading="lazy" decoding="async">
+            <div class="title"></div>
+            <div class="subtitle">Columbus, OH.</div>
+        </div>
+        </div>
 
     <script>
         const photoSections = document.querySelectorAll('.photo.fade-in');
