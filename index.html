@@ -77,10 +77,42 @@
             min-width: 180px;
         }
 
+        .nav-group {
+            display: flex;
+            flex-direction: column;
+            align-items: inherit;
+            text-align: inherit;
+            gap: 4px;
+            max-width: 280px;
+        }
+
+        .mini-links {
+            display: flex;
+            flex-direction: column;
+            align-items: inherit;
+            text-align: inherit;
+            gap: 2px;
+        }
+
         .research-panel .nav-links {
             right: calc(100% + 60px);
             align-items: flex-end;
             text-align: right;
+        }
+
+        .research-panel .nav-group {
+            align-self: flex-end;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .research-panel .mini-links {
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .research-panel .mini-links a {
+            margin-left: 12px;
         }
 
         .panel:not(.research-panel) .nav-links {
@@ -89,14 +121,61 @@
             text-align: left;
         }
 
+        .panel:not(.research-panel) .nav-group {
+            align-items: flex-end;
+            text-align: right;
+        }
+
+        .panel:not(.research-panel) .mini-links {
+            align-items: flex-end;
+            text-align: right;
+        }
+
+        .panel:not(.research-panel) .mini-links a {
+            margin-right: 12px;
+        }
+
         .nav-links a {
             color: #fff;
             text-decoration: none;
             font-size: 1.3em;
             letter-spacing: 1px;
             text-transform: lowercase;
+            display: inline-flex;
+            align-items: center;
             transition: color 0.3s, text-shadow 0.3s;
             white-space: nowrap;
+        }
+
+        .mini-links a {
+            font-size: 0.74em;
+            letter-spacing: 0.04em;
+            line-height: 1.35;
+            text-transform: none;
+            white-space: normal;
+            max-width: 100%;
+        }
+
+        .panel:not(.research-panel) .nav-links a::before,
+        .research-panel .nav-links a::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            opacity: 0;
+            transform: scale(0.65);
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            flex: 0 0 6px;
+        }
+
+        .panel:not(.research-panel) .nav-links a::before {
+            margin-right: 10px;
+        }
+
+        .research-panel .nav-links a::after {
+            margin-left: 10px;
         }
 
         .panel:not(.research-panel) .panel-image:hover ~ .nav-links a {
@@ -109,6 +188,16 @@
             color: #ffd700;
             text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
             transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .panel:not(.research-panel) .nav-links a:hover::before,
+        .research-panel .nav-links a:hover::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .panel:not(.research-panel) .nav-links a:hover::before {
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
         }
 
         .research-links a {
@@ -126,6 +215,10 @@
             color: #87CEEB;
             text-shadow: 0 0 8px rgba(135, 206, 235, 0.6);
             transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .research-links a:hover::after {
+            box-shadow: 0 0 8px rgba(135, 206, 235, 0.6);
         }
 
         .external-link-icon {
@@ -158,7 +251,7 @@
 
         .panel-image.research img {
             object-fit: cover;
-            object-position: 60% center;
+            object-position: center center;
             transform: scale(1);
         }
 
@@ -290,15 +383,53 @@
                 max-width: 300px;
             }
 
+            .nav-group {
+                width: 100%;
+                max-width: 300px;
+                align-items: center;
+                text-align: center;
+                gap: 8px;
+            }
+
+            .research-panel .nav-group,
+            .panel:not(.research-panel) .nav-group {
+                align-items: center;
+                text-align: center;
+            }
+
+            .mini-links {
+                width: 100%;
+                gap: 6px;
+            }
+
+            .research-panel .mini-links,
+            .panel:not(.research-panel) .mini-links {
+                align-items: center;
+                text-align: center;
+            }
+
+            .research-panel .mini-links a,
+            .panel:not(.research-panel) .mini-links a {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
             .nav-links a {
                 padding: 12px 20px;
                 border: 1px solid #444;
                 border-radius: 8px;
                 background-color: rgba(255, 255, 255, 0.05);
-                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 100%;
                 text-align: center;
                 transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+            }
+
+            .mini-links a {
+                font-size: 0.9em;
+                padding: 9px 12px;
             }
 
             .nav-links a:hover {
@@ -456,10 +587,17 @@
         <div class="main-section">
             <div class="panel research-panel">
                 <a href="research.html" class="panel-image research">
-                    <img src="research-figures/kelt-20b.png" alt=""" loading="lazy" decoding="async">
+                    <img src="research-figures/KELT-20b.Fe.5.4e-05.inverted-transmission-better.blue.contribution_function.crop.rot90.png" alt="" loading="lazy" decoding="async">
                 </a>
                 <nav class="nav-links research-links">
-                    <a href="research.html">research</a>
+                    <div class="nav-group">
+                        <a href="research.html">research</a>
+                        <div class="mini-links">
+                            <a href="research.html#f04">mlexo</a>
+                            <a href="research.html#f02">atmo-retrieval</a>
+                            <a href="research.html#f01">malca</a>
+                        </div>
+                    </div>
                     <a href="projects.html">projects</a>
                     <a href="https://github.com/calderlen">GitHub<span class="material-symbols-outlined external-link-icon">arrow_outward</span></a>
                     <a href="mailto:lenhart.106@osu.edu">lenhart.106[at]osu.edu</a>

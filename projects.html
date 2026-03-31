@@ -385,26 +385,50 @@
     </script>
 
     <script>
-        document.querySelectorAll('.pane').forEach(pane => {
+        const panes = document.querySelectorAll('.pane');
+        const contentDisplays = document.querySelectorAll('.content-display');
+
+        function activateFrame(frameId, updateHash = false) {
+            const pane = document.querySelector(`.pane[data-frame="${frameId}"]`);
+            const contentDisplay = document.querySelector(`.content-display[data-content="${frameId}"]`);
+
+            if (!pane || !contentDisplay) {
+                return false;
+            }
+
+            panes.forEach(item => item.classList.remove('active'));
+            contentDisplays.forEach(item => item.classList.remove('active'));
+
+            pane.classList.add('active');
+            contentDisplay.classList.add('active');
+
+            if (updateHash) {
+                history.replaceState(null, '', `${window.location.pathname}#${frameId}`);
+            }
+
+            return true;
+        }
+
+        panes.forEach(pane => {
             pane.addEventListener('click', function(e) {
                 if (e.target.tagName === 'A' || e.target.closest('a')) {
                     return;
                 }
-                
-                document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
-                
-                this.classList.add('active');
-                
-                document.querySelectorAll('.content-display').forEach(content => {
-                    content.classList.remove('active');
-                });
-                
-                const frameId = this.getAttribute('data-frame');
-                const contentDisplay = document.querySelector(`.content-display[data-content="${frameId}"]`);
-                if (contentDisplay) {
-                    contentDisplay.classList.add('active');
-                }
+
+                activateFrame(this.getAttribute('data-frame'), true);
             });
+        });
+
+        const initialFrame = window.location.hash ? window.location.hash.slice(1) : document.querySelector('.pane.active')?.getAttribute('data-frame');
+        if (initialFrame) {
+            activateFrame(initialFrame);
+        }
+
+        window.addEventListener('hashchange', function() {
+            const frameId = window.location.hash.slice(1);
+            if (frameId) {
+                activateFrame(frameId);
+            }
         });
 
         document.addEventListener('contextmenu', function(e) {
@@ -439,4 +463,3 @@
     </script>
 </body>
 </html>
-
