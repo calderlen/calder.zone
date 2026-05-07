@@ -16,12 +16,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=reply">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #000;
-            color: #ddd;
+            background-color: #fdfbf7;
+            color: #333;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -31,6 +31,17 @@
             max-width: 1200px;
             margin: 160px auto 60px auto;
             padding: 0 20px;
+        }
+
+        .home-circle {
+            border-color: rgba(0, 0, 0, 0.15);
+            color: transparent;
+        }
+
+        .home-circle:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            border-color: rgba(0, 0, 0, 0.3);
+            color: transparent;
         }
 
         .sort-controls {
@@ -43,15 +54,15 @@
         }
 
         .sort-controls label {
-            color: #aaa;
+            color: #666;
             font-size: 0.9em;
             letter-spacing: 1px;
         }
 
         .sort-controls select {
-            background-color: #050505;
-            border: 1px solid #333;
-            color: #fff;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            color: #333;
             padding: 8px 12px;
             font-family: 'Inter', sans-serif;
             font-size: 0.9em;
@@ -61,12 +72,12 @@
         }
 
         .sort-controls select:hover {
-            border-color: #666;
+            border-color: #999;
         }
 
         .sort-controls select:focus {
             outline: none;
-            border-color: #ffd700;
+            border-color: #5c7c99;
         }
 
         .shop-header {
@@ -78,12 +89,12 @@
             font-size: 2.5em;
             font-weight: 400;
             letter-spacing: 3px;
-            color: #fff;
+            color: #222;
             margin-bottom: 20px;
         }
 
         .shop-header p {
-            color: #aaa;
+            color: #555;
             font-size: 1em;
             line-height: 1.6;
             max-width: 600px;
@@ -100,20 +111,21 @@
         }
 
         .product-card {
-            border: 1px solid #333;
-            background-color: #050505;
+            border: 1px solid #eaeaea;
+            background-color: #fff;
             padding: 0;
             transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
             display: flex;
             flex-direction: column;
             overflow: hidden;
             width: 100%;
+            cursor: pointer;
         }
 
         .product-card:hover {
             transform: translateY(-4px);
-            border-color: #ffd700;
-            box-shadow: 0 8px 24px rgba(255, 215, 0, 0.2);
+            border-color: #5c7c99;
+            box-shadow: 0 8px 24px rgba(92, 124, 153, 0.12);
         }
 
         .product-image {
@@ -121,13 +133,7 @@
             height: auto;
             object-fit: cover;
             display: block;
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
             flex-shrink: 0;
-        }
-
-        .product-card:hover .product-image {
-            filter: grayscale(0%);
         }
 
         .product-info {
@@ -140,70 +146,31 @@
         .product-title {
             font-size: 1.1em;
             font-weight: 500;
-            color: #fff;
+            color: #222;
             margin: 0 0 8px 0;
             line-height: 1.4;
         }
 
         .product-details {
             font-size: 0.85em;
-            color: #888;
+            color: #666;
             margin: 0 0 12px 0;
             line-height: 1.5;
         }
 
         .product-price {
-            font-size: 1.3em;
+            font-size: 1.1em;
             font-weight: 500;
-            color: #ffd700;
+            color: #5c7c99;
             margin: 12px 0;
         }
 
-        .buy-button {
-            background-color: transparent;
-            border: 1px solid #ffd700;
-            color: #ffd700;
-            padding: 12px 24px;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.9em;
-            font-weight: 500;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: block;
-            text-align: center;
-            width: 100%;
-            box-sizing: border-box;
-            margin-top: auto;
-        }
-
-        .buy-button:hover {
-            background-color: #ffd700;
-            color: #000;
-            box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
-        }
-
-        .buy-button:active {
-            transform: scale(0.98);
+        .product-card .buy-button {
+            display: none;
         }
 
         .sold-out {
             opacity: 0.6;
-            cursor: not-allowed;
-        }
-
-        .sold-out .buy-button {
-            border-color: #666;
-            color: #666;
-            cursor: not-allowed;
-        }
-
-        .sold-out .buy-button:hover {
-            background-color: transparent;
-            color: #666;
-            box-shadow: none;
         }
 
         .product-card {
@@ -214,13 +181,211 @@
             position: absolute;
             top: 12px;
             right: 12px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
+            background-color: rgba(253, 251, 247, 0.9);
+            color: #333;
+            border: 1px solid #ccc;
             padding: 6px 12px;
             font-size: 0.75em;
             letter-spacing: 1px;
             text-transform: uppercase;
             z-index: 10;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(253, 251, 247, 0.95);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-content {
+            background: #fff;
+            border: 1px solid #eaeaea;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+            max-width: 1400px;
+            width: 95%;
+            height: 85vh;
+            max-height: 95vh;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: translateY(0);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: transparent;
+            border: none;
+            font-size: 28px;
+            color: #888;
+            cursor: pointer;
+            z-index: 10;
+            transition: color 0.3s ease;
+            padding: 0;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: #222;
+        }
+
+        .modal-image-container {
+            flex: 1;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .image-wrapper {
+            position: relative;
+            display: inline-flex;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .modal-image {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+
+        .carousel-controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            margin-top: auto;
+            padding-top: 40px;
+        }
+
+        .image-indicator {
+            color: #666;
+            font-size: 0.9em;
+            letter-spacing: 2px;
+            pointer-events: none;
+            font-weight: 500;
+        }
+
+        .arrow-group {
+            display: flex;
+            gap: 16px;
+        }
+
+        .nav-arrow {
+            background: transparent;
+            border: none;
+            color: #555;
+            font-size: 36px;
+            padding: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease, color 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-arrow .material-symbols-outlined {
+            font-size: inherit;
+        }
+
+        .nav-arrow:hover {
+            transform: scale(1.1);
+        }
+
+        .nav-arrow:disabled {
+            opacity: 0.2;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .modal-info {
+            width: 350px;
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #fff;
+            border-left: none;
+        }
+
+        .modal-title {
+            font-size: 2em;
+            font-weight: 400;
+            color: #222;
+            margin: 0 0 16px 0;
+            line-height: 1.2;
+        }
+
+        .modal-details {
+            font-size: 1em;
+            color: #666;
+            margin: 0 0 32px 0;
+            line-height: 1.6;
+        }
+
+        .modal-price {
+            font-size: 1.5em;
+            color: #5c7c99;
+            margin: 0 0 40px 0;
+        }
+
+        .modal-buy-button {
+            background-color: transparent;
+            border: 1px solid #5c7c99;
+            color: #5c7c99;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        
+        .modal-buy-button .material-symbols-outlined {
+            font-size: 24px;
+        }
+
+        .modal-buy-button:hover {
+            background-color: #5c7c99;
+            color: #fff;
+        }
+
+        .modal-buy-button.disabled {
+            border-color: #ccc;
+            color: #ccc;
+            cursor: not-allowed;
+            background-color: transparent;
+        }
+        
+        .modal-buy-button.disabled:hover {
+            background-color: transparent;
+            color: #ccc;
         }
 
         @media screen and (max-width: 768px) {
@@ -236,6 +401,22 @@
             .products-grid {
                 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
                 gap: 24px;
+            }
+            
+            .modal-content {
+                flex-direction: column;
+                overflow-y: auto;
+            }
+            
+            .modal-info {
+                width: auto;
+                padding: 30px;
+                border-left: none;
+                border-top: 1px solid #eaeaea;
+            }
+            
+            .modal-image-container {
+                min-height: 300px;
             }
         }
 
@@ -267,6 +448,191 @@
             </select>
         </div>
         <div class="products-grid" id="products-grid">
+            <div class="product-card" data-name="Reclamation" data-price="700" data-date="20251231" data-raw-image="photographs/fs-studies-of-foliage/reclamation.jpg">
+                <img src="photographs/fs-studies-of-foliage/reclamation.jpg" class="product-image" alt="Reclamation">
+                <div class="product-info">
+                    <h3 class="product-title">Reclamation</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$700</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Water Tower" data-price="700" data-date="20251231" data-raw-image="">
+                <img src="photographs/shop/water-tower.jpg" class="product-image" alt="Water Tower">
+                <div class="product-info">
+                    <h3 class="product-title">Water Tower</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$700</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Encounter" data-price="350" data-date="20251231" data-raw-image="photographs/fs-surveil/encounter.jpg">
+                <img src="photographs/shop/encounter.jpg" class="product-image" alt="Encounter">
+                <div class="product-info">
+                    <h3 class="product-title">Encounter</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$350</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="August" data-price="350" data-date="20251231" data-raw-image="">
+                <img src="photographs/shop/august.jpg" class="product-image" alt="August">
+                <div class="product-info">
+                    <h3 class="product-title">August</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$350</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Full" data-price="500" data-date="20251231" data-raw-image="photographs/fs-surveil/full.jpg">
+                <img src="photographs/shop/full.jpg" class="product-image" alt="Full">
+                <div class="product-info">
+                    <h3 class="product-title">Full</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$500</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Yarvin" data-price="600" data-date="20251231" data-raw-image="photographs/fs-hegenomy/yarvin.JPG">
+                <img src="photographs/shop/yarvin.jpg" class="product-image" alt="Yarvin">
+                <div class="product-info">
+                    <h3 class="product-title">Yarvin</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$600</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Christmas in July" data-price="600" data-date="20251231" data-raw-image="photographs/fs-hegenomy/christmas-in-july.jpg">
+                <img src="photographs/shop/christmas-in-july.jpg" class="product-image" alt="Christmas in July">
+                <div class="product-info">
+                    <h3 class="product-title">Christmas in July</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$600</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Water Tower (Large)" data-price="800" data-date="20251230" data-raw-image="">
+                <img src="photographs/shop/water-tower.jpg" class="product-image" alt="Water Tower (Large)">
+                <div class="product-info">
+                    <h3 class="product-title">Water Tower (Large)</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$800</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Home" data-price="900" data-date="20251230" data-raw-image="photographs/fs-guerrilla/home.jpg">
+                <img src="photographs/shop/home.jpg" class="product-image" alt="Home">
+                <div class="product-info">
+                    <h3 class="product-title">Home</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$900</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="After the Fire" data-price="350" data-date="20251230" data-raw-image="photographs/fs-neighborhood-watch/after-the-fire.jpg">
+                <img src="photographs/shop/after-the-fire.jpg" class="product-image" alt="After the Fire">
+                <div class="product-info">
+                    <h3 class="product-title">After the Fire</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$350</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Bull" data-price="350" data-date="20251225" data-raw-image="">
+                <img src="photographs/shop/bull.jpg" class="product-image" alt="Bull">
+                <div class="product-info">
+                    <h3 class="product-title">Bull</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$350</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Duck in Creek" data-price="350" data-date="20251225" data-raw-image="photographs/fs-studies-of-water/duck-in-creek-polandwoods.jpg">
+                <img src="photographs/shop/duck-in-creek.jpg" class="product-image" alt="Duck in Creek">
+                <div class="product-info">
+                    <h3 class="product-title">Duck in Creek</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$350</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Adventitious" data-price="350" data-date="20251225" data-raw-image="photographs/fs-studies-of-water/adventitious.jpg">
+                <img src="photographs/shop/adventitious.jpg" class="product-image" alt="Adventitious">
+                <div class="product-info">
+                    <h3 class="product-title">Adventitious</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$350</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Frozen Pond" data-price="350" data-date="20251225" data-raw-image="photographs/fs-studies-of-water/frozen-pond-canfield.jpg">
+                <img src="photographs/shop/frozen-pond.jpg" class="product-image" alt="Frozen Pond">
+                <div class="product-info">
+                    <h3 class="product-title">Frozen Pond</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$350</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="House Uphill" data-price="350" data-date="20251225" data-raw-image="photographs/fs-neighborhood-watch/house-up-hill-conneaut.jpg">
+                <img src="photographs/shop/house-uphill.jpg" class="product-image" alt="House Uphill">
+                <div class="product-info">
+                    <h3 class="product-title">House Uphill</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$350</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Pylons" data-price="350" data-date="20251225" data-raw-image="photographs/fs-neighborhood-watch/transmission-towers.jpg">
+                <img src="photographs/shop/pylons.jpg" class="product-image" alt="Pylons">
+                <div class="product-info">
+                    <h3 class="product-title">Pylons</h3>
+                    <p class="product-details">Fine Art Print</p>
+                    <p class="product-price">$350</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal HTML -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-image-container">
+                <div class="image-wrapper">
+                    <img src="" class="modal-image" id="modal-image" alt="">
+                </div>
+            </div>
+            <div class="modal-info">
+                <h3 class="modal-title" id="modal-title">Title</h3>
+                <p class="modal-details" id="modal-details">Details</p>
+                <p class="modal-price" id="modal-price">$0</p>
+                <a href="#" class="modal-buy-button" id="modal-buy-button" aria-label="Purchase Print"><span class="material-symbols-outlined">arrow_outward</span></a>
+                
+                <div class="carousel-controls" id="carousel-controls">
+                    <div class="image-indicator" id="image-indicator">1 / 1</div>
+                    <div class="arrow-group">
+                        <button class="nav-arrow prev-arrow" id="prev-image"><span class="material-symbols-outlined">arrow_back</span></button>
+                        <button class="nav-arrow next-arrow" id="next-image"><span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -348,6 +714,104 @@
         sortSelect.addEventListener('change', (e) => {
             sortProducts(e.target.value);
         });
+
+        // Modal Logic
+        const modal = document.getElementById('product-modal');
+        const modalClose = document.getElementById('modal-close');
+        const modalImage = document.getElementById('modal-image');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDetails = document.getElementById('modal-details');
+        const modalPrice = document.getElementById('modal-price');
+        const modalBuyButton = document.getElementById('modal-buy-button');
+        const prevArrow = document.getElementById('prev-image');
+        const nextArrow = document.getElementById('next-image');
+        const imageIndicator = document.getElementById('image-indicator');
+        const carouselControls = document.getElementById('carousel-controls');
+        
+        let currentModalImages = [];
+        let currentImageIndex = 0;
+
+        function updateModalImage() {
+            modalImage.src = currentModalImages[currentImageIndex];
+            imageIndicator.textContent = `${currentImageIndex + 1} / ${currentModalImages.length}`;
+            prevArrow.disabled = currentImageIndex === 0;
+            nextArrow.disabled = currentImageIndex === currentModalImages.length - 1;
+            
+            // Hide controls entirely if there's only 1 image
+            if (currentModalImages.length <= 1) {
+                carouselControls.style.display = 'none';
+            } else {
+                carouselControls.style.display = 'flex';
+            }
+        }
+
+        prevArrow.addEventListener('click', () => {
+            if (currentImageIndex > 0) {
+                currentImageIndex--;
+                updateModalImage();
+            }
+        });
+
+        nextArrow.addEventListener('click', () => {
+            if (currentImageIndex < currentModalImages.length - 1) {
+                currentImageIndex++;
+                updateModalImage();
+            }
+        });
+
+        function openModal(card) {
+            const isSoldOut = card.classList.contains('sold-out');
+            
+            const printImg = card.querySelector('.product-image').src;
+            const rawImg = card.dataset.rawImage;
+            
+            currentModalImages = [printImg];
+            if (rawImg && rawImg.trim() !== '') {
+                currentModalImages.push(rawImg);
+            }
+            currentImageIndex = 0;
+            updateModalImage();
+            
+            modalTitle.textContent = card.querySelector('.product-title').textContent;
+            modalDetails.textContent = card.querySelector('.product-details').textContent;
+            modalPrice.textContent = card.querySelector('.product-price').textContent;
+            
+            const buyBtn = card.querySelector('.buy-button');
+            if (isSoldOut || (buyBtn && buyBtn.disabled)) {
+                modalPrice.textContent = "Sold Out";
+                modalBuyButton.style.display = "none";
+                modalBuyButton.href = "#";
+            } else {
+                modalBuyButton.style.display = "flex";
+                modalBuyButton.href = buyBtn ? buyBtn.href : "#";
+            }
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling behind modal
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        function attachCardListeners() {
+            document.querySelectorAll('.product-card').forEach(card => {
+                if (!card.dataset.hasListener) {
+                    card.addEventListener('click', () => openModal(card));
+                    card.dataset.hasListener = 'true';
+                }
+            });
+        }
+        
+        attachCardListeners();
     </script>
 </body>
 </html>
