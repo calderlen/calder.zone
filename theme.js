@@ -1,13 +1,21 @@
 (function () {
     'use strict';
 
-    const storageKey = 'calder-theme';
+    const storageKey = 'theme';
     const systemTheme = window.matchMedia('(prefers-color-scheme: light)');
     let savedTheme = null;
     let transitionTimeout;
 
     try {
         savedTheme = localStorage.getItem(storageKey);
+        if (savedTheme === null) {
+            // Preserve preferences saved under the previous key.
+            savedTheme = localStorage.getItem('calder-theme');
+            if (savedTheme !== null) {
+                localStorage.setItem(storageKey, savedTheme);
+                localStorage.removeItem('calder-theme');
+            }
+        }
     } catch (error) {
         // The switch still works when browser storage is unavailable.
     }
@@ -59,7 +67,8 @@
             }
         });
 
-        document.body.appendChild(switcher);
+        const toolbar = document.querySelector('.site-header .site-links');
+        (toolbar || document.body).appendChild(switcher);
         applyTheme();
     }
 

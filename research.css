@@ -98,7 +98,11 @@ a:focus-visible {
     margin-bottom: 8px;
 }
 
-.project-link {
+.research-nav .project-link {
+    display: grid;
+    grid-template-columns: 0.85em minmax(0, 1fr);
+    column-gap: 0.35em;
+    align-items: baseline;
     position: relative;
     color: var(--text);
     font-size: inherit;
@@ -109,24 +113,15 @@ a:focus-visible {
 
 .project-link.is-current { color: var(--accent); }
 
-/* Both brackets reserve space inside the link so they stay visible without shifting text. */
-.research-nav .project-link::before,
-.research-nav .project-link::after {
-    visibility: hidden;
-}
-
 .research-nav .project-link::before {
-    content: "[\00a0" / "";
+    content: "\2192" / "";
+    font-size: 0.85em;
 }
-
-.research-nav .project-link::after { content: "\00a0]" / ""; }
 
 .research-nav .project-link:is(:hover, :focus-visible) { color: var(--accent); }
-.research-nav .project-link:focus-visible { outline: none; }
-
-.research-nav .project-link:is(:hover, :focus-visible)::before,
-.research-nav .project-link:is(:hover, :focus-visible)::after {
-    visibility: visible;
+.research-nav .project-link:focus-visible {
+    outline: 1px solid var(--accent);
+    outline-offset: 2px;
 }
 
 main { min-width: 0; }
@@ -273,8 +268,6 @@ h2 {
     touch-action: manipulation;
 }
 
-.audience-tab:hover { color: var(--text-strong); }
-
 .audience-tab-label {
     position: relative;
     display: block;
@@ -287,7 +280,7 @@ h2 {
 .audience-tab-label::after {
     position: absolute;
     top: 0;
-    color: #fff;
+    color: currentColor;
     visibility: hidden;
     pointer-events: none;
 }
@@ -304,8 +297,9 @@ h2 {
     bottom: 0;
 }
 
-.audience-tab[aria-selected="true"] {
-    color: var(--text-strong);
+.audience-tab[aria-selected="true"],
+.audience-tab:is(:hover, :focus-visible) {
+    color: var(--accent-research);
 }
 
 .audience-tab[aria-selected="true"] .audience-tab-label::before,
@@ -528,15 +522,11 @@ figcaption {
     .research-nav .nav-tree > li + li { margin-top: 16px; }
     .research-nav .project-index > li + li { margin-top: 0; }
     .research-nav .project-link {
-        display: flex;
-        align-items: center;
         min-height: 44px;
         margin: 0;
         padding: 10px 8px;
         font-size: 16px;
     }
-    .research-nav .project-link::before,
-    .research-nav .project-link::after { content: none; }
     .research-nav .project-link:focus-visible {
         outline: 2px solid var(--accent);
         outline-offset: -2px;

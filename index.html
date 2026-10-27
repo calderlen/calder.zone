@@ -12,7 +12,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <title>calder lenhart</title>
     <meta name="description" content="Calder Lenhart, astrophysics researcher and photographer. Research in galaxy evolution, compact objects, exoplanet atmospheres, and time-domain astronomy.">
-    <script src="theme.js"></script>
+    <script src="theme.js?v=20261027-theme-storage"></script>
     <link rel="stylesheet" type="text/css" href="styles.css?v=20261027-page-bottom-toggle">
     <link rel="stylesheet" href="home-mobile.css?v=20">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -299,36 +299,14 @@
             display: none;
         }
 
-        footer {
-            position: absolute;
-            bottom: 8px;
-            right: 10px;
-            margin: 0;
-            padding: 0;
-            font-size: 0.85em;
-            color: var(--text-muted);
-            text-align: right;
-        }
-
         .clock {
             position: absolute;
-            bottom: 25px;
+            bottom: 15px;
             right: 10px;
             font-size: 0.85em;
-            color: var(--text-muted);
-            letter-spacing: 1px;
+            line-height: 24px;
             padding: 0;
             text-align: right;
-            font-variant-numeric: tabular-nums;
-        }
-
-        .clock-time { white-space: nowrap; }
-
-        .clock-digit {
-            display: inline-block;
-            width: 0.65em;
-            letter-spacing: 0;
-            text-align: center;
         }
 
     </style>
@@ -385,10 +363,6 @@
             </p>
         </div>
 
-        <footer>
-            © 2023-2026 Calder Lenhart. All rights reserved.
-        </footer>
-
         <div class="side-links">
         </div>
 
@@ -418,7 +392,6 @@
         </main>
         <footer>
             <div class="mobile-clock" id="mobile-clock"></div>
-            <div>© 2023-2026 Calder Lenhart. All rights reserved.</div>
         </footer>
     </div>
     <div class="scroll-indicator scroll-indicator-up">
@@ -459,8 +432,7 @@
             const second = parts.find(p => p.type === 'second').value;
             const timeZone = parts.find(p => p.type === 'timeZoneName').value;
             
-            const timeMarkup = `${hour}:${minute}:${second}`.replace(/\d/g, '<span class="clock-digit">$&</span>');
-            const clockMarkup = `${weekday} ${month} ${day} ${year} <span class="clock-time">${timeMarkup} ${timeZone}</span>`;
+            const clockMarkup = `${weekday} ${month} ${day} ${year} <span class="clock-time">${hour}:${minute}:${second}</span> ${timeZone}`;
             document.getElementById('clock').innerHTML = clockMarkup;
             document.getElementById('mobile-clock').innerHTML = clockMarkup;
         }

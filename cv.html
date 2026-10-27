@@ -12,8 +12,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <title>cv</title>
     <meta name="description" content="">
-    <script src="theme.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css?v=20261027-page-bottom-toggle">
+    <script src="theme.js?v=20261027-theme-storage"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css?v=20261027-cv-no-bottom-gap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
             gap: 46px;
             max-width: 1760px;
             margin: 26px auto 0;
-            padding: 0 40px 60px;
+            padding: 0 40px;
             align-items: start;
         }
 
@@ -205,13 +205,15 @@
             margin-bottom: 8px;
         }
 
+        .awards-list li:last-child { margin-bottom: 0; }
+
         @media screen and (max-width: 1024px) {
             .container {
                 grid-template-columns: minmax(0, 1fr);
                 max-width: 860px;
                 margin-top: 20px;
                 gap: 32px;
-                padding: 0 24px 48px;
+                padding: 0 24px;
             }
 
             .cv-sidebar {
@@ -234,10 +236,10 @@
             .container { padding-inline: 20px; }
         }
     </style>
-    <link rel="stylesheet" href="site-header.css?v=20261027-matching-external-arrows">
-    <script src="site-navigation.js?v=20261027-single-row-header" defer></script>
+    <link rel="stylesheet" href="site-header.css?v=20261027-fit-vertical-menu">
+    <script src="site-navigation.js?v=20261027-vertical-menu" defer></script>
 </head>
-<body class="research-page">
+<body class="research-page cv-page">
     <header class="site-header">
         <a class="site-name" href="index.html" aria-label="Calder Lenhart, home">Calder Lenhart</a>
         <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>

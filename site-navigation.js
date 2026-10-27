@@ -5,6 +5,7 @@
     const compactProjects = window.matchMedia('(max-width: 1024px)');
     const header = document.querySelector('.site-header');
     const menuButton = header.querySelector('.site-menu-toggle');
+    const siteLinks = header.querySelector('.site-links');
     const projectPicker = document.querySelector('.project-picker');
 
     header.classList.add('has-menu');
@@ -19,6 +20,16 @@
         const expanded = menuButton.getAttribute('aria-expanded') === 'true';
         menuButton.setAttribute('aria-expanded', String(!expanded));
         if (!expanded && compactProjects.matches && projectPicker) projectPicker.open = false;
+    });
+
+    siteLinks.addEventListener('click', function (event) {
+        if (compactLayout.matches && event.target.closest('a')) closeMenu();
+    });
+
+    document.addEventListener('click', function (event) {
+        if (compactLayout.matches && !header.contains(event.target)) {
+            closeMenu(siteLinks.contains(document.activeElement));
+        }
     });
 
     if (projectPicker) {
@@ -39,7 +50,7 @@
 
     function updateLayout() {
         const activeElement = document.activeElement;
-        if (compactLayout.matches && header.querySelector('.site-links').contains(activeElement)) {
+        if (compactLayout.matches && siteLinks.contains(activeElement)) {
             menuButton.focus();
         } else if (!compactLayout.matches && activeElement === menuButton) {
             header.querySelector('.site-name').focus();

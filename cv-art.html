@@ -12,8 +12,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <title>art cv</title>
     <meta name="description" content="">
-    <script src="theme.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css?v=20261027-page-bottom-toggle">
+    <script src="theme.js?v=20261027-theme-storage"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css?v=20261027-cv-no-bottom-gap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
             gap: 64px;
             max-width: 1140px;
             margin: 0 auto;
-            padding: 80px 40px 60px 40px;
+            padding: 80px 40px 0;
             align-items: start;
         }
 
@@ -94,28 +94,6 @@
             line-height: 1.6;
         }
 
-        .education-item {
-            display: grid;
-            grid-template-columns: 5rem minmax(0, 1fr);
-            gap: 16px;
-            align-items: baseline;
-        }
-
-        .education-item .date {
-            margin-right: 0;
-            white-space: nowrap;
-        }
-
-        .education-details p {
-            margin: 4px 0 0;
-            line-height: 1.5;
-        }
-
-        .education-details .education-honors {
-            font-size: 0.9em;
-            color: var(--text-muted);
-        }
-
         .cv-item ul {
             margin: 10px 0;
             padding-left: 20px;
@@ -164,7 +142,7 @@
                 max-width: 860px;
                 box-sizing: border-box;
                 gap: 32px;
-                padding: 80px 24px 48px;
+                padding: 80px 24px 0;
             }
 
             .container > .home-link { left: 16px; }
@@ -180,7 +158,7 @@
         }
     </style>
 </head>
-<body>
+<body class="cv-page">
     <div class="container">
         <a href="index.html" class="site-name home-link" aria-label="Calder Lenhart, home">Calder Lenhart</a>
         <header class="cv-sidebar">
@@ -247,21 +225,13 @@
             </div>
 
             <h2>Education</h2>
-            <div class="cv-item education-item">
+            <div class="cv-item">
                 <span class="date">2025–2027</span>
-                <div class="education-details">
-                    <span class="title">M.S., Physics</span>
-                    <p>Ohio State University, Columbus, OH</p>
-                </div>
+                <span class="title">M.S. Physics; Ohio State University, Columbus, OH</span>
             </div>
-            <div class="cv-item education-item">
+            <div class="cv-item">
                 <span class="date">2020–2024</span>
-                <div class="education-details">
-                    <span class="title">B.S., Physics, Astronomy and Astrophysics</span>
-                    <p>Ohio State University, Columbus, OH</p>
-                    <p>Minors in Mathematics and History</p>
-                    <p class="education-honors">Magna Cum Laude, with Research Distinction in Astronomy and Astrophysics</p>
-                </div>
+                <span class="title">B.S. Physics, Astronomy and Astrophysics; Ohio State University, Columbus, OH; Minors in Mathematics and History; Magna Cum Laude, with Research Distinction in Astronomy and Astrophysics</span>
             </div>
         </main>
     </div>

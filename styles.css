@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=reply');
 
 /* Interpolate the palette once; every element inherits the same color values. */
@@ -100,13 +101,28 @@ body {
     min-height: 100dvh;
 }
 
-body:not(.home-page):not(.construction-page):not(.photography-page) {
+body:not(.home-page):not(.construction-page):not(.photography-page):not(.cv-page) {
     padding-bottom: 66px;
 }
+
+.cv-page .cv-content > :last-child { margin-bottom: 0; }
 
 .home-page { height: auto; }
 
 .photography-page { display: flow-root; }
+
+.clock, .mobile-clock {
+    color: var(--text-strong);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: normal;
+    font-variant-numeric: proportional-nums;
+}
+
+.clock-time {
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
 
 /* Color fades run on the root rather than restarting on nested elements. */
 :root.theme-changing {
@@ -155,7 +171,7 @@ body:not(.home-page):not(.construction-page):not(.photography-page) {
     touch-action: manipulation;
 }
 
-.photography-page .theme-switcher {
+body:not(.home-page) .theme-switcher {
     top: 30px;
     right: 30px;
     bottom: auto;
@@ -371,7 +387,7 @@ body:not(.home-page):not(.construction-page):not(.photography-page) {
         height: 36px;
     }
 
-    .photography-page .theme-switcher {
+    body:not(.home-page) .theme-switcher {
         top: 20px;
         right: 12px;
     }

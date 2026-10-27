@@ -107,18 +107,14 @@
         position: static;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: flex-end;
         gap: 2px;
         min-height: 44px;
         padding: 0 0 0 56px;
-        color: var(--text-faint);
         font-size: clamp(10px, 1.5dvh, 12px);
         line-height: 1.5;
-        letter-spacing: 0.015em;
     }
-
-    .mobile-clock { font-variant-numeric: tabular-nums; }
 
     .home-page .theme-switcher {
         position: absolute;
