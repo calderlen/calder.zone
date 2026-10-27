@@ -308,6 +308,12 @@ body:not(.home-page):not(.construction-page):not(.photography-page) {
     padding-top: 108px;
 }
 
+@media screen and (min-width: 901px) {
+    .gallery .photo:first-child {
+        min-height: calc(100svh - 108px);
+    }
+}
+
 .photo.fade-in img {
     opacity: 0;
     transform: translateY(15px);

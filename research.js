@@ -6,8 +6,6 @@ const projectPicker = document.querySelector('.project-picker');
 const compactProjects = window.matchMedia('(max-width: 1024px)');
 document.body.classList.add('research-reader');
 
-let currentProject = researchProjects[0];
-
 function showProject(focusContent = false) {
     const target = document.getElementById(location.hash.slice(1));
     if (target === researchContent && focusContent) {
@@ -16,7 +14,7 @@ function showProject(focusContent = false) {
     }
     const requestedProject = target?.closest('.research-project')
         || (target?.classList.contains('research-area') && target.querySelector('.research-project'));
-    if (requestedProject) currentProject = requestedProject;
+    const currentProject = requestedProject || researchProjects[0];
 
     for (const project of researchProjects) {
         project.hidden = project !== currentProject;

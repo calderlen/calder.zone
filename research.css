@@ -580,7 +580,10 @@ figcaption {
 
 @media screen and (hover: hover) and (pointer: fine) and (max-width: 600px) {
     .research-page .research-project { grid-template-columns: minmax(0, 1fr); }
-    .research-page .project-plots { grid-column: 1; }
+    .research-page .project-plots { grid-column: 1; width: 100%; }
+    .research-page .retrieval-gallery,
+    .research-page .img-container { grid-template-columns: minmax(0, 1fr); }
+    .research-page .img-container { gap: 12px; }
 }
 
 @media print {

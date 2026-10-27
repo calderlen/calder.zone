@@ -1,0 +1,3935 @@
+{
+  "settings": {
+    "build_version": 2,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ],
+    "max_edge": 2000,
+    "quality": 85,
+    "method": 6,
+    "metadata": "icc",
+    "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+    "pillow_version": "12.2.0"
+  },
+  "images": {
+    "photographs/fs-american-west/20230316-IMG_6700.jpg": {
+      "source": {
+        "size": 1652879,
+        "mtime_ns": 1780071394864276083
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 2931,
+      "height": 1954,
+      "variants": [
+        {
+          "src": "photographs/web/fs-american-west/20230316-IMG_6700.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 20878
+        },
+        {
+          "src": "photographs/web/fs-american-west/20230316-IMG_6700.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 63086
+        },
+        {
+          "src": "photographs/web/fs-american-west/20230316-IMG_6700.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 139536
+        },
+        {
+          "src": "photographs/web/fs-american-west/20230316-IMG_6700.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 199224
+        }
+      ]
+    },
+    "photographs/fs-american-west/abq-i40.jpg": {
+      "source": {
+        "size": 6751769,
+        "mtime_ns": 1780071394879033063
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 7968,
+      "height": 4482,
+      "variants": [
+        {
+          "src": "photographs/web/fs-american-west/abq-i40.jpg-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 20120
+        },
+        {
+          "src": "photographs/web/fs-american-west/abq-i40.jpg-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 44948
+        },
+        {
+          "src": "photographs/web/fs-american-west/abq-i40.jpg-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 88408
+        },
+        {
+          "src": "photographs/web/fs-american-west/abq-i40.jpg-2000.webp",
+          "width": 2000,
+          "height": 1125,
+          "bytes": 122530
+        }
+      ]
+    },
+    "photographs/fs-american-west/brycecanyon.jpg": {
+      "source": {
+        "size": 1479229,
+        "mtime_ns": 1780071394880368114
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 2000,
+      "height": 2000,
+      "variants": [
+        {
+          "src": "photographs/web/fs-american-west/brycecanyon.jpg-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 69442
+        },
+        {
+          "src": "photographs/web/fs-american-west/brycecanyon.jpg-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 218312
+        },
+        {
+          "src": "photographs/web/fs-american-west/brycecanyon.jpg-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 462910
+        },
+        {
+          "src": "photographs/web/fs-american-west/brycecanyon.jpg-2000.webp",
+          "width": 2000,
+          "height": 2000,
+          "bytes": 775012
+        }
+      ]
+    },
+    "photographs/fs-american-west/canyonlands-sunset.jpg": {
+      "source": {
+        "size": 2471884,
+        "mtime_ns": 1780071394885642193
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3899,
+      "height": 2517,
+      "variants": [
+        {
+          "src": "photographs/web/fs-american-west/canyonlands-sunset.jpg-480.webp",
+          "width": 480,
+          "height": 310,
+          "bytes": 16412
+        },
+        {
+          "src": "photographs/web/fs-american-west/canyonlands-sunset.jpg-960.webp",
+          "width": 960,
+          "height": 620,
+          "bytes": 46228
+        },
+        {
+          "src": "photographs/web/fs-american-west/canyonlands-sunset.jpg-1600.webp",
+          "width": 1600,
+          "height": 1033,
+          "bytes": 109082
+        },
+        {
+          "src": "photographs/web/fs-american-west/canyonlands-sunset.jpg-2000.webp",
+          "width": 2000,
+          "height": 1291,
+          "bytes": 157744
+        }
+      ]
+    },
+    "photographs/fs-american-west/canyonlands-tree.jpg": {
+      "source": {
+        "size": 689267,
+        "mtime_ns": 1780071394886535866
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3990,
+      "height": 2244,
+      "variants": [
+        {
+          "src": "photographs/web/fs-american-west/canyonlands-tree.jpg-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 35156
+        },
+        {
+          "src": "photographs/web/fs-american-west/canyonlands-tree.jpg-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 117974
+        },
+        {
+          "src": "photographs/web/fs-american-west/canyonlands-tree.jpg-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 275640
+        },
+        {
+          "src": "photographs/web/fs-american-west/canyonlands-tree.jpg-2000.webp",
+          "width": 2000,
+          "height": 1125,
+          "bytes": 394510
+        }
+      ]
+    },
+    "photographs/fs-american-west/grand-canyon-sunrise.jpg": {
+      "source": {
+        "size": 675918,
+        "mtime_ns": 1780071394887877126
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6000,
+      "height": 4000,
+      "variants": [
+        {
+          "src": "photographs/web/fs-american-west/grand-canyon-sunrise.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 11596
+        },
+        {
+          "src": "photographs/web/fs-american-west/grand-canyon-sunrise.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 36114
+        },
+        {
+          "src": "photographs/web/fs-american-west/grand-canyon-sunrise.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 90162
+        },
+        {
+          "src": "photographs/web/fs-american-west/grand-canyon-sunrise.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 140118
+        }
+      ]
+    },
+    "photographs/fs-guerrilla/home.jpg": {
+      "source": {
+        "size": 325343,
+        "mtime_ns": 1780071394888446963
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 1107,
+      "height": 1673,
+      "variants": [
+        {
+          "src": "photographs/web/fs-guerrilla/home.jpg-480.webp",
+          "width": 480,
+          "height": 725,
+          "bytes": 82642
+        },
+        {
+          "src": "photographs/web/fs-guerrilla/home.jpg-960.webp",
+          "width": 960,
+          "height": 1451,
+          "bytes": 327336
+        },
+        {
+          "src": "photographs/web/fs-guerrilla/home.jpg-1107.webp",
+          "width": 1107,
+          "height": 1673,
+          "bytes": 440048
+        }
+      ]
+    },
+    "photographs/fs-guerrilla/pgh-alley.jpg": {
+      "source": {
+        "size": 65774289,
+        "mtime_ns": 1780071394929807841
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4717,
+      "height": 7076,
+      "variants": [
+        {
+          "src": "photographs/web/fs-guerrilla/pgh-alley.jpg-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 36162
+        },
+        {
+          "src": "photographs/web/fs-guerrilla/pgh-alley.jpg-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 223440
+        },
+        {
+          "src": "photographs/web/fs-guerrilla/pgh-alley.jpg-1333.webp",
+          "width": 1333,
+          "height": 2000,
+          "bytes": 522792
+        }
+      ]
+    },
+    "photographs/fs-guerrilla/pgh-geese.jpg": {
+      "source": {
+        "size": 16997367,
+        "mtime_ns": 1780071394939431201
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6673,
+      "height": 3607,
+      "variants": [
+        {
+          "src": "photographs/web/fs-guerrilla/pgh-geese.jpg-480.webp",
+          "width": 480,
+          "height": 259,
+          "bytes": 29826
+        },
+        {
+          "src": "photographs/web/fs-guerrilla/pgh-geese.jpg-960.webp",
+          "width": 960,
+          "height": 519,
+          "bytes": 99482
+        },
+        {
+          "src": "photographs/web/fs-guerrilla/pgh-geese.jpg-1600.webp",
+          "width": 1600,
+          "height": 865,
+          "bytes": 326726
+        },
+        {
+          "src": "photographs/web/fs-guerrilla/pgh-geese.jpg-2000.webp",
+          "width": 2000,
+          "height": 1081,
+          "bytes": 554948
+        }
+      ]
+    },
+    "photographs/fs-hegenomy/christmas-in-july.jpg": {
+      "source": {
+        "size": 2003170,
+        "mtime_ns": 1780071394943943984
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6000,
+      "height": 4988,
+      "variants": [
+        {
+          "src": "photographs/web/fs-hegenomy/christmas-in-july.jpg-480.webp",
+          "width": 480,
+          "height": 399,
+          "bytes": 30768
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/christmas-in-july.jpg-960.webp",
+          "width": 960,
+          "height": 798,
+          "bytes": 123008
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/christmas-in-july.jpg-1600.webp",
+          "width": 1600,
+          "height": 1330,
+          "bytes": 377016
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/christmas-in-july.jpg-2000.webp",
+          "width": 2000,
+          "height": 1663,
+          "bytes": 612876
+        }
+      ]
+    },
+    "photographs/fs-hegenomy/condolences.JPG": {
+      "source": {
+        "size": 3258146,
+        "mtime_ns": 1780071394946403084
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4288,
+      "height": 2848,
+      "variants": [
+        {
+          "src": "photographs/web/fs-hegenomy/condolences.JPG-480.webp",
+          "width": 480,
+          "height": 319,
+          "bytes": 33618
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/condolences.JPG-960.webp",
+          "width": 960,
+          "height": 638,
+          "bytes": 104286
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/condolences.JPG-1600.webp",
+          "width": 1600,
+          "height": 1063,
+          "bytes": 221862
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/condolences.JPG-2000.webp",
+          "width": 2000,
+          "height": 1328,
+          "bytes": 300588
+        }
+      ]
+    },
+    "photographs/fs-hegenomy/delicatessen.jpg": {
+      "source": {
+        "size": 18209287,
+        "mtime_ns": 1780071394955972986
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6414,
+      "height": 4279,
+      "variants": [
+        {
+          "src": "photographs/web/fs-hegenomy/delicatessen.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 23416
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/delicatessen.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 49580
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/delicatessen.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 159936
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/delicatessen.jpg-2000.webp",
+          "width": 2000,
+          "height": 1334,
+          "bytes": 315108
+        }
+      ]
+    },
+    "photographs/fs-hegenomy/i465.jpg": {
+      "source": {
+        "size": 4673130,
+        "mtime_ns": 1780071394961190356
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3094,
+      "height": 4641,
+      "variants": [
+        {
+          "src": "photographs/web/fs-hegenomy/i465.jpg-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 66664
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/i465.jpg-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 186630
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/i465.jpg-1333.webp",
+          "width": 1333,
+          "height": 2000,
+          "bytes": 305994
+        }
+      ]
+    },
+    "photographs/fs-hegenomy/indianapolis.jpg": {
+      "source": {
+        "size": 4924964,
+        "mtime_ns": 1780071394965850889
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3097,
+      "height": 4646,
+      "variants": [
+        {
+          "src": "photographs/web/fs-hegenomy/indianapolis.jpg-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 30710
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/indianapolis.jpg-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 85942
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/indianapolis.jpg-1333.webp",
+          "width": 1333,
+          "height": 2000,
+          "bytes": 143860
+        }
+      ]
+    },
+    "photographs/fs-hegenomy/olympic-stadium-montreal.jpg": {
+      "source": {
+        "size": 4856708,
+        "mtime_ns": 1780071394972828856
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5178,
+      "height": 3438,
+      "variants": [
+        {
+          "src": "photographs/web/fs-hegenomy/olympic-stadium-montreal.jpg-480.webp",
+          "width": 480,
+          "height": 319,
+          "bytes": 24058
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/olympic-stadium-montreal.jpg-960.webp",
+          "width": 960,
+          "height": 637,
+          "bytes": 66160
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/olympic-stadium-montreal.jpg-1600.webp",
+          "width": 1600,
+          "height": 1062,
+          "bytes": 147418
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/olympic-stadium-montreal.jpg-2000.webp",
+          "width": 2000,
+          "height": 1328,
+          "bytes": 202316
+        }
+      ]
+    },
+    "photographs/fs-hegenomy/public-lands.JPEG": {
+      "source": {
+        "size": 5934135,
+        "mtime_ns": 1780071394980997706
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6495,
+      "height": 5196,
+      "variants": [
+        {
+          "src": "photographs/web/fs-hegenomy/public-lands.JPEG-480.webp",
+          "width": 480,
+          "height": 384,
+          "bytes": 19090
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/public-lands.JPEG-960.webp",
+          "width": 960,
+          "height": 768,
+          "bytes": 51760
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/public-lands.JPEG-1600.webp",
+          "width": 1600,
+          "height": 1280,
+          "bytes": 106584
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/public-lands.JPEG-2000.webp",
+          "width": 2000,
+          "height": 1600,
+          "bytes": 147512
+        }
+      ]
+    },
+    "photographs/fs-hegenomy/stl-night-bikers.jpg": {
+      "source": {
+        "size": 6686190,
+        "mtime_ns": 1780071394989420682
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5091,
+      "height": 3394,
+      "variants": [
+        {
+          "src": "photographs/web/fs-hegenomy/stl-night-bikers.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 36074
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/stl-night-bikers.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 100280
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/stl-night-bikers.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 255082
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/stl-night-bikers.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 400906
+        }
+      ]
+    },
+    "photographs/fs-hegenomy/telco.jpg": {
+      "source": {
+        "size": 1453158,
+        "mtime_ns": 1780071394992399079
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6397,
+      "height": 3198,
+      "variants": [
+        {
+          "src": "photographs/web/fs-hegenomy/telco.jpg-480.webp",
+          "width": 480,
+          "height": 240,
+          "bytes": 14086
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/telco.jpg-960.webp",
+          "width": 960,
+          "height": 480,
+          "bytes": 49208
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/telco.jpg-1600.webp",
+          "width": 1600,
+          "height": 800,
+          "bytes": 125838
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/telco.jpg-2000.webp",
+          "width": 2000,
+          "height": 1000,
+          "bytes": 185788
+        }
+      ]
+    },
+    "photographs/fs-hegenomy/what-happened.jpg": {
+      "source": {
+        "size": 2106161,
+        "mtime_ns": 1780071394996684026
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4751,
+      "height": 3167,
+      "variants": [
+        {
+          "src": "photographs/web/fs-hegenomy/what-happened.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 27144
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/what-happened.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 77414
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/what-happened.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 159032
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/what-happened.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 214722
+        }
+      ]
+    },
+    "photographs/fs-hegenomy/win.jpg": {
+      "source": {
+        "size": 7039303,
+        "mtime_ns": 1780071395000803472
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4992,
+      "height": 2808,
+      "variants": [
+        {
+          "src": "photographs/web/fs-hegenomy/win.jpg-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 32698
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/win.jpg-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 100720
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/win.jpg-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 257734
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/win.jpg-2000.webp",
+          "width": 2000,
+          "height": 1125,
+          "bytes": 385880
+        }
+      ]
+    },
+    "photographs/fs-hegenomy/yarvin.JPG": {
+      "source": {
+        "size": 1742492,
+        "mtime_ns": 1780071395003613992
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4419,
+      "height": 2488,
+      "variants": [
+        {
+          "src": "photographs/web/fs-hegenomy/yarvin.JPG-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 6644
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/yarvin.JPG-960.webp",
+          "width": 960,
+          "height": 541,
+          "bytes": 17284
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/yarvin.JPG-1600.webp",
+          "width": 1600,
+          "height": 901,
+          "bytes": 39764
+        },
+        {
+          "src": "photographs/web/fs-hegenomy/yarvin.JPG-2000.webp",
+          "width": 2000,
+          "height": 1126,
+          "bytes": 59992
+        }
+      ]
+    },
+    "photographs/fs-loss/lost-dog.jpg": {
+      "source": {
+        "size": 6469364,
+        "mtime_ns": 1780071395012780890
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4956,
+      "height": 3540,
+      "variants": [
+        {
+          "src": "photographs/web/fs-loss/lost-dog.jpg-480.webp",
+          "width": 480,
+          "height": 343,
+          "bytes": 25588
+        },
+        {
+          "src": "photographs/web/fs-loss/lost-dog.jpg-960.webp",
+          "width": 960,
+          "height": 686,
+          "bytes": 53862
+        },
+        {
+          "src": "photographs/web/fs-loss/lost-dog.jpg-1600.webp",
+          "width": 1600,
+          "height": 1143,
+          "bytes": 102682
+        },
+        {
+          "src": "photographs/web/fs-loss/lost-dog.jpg-2000.webp",
+          "width": 2000,
+          "height": 1429,
+          "bytes": 141684
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/DSC02447.jpg": {
+      "source": {
+        "size": 5551505,
+        "mtime_ns": 1780071395016241665
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6753,
+      "height": 4502,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/DSC02447.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 28664
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/DSC02447.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 111544
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/DSC02447.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 294736
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/DSC02447.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 438422
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/Telephone Poles Sunset.jpg": {
+      "source": {
+        "size": 11773872,
+        "mtime_ns": 1780071395027277619
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3742,
+      "height": 4619,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/Telephone Poles Sunset.jpg-480.webp",
+          "width": 480,
+          "height": 592,
+          "bytes": 78528
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/Telephone Poles Sunset.jpg-960.webp",
+          "width": 960,
+          "height": 1185,
+          "bytes": 247018
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/Telephone Poles Sunset.jpg-1600.webp",
+          "width": 1600,
+          "height": 1975,
+          "bytes": 530468
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/Telephone Poles Sunset.jpg-1620.webp",
+          "width": 1620,
+          "height": 2000,
+          "bytes": 540546
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/after-the-fire.jpg": {
+      "source": {
+        "size": 2859608,
+        "mtime_ns": 1780071395033674831
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6696,
+      "height": 5137,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/after-the-fire.jpg-480.webp",
+          "width": 480,
+          "height": 368,
+          "bytes": 59626
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/after-the-fire.jpg-960.webp",
+          "width": 960,
+          "height": 736,
+          "bytes": 223728
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/after-the-fire.jpg-1600.webp",
+          "width": 1600,
+          "height": 1227,
+          "bytes": 587840
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/after-the-fire.jpg-2000.webp",
+          "width": 2000,
+          "height": 1534,
+          "bytes": 881314
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/and-a-happy-new-year.jpg": {
+      "source": {
+        "size": 9654842,
+        "mtime_ns": 1780071395038426281
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5966,
+      "height": 3981,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/and-a-happy-new-year.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 38348
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/and-a-happy-new-year.jpg-960.webp",
+          "width": 960,
+          "height": 641,
+          "bytes": 111874
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/and-a-happy-new-year.jpg-1600.webp",
+          "width": 1600,
+          "height": 1068,
+          "bytes": 250180
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/and-a-happy-new-year.jpg-2000.webp",
+          "width": 2000,
+          "height": 1335,
+          "bytes": 348110
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/bench-warren.jpg": {
+      "source": {
+        "size": 2870678,
+        "mtime_ns": 1780071395040836590
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3921,
+      "height": 5881,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/bench-warren.jpg-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 96982
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/bench-warren.jpg-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 415286
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/bench-warren.jpg-1333.webp",
+          "width": 1333,
+          "height": 2000,
+          "bytes": 818278
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/bike-cops.jpg": {
+      "source": {
+        "size": 1805918,
+        "mtime_ns": 1780071395044695659
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5256,
+      "height": 7880,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/bike-cops.jpg-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 63526
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/bike-cops.jpg-960.webp",
+          "width": 960,
+          "height": 1439,
+          "bytes": 216046
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/bike-cops.jpg-1334.webp",
+          "width": 1334,
+          "height": 2000,
+          "bytes": 376848
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/blue-shutters.jpg": {
+      "source": {
+        "size": 1579365,
+        "mtime_ns": 1780071395045978293
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 2048,
+      "height": 996,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/blue-shutters.jpg-480.webp",
+          "width": 480,
+          "height": 233,
+          "bytes": 19936
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/blue-shutters.jpg-960.webp",
+          "width": 960,
+          "height": 467,
+          "bytes": 62656
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/blue-shutters.jpg-1600.webp",
+          "width": 1600,
+          "height": 778,
+          "bytes": 153752
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/blue-shutters.jpg-2000.webp",
+          "width": 2000,
+          "height": 973,
+          "bytes": 223006
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/brick-vine-house.jpg": {
+      "source": {
+        "size": 16737524,
+        "mtime_ns": 1780071395055553528
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4972,
+      "height": 3713,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/brick-vine-house.jpg-480.webp",
+          "width": 480,
+          "height": 358,
+          "bytes": 52014
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/brick-vine-house.jpg-960.webp",
+          "width": 960,
+          "height": 717,
+          "bytes": 189748
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/brick-vine-house.jpg-1600.webp",
+          "width": 1600,
+          "height": 1195,
+          "bytes": 490660
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/brick-vine-house.jpg-2000.webp",
+          "width": 2000,
+          "height": 1494,
+          "bytes": 739140
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/cat-night.jpg": {
+      "source": {
+        "size": 7170865,
+        "mtime_ns": 1780071395064003963
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4419,
+      "height": 2946,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/cat-night.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 18678
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/cat-night.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 56536
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/cat-night.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 150560
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/cat-night.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 257058
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/fire-hose.jpg": {
+      "source": {
+        "size": 7337330,
+        "mtime_ns": 1780071395071339432
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3919,
+      "height": 6968,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/fire-hose.jpg-480.webp",
+          "width": 480,
+          "height": 853,
+          "bytes": 88756
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/fire-hose.jpg-960.webp",
+          "width": 960,
+          "height": 1707,
+          "bytes": 303918
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/fire-hose.jpg-1125.webp",
+          "width": 1125,
+          "height": 2000,
+          "bytes": 398626
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/first-house.jpg": {
+      "source": {
+        "size": 9246347,
+        "mtime_ns": 1780071395092070413
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4319,
+      "height": 2868,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/first-house.jpg-480.webp",
+          "width": 480,
+          "height": 319,
+          "bytes": 28346
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/first-house.jpg-960.webp",
+          "width": 960,
+          "height": 637,
+          "bytes": 87902
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/first-house.jpg-1600.webp",
+          "width": 1600,
+          "height": 1062,
+          "bytes": 216810
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/first-house.jpg-2000.webp",
+          "width": 2000,
+          "height": 1328,
+          "bytes": 327242
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/gated-door.jpg": {
+      "source": {
+        "size": 2005859,
+        "mtime_ns": 1780071395096440611
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6776,
+      "height": 4514,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/gated-door.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 31846
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/gated-door.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 112390
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/gated-door.jpg-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 265404
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/gated-door.jpg-2000.webp",
+          "width": 2000,
+          "height": 1332,
+          "bytes": 369356
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/golden-ratio-ysu.jpg": {
+      "source": {
+        "size": 2081136,
+        "mtime_ns": 1780071395101161061
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3687,
+      "height": 5531,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/golden-ratio-ysu.jpg-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 115418
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/golden-ratio-ysu.jpg-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 396290
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/golden-ratio-ysu.jpg-1333.webp",
+          "width": 1333,
+          "height": 2000,
+          "bytes": 704916
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/house-up-hill-conneaut.jpg": {
+      "source": {
+        "size": 1867626,
+        "mtime_ns": 1780071395104741587
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6000,
+      "height": 4000,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/house-up-hill-conneaut.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 45362
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/house-up-hill-conneaut.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 167820
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/house-up-hill-conneaut.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 430830
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/house-up-hill-conneaut.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 630932
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/ivy-house-madera.jpg": {
+      "source": {
+        "size": 2007215,
+        "mtime_ns": 1780071395109098576
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5213,
+      "height": 3475,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/ivy-house-madera.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 49646
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/ivy-house-madera.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 188840
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/ivy-house-madera.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 488834
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/ivy-house-madera.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 739778
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/overgrown-car.jpg": {
+      "source": {
+        "size": 1282188,
+        "mtime_ns": 1780071395111978347
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5605,
+      "height": 3737,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/overgrown-car.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 46248
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/overgrown-car.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 146630
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/overgrown-car.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 317344
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/overgrown-car.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 445804
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/planter-framing.jpg": {
+      "source": {
+        "size": 18737793,
+        "mtime_ns": 1780071395120970744
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6579,
+      "height": 4388,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/planter-framing.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 41024
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/planter-framing.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 124794
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/planter-framing.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 282752
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/planter-framing.jpg-2000.webp",
+          "width": 2000,
+          "height": 1334,
+          "bytes": 396038
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/red-tent.jpg": {
+      "source": {
+        "size": 1954036,
+        "mtime_ns": 1780071395125178649
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6896,
+      "height": 4600,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/red-tent.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 39032
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/red-tent.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 153364
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/red-tent.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 392470
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/red-tent.jpg-2000.webp",
+          "width": 2000,
+          "height": 1334,
+          "bytes": 584876
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/transmission-towers.jpg": {
+      "source": {
+        "size": 878245,
+        "mtime_ns": 1780071395126927036
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3965,
+      "height": 2643,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/transmission-towers.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 32432
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/transmission-towers.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 134330
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/transmission-towers.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 356984
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/transmission-towers.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 520976
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/uniform-garage.jpg": {
+      "source": {
+        "size": 1923185,
+        "mtime_ns": 1780071395130932023
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 7753,
+      "height": 5171,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/uniform-garage.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 29420
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/uniform-garage.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 103520
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/uniform-garage.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 256412
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/uniform-garage.jpg-2000.webp",
+          "width": 2000,
+          "height": 1334,
+          "bytes": 382564
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/white-house-columbus.jpg": {
+      "source": {
+        "size": 1200699,
+        "mtime_ns": 1780071395133384624
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5894,
+      "height": 3519,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/white-house-columbus.jpg-480.webp",
+          "width": 480,
+          "height": 287,
+          "bytes": 27068
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/white-house-columbus.jpg-960.webp",
+          "width": 960,
+          "height": 573,
+          "bytes": 92508
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/white-house-columbus.jpg-1600.webp",
+          "width": 1600,
+          "height": 955,
+          "bytes": 227640
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/white-house-columbus.jpg-2000.webp",
+          "width": 2000,
+          "height": 1194,
+          "bytes": 334094
+        }
+      ]
+    },
+    "photographs/fs-neighborhood-watch/yellow-house-winter.jpg": {
+      "source": {
+        "size": 1729479,
+        "mtime_ns": 1780071395136448229
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5756,
+      "height": 3837,
+      "variants": [
+        {
+          "src": "photographs/web/fs-neighborhood-watch/yellow-house-winter.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 41512
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/yellow-house-winter.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 146968
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/yellow-house-winter.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 359268
+        },
+        {
+          "src": "photographs/web/fs-neighborhood-watch/yellow-house-winter.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 521726
+        }
+      ]
+    },
+    "photographs/fs-portraits/jonathan-portrait.jpg": {
+      "source": {
+        "size": 994052,
+        "mtime_ns": 1780071395138687870
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4889,
+      "height": 3667,
+      "variants": [
+        {
+          "src": "photographs/web/fs-portraits/jonathan-portrait.jpg-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 40280
+        },
+        {
+          "src": "photographs/web/fs-portraits/jonathan-portrait.jpg-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 134254
+        },
+        {
+          "src": "photographs/web/fs-portraits/jonathan-portrait.jpg-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 302338
+        },
+        {
+          "src": "photographs/web/fs-portraits/jonathan-portrait.jpg-2000.webp",
+          "width": 2000,
+          "height": 1500,
+          "bytes": 421562
+        }
+      ]
+    },
+    "photographs/fs-portraits/lone-man.jpg": {
+      "source": {
+        "size": 4372852,
+        "mtime_ns": 1780071395141149138
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 2980,
+      "height": 4470,
+      "variants": [
+        {
+          "src": "photographs/web/fs-portraits/lone-man.jpg-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 36552
+        },
+        {
+          "src": "photographs/web/fs-portraits/lone-man.jpg-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 93376
+        },
+        {
+          "src": "photographs/web/fs-portraits/lone-man.jpg-1333.webp",
+          "width": 1333,
+          "height": 2000,
+          "bytes": 147530
+        }
+      ]
+    },
+    "photographs/fs-power/john-e-amos.jpg": {
+      "source": {
+        "size": 4207518,
+        "mtime_ns": 1780071395143414279
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4000,
+      "height": 3000,
+      "variants": [
+        {
+          "src": "photographs/web/fs-power/john-e-amos.jpg-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 45602
+        },
+        {
+          "src": "photographs/web/fs-power/john-e-amos.jpg-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 140656
+        },
+        {
+          "src": "photographs/web/fs-power/john-e-amos.jpg-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 322858
+        },
+        {
+          "src": "photographs/web/fs-power/john-e-amos.jpg-2000.webp",
+          "width": 2000,
+          "height": 1500,
+          "bytes": 470692
+        }
+      ]
+    },
+    "photographs/fs-power/somewhere-ohio-river.jpg": {
+      "source": {
+        "size": 8385885,
+        "mtime_ns": 1780071395152211258
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 7977,
+      "height": 3394,
+      "variants": [
+        {
+          "src": "photographs/web/fs-power/somewhere-ohio-river.jpg-480.webp",
+          "width": 480,
+          "height": 204,
+          "bytes": 20772
+        },
+        {
+          "src": "photographs/web/fs-power/somewhere-ohio-river.jpg-960.webp",
+          "width": 960,
+          "height": 408,
+          "bytes": 46024
+        },
+        {
+          "src": "photographs/web/fs-power/somewhere-ohio-river.jpg-1600.webp",
+          "width": 1600,
+          "height": 681,
+          "bytes": 91784
+        },
+        {
+          "src": "photographs/web/fs-power/somewhere-ohio-river.jpg-2000.webp",
+          "width": 2000,
+          "height": 851,
+          "bytes": 136662
+        }
+      ]
+    },
+    "photographs/fs-power/southie-pylon.jpg": {
+      "source": {
+        "size": 12393295,
+        "mtime_ns": 1780071395157757589
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3970,
+      "height": 5984,
+      "variants": [
+        {
+          "src": "photographs/web/fs-power/southie-pylon.jpg-480.webp",
+          "width": 480,
+          "height": 724,
+          "bytes": 43332
+        },
+        {
+          "src": "photographs/web/fs-power/southie-pylon.jpg-960.webp",
+          "width": 960,
+          "height": 1447,
+          "bytes": 129484
+        },
+        {
+          "src": "photographs/web/fs-power/southie-pylon.jpg-1327.webp",
+          "width": 1327,
+          "height": 2000,
+          "bytes": 241730
+        }
+      ]
+    },
+    "photographs/fs-studies-of-foliage/IMG_5909-Edit.jpg": {
+      "source": {
+        "size": 2148561,
+        "mtime_ns": 1780071395162444664
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 1144,
+      "height": 1430,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-foliage/IMG_5909-Edit.jpg-480.webp",
+          "width": 480,
+          "height": 600,
+          "bytes": 90986
+        },
+        {
+          "src": "photographs/web/fs-studies-of-foliage/IMG_5909-Edit.jpg-960.webp",
+          "width": 960,
+          "height": 1200,
+          "bytes": 317346
+        },
+        {
+          "src": "photographs/web/fs-studies-of-foliage/IMG_5909-Edit.jpg-1144.webp",
+          "width": 1144,
+          "height": 1430,
+          "bytes": 495974
+        }
+      ]
+    },
+    "photographs/fs-studies-of-foliage/foliage-polandwoods.jpg": {
+      "source": {
+        "size": 10880152,
+        "mtime_ns": 1780071395173137657
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4453,
+      "height": 2969,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-foliage/foliage-polandwoods.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 52474
+        },
+        {
+          "src": "photographs/web/fs-studies-of-foliage/foliage-polandwoods.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 220408
+        },
+        {
+          "src": "photographs/web/fs-studies-of-foliage/foliage-polandwoods.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 581850
+        },
+        {
+          "src": "photographs/web/fs-studies-of-foliage/foliage-polandwoods.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 863528
+        }
+      ]
+    },
+    "photographs/fs-studies-of-foliage/forest-path.jpg": {
+      "source": {
+        "size": 2435715,
+        "mtime_ns": 1780071395174435375
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 915,
+      "height": 1372,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-foliage/forest-path.jpg-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 149894
+        },
+        {
+          "src": "photographs/web/fs-studies-of-foliage/forest-path.jpg-915.webp",
+          "width": 915,
+          "height": 1372,
+          "bytes": 559152
+        }
+      ]
+    },
+    "photographs/fs-studies-of-foliage/reclamation.jpg": {
+      "source": {
+        "size": 9995795,
+        "mtime_ns": 1780071395178711280
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6774,
+      "height": 4308,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-foliage/reclamation.jpg-480.webp",
+          "width": 480,
+          "height": 305,
+          "bytes": 52348
+        },
+        {
+          "src": "photographs/web/fs-studies-of-foliage/reclamation.jpg-960.webp",
+          "width": 960,
+          "height": 611,
+          "bytes": 188448
+        },
+        {
+          "src": "photographs/web/fs-studies-of-foliage/reclamation.jpg-1600.webp",
+          "width": 1600,
+          "height": 1018,
+          "bytes": 469480
+        },
+        {
+          "src": "photographs/web/fs-studies-of-foliage/reclamation.jpg-2000.webp",
+          "width": 2000,
+          "height": 1272,
+          "bytes": 684054
+        }
+      ]
+    },
+    "photographs/fs-studies-of-water/adventitious.jpg": {
+      "source": {
+        "size": 2738506,
+        "mtime_ns": 1780071395180266291
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5842,
+      "height": 3895,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-water/adventitious.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 56648
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/adventitious.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 220766
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/adventitious.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 587948
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/adventitious.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 894344
+        }
+      ]
+    },
+    "photographs/fs-studies-of-water/boat-near-silos-conneaut.jpg": {
+      "source": {
+        "size": 1562065,
+        "mtime_ns": 1780071395182127346
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3716,
+      "height": 5491,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-water/boat-near-silos-conneaut.jpg-480.webp",
+          "width": 480,
+          "height": 709,
+          "bytes": 84406
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/boat-near-silos-conneaut.jpg-960.webp",
+          "width": 960,
+          "height": 1419,
+          "bytes": 308124
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/boat-near-silos-conneaut.jpg-1353.webp",
+          "width": 1353,
+          "height": 2000,
+          "bytes": 545418
+        }
+      ]
+    },
+    "photographs/fs-studies-of-water/duck-in-creek-polandwoods.jpg": {
+      "source": {
+        "size": 1727405,
+        "mtime_ns": 1780071395185043575
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5704,
+      "height": 3803,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-water/duck-in-creek-polandwoods.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 44448
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/duck-in-creek-polandwoods.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 156602
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/duck-in-creek-polandwoods.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 387844
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/duck-in-creek-polandwoods.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 563334
+        }
+      ]
+    },
+    "photographs/fs-studies-of-water/frozen-pond-canfield.jpg": {
+      "source": {
+        "size": 1752152,
+        "mtime_ns": 1780071395188686184
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6000,
+      "height": 4000,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-water/frozen-pond-canfield.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 32948
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/frozen-pond-canfield.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 135090
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/frozen-pond-canfield.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 370954
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/frozen-pond-canfield.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 567884
+        }
+      ]
+    },
+    "photographs/fs-studies-of-water/nebula-pond.jpg": {
+      "source": {
+        "size": 2497865,
+        "mtime_ns": 1780071395189895693
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5722,
+      "height": 3815,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-water/nebula-pond.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 51536
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/nebula-pond.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 216106
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/nebula-pond.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 567148
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/nebula-pond.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 850134
+        }
+      ]
+    },
+    "photographs/fs-studies-of-water/poland-woods-river.jpg": {
+      "source": {
+        "size": 2300995,
+        "mtime_ns": 1780071395192476253
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4000,
+      "height": 6000,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-water/poland-woods-river.jpg-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 123496
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/poland-woods-river.jpg-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 448710
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/poland-woods-river.jpg-1333.webp",
+          "width": 1333,
+          "height": 2000,
+          "bytes": 801514
+        }
+      ]
+    },
+    "photographs/fs-studies-of-water/reflected-canyons.jpg": {
+      "source": {
+        "size": 1076894,
+        "mtime_ns": 1780071395194828978
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5467,
+      "height": 3645,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-water/reflected-canyons.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 20320
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/reflected-canyons.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 78984
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/reflected-canyons.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 215050
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/reflected-canyons.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 328598
+        }
+      ]
+    },
+    "photographs/fs-studies-of-water/standing-water-mill-creek.jpg": {
+      "source": {
+        "size": 1874918,
+        "mtime_ns": 1780071395197341371
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6000,
+      "height": 4000,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-water/standing-water-mill-creek.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 44240
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/standing-water-mill-creek.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 156542
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/standing-water-mill-creek.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 386486
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/standing-water-mill-creek.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 578640
+        }
+      ]
+    },
+    "photographs/fs-studies-of-water/water-under-bridge-conneaut.jpg": {
+      "source": {
+        "size": 862656,
+        "mtime_ns": 1780071395199259676
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5793,
+      "height": 3862,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-water/water-under-bridge-conneaut.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 26456
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/water-under-bridge-conneaut.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 93368
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/water-under-bridge-conneaut.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 216634
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/water-under-bridge-conneaut.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 303212
+        }
+      ]
+    },
+    "photographs/fs-studies-of-water/waterbike.jpg": {
+      "source": {
+        "size": 9667606,
+        "mtime_ns": 1780071395203965377
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 5550,
+      "height": 4440,
+      "variants": [
+        {
+          "src": "photographs/web/fs-studies-of-water/waterbike.jpg-480.webp",
+          "width": 480,
+          "height": 384,
+          "bytes": 60434
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/waterbike.jpg-960.webp",
+          "width": 960,
+          "height": 768,
+          "bytes": 195368
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/waterbike.jpg-1600.webp",
+          "width": 1600,
+          "height": 1280,
+          "bytes": 460570
+        },
+        {
+          "src": "photographs/web/fs-studies-of-water/waterbike.jpg-2000.webp",
+          "width": 2000,
+          "height": 1600,
+          "bytes": 649626
+        }
+      ]
+    },
+    "photographs/fs-surveil/cell-tower-19th-ave.jpg": {
+      "source": {
+        "size": 7465619,
+        "mtime_ns": 1780071395209991045
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 4804,
+      "height": 4770,
+      "variants": [
+        {
+          "src": "photographs/web/fs-surveil/cell-tower-19th-ave.jpg-480.webp",
+          "width": 480,
+          "height": 477,
+          "bytes": 36928
+        },
+        {
+          "src": "photographs/web/fs-surveil/cell-tower-19th-ave.jpg-960.webp",
+          "width": 960,
+          "height": 953,
+          "bytes": 80888
+        },
+        {
+          "src": "photographs/web/fs-surveil/cell-tower-19th-ave.jpg-1600.webp",
+          "width": 1600,
+          "height": 1589,
+          "bytes": 152936
+        },
+        {
+          "src": "photographs/web/fs-surveil/cell-tower-19th-ave.jpg-2000.webp",
+          "width": 2000,
+          "height": 1986,
+          "bytes": 209304
+        }
+      ]
+    },
+    "photographs/fs-surveil/encounter.jpg": {
+      "source": {
+        "size": 1230688,
+        "mtime_ns": 1780071395210979301
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 1987,
+      "height": 1111,
+      "variants": [
+        {
+          "src": "photographs/web/fs-surveil/encounter.jpg-480.webp",
+          "width": 480,
+          "height": 268,
+          "bytes": 13852
+        },
+        {
+          "src": "photographs/web/fs-surveil/encounter.jpg-960.webp",
+          "width": 960,
+          "height": 537,
+          "bytes": 25604
+        },
+        {
+          "src": "photographs/web/fs-surveil/encounter.jpg-1600.webp",
+          "width": 1600,
+          "height": 895,
+          "bytes": 87506
+        },
+        {
+          "src": "photographs/web/fs-surveil/encounter.jpg-1987.webp",
+          "width": 1987,
+          "height": 1111,
+          "bytes": 255204
+        }
+      ]
+    },
+    "photographs/fs-surveil/full.jpg": {
+      "source": {
+        "size": 293647,
+        "mtime_ns": 1780071395211365429
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 1781,
+      "height": 1188,
+      "variants": [
+        {
+          "src": "photographs/web/fs-surveil/full.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 5724
+        },
+        {
+          "src": "photographs/web/fs-surveil/full.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 20584
+        },
+        {
+          "src": "photographs/web/fs-surveil/full.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 56108
+        },
+        {
+          "src": "photographs/web/fs-surveil/full.jpg-1781.webp",
+          "width": 1781,
+          "height": 1188,
+          "bytes": 89642
+        }
+      ]
+    },
+    "photographs/fs-surveil/local-creep.jpg": {
+      "source": {
+        "size": 17078674,
+        "mtime_ns": 1780071395228437467
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 6684,
+      "height": 4458,
+      "variants": [
+        {
+          "src": "photographs/web/fs-surveil/local-creep.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 45994
+        },
+        {
+          "src": "photographs/web/fs-surveil/local-creep.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 146890
+        },
+        {
+          "src": "photographs/web/fs-surveil/local-creep.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 333546
+        },
+        {
+          "src": "photographs/web/fs-surveil/local-creep.jpg-2000.webp",
+          "width": 2000,
+          "height": 1334,
+          "bytes": 468228
+        }
+      ]
+    },
+    "photographs/fs-surveil/wexner.jpg": {
+      "source": {
+        "size": 539343,
+        "mtime_ns": 1780071395229156723
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 1295,
+      "height": 1993,
+      "variants": [
+        {
+          "src": "photographs/web/fs-surveil/wexner.jpg-480.webp",
+          "width": 480,
+          "height": 739,
+          "bytes": 23714
+        },
+        {
+          "src": "photographs/web/fs-surveil/wexner.jpg-960.webp",
+          "width": 960,
+          "height": 1477,
+          "bytes": 50088
+        },
+        {
+          "src": "photographs/web/fs-surveil/wexner.jpg-1295.webp",
+          "width": 1295,
+          "height": 1993,
+          "bytes": 81554
+        }
+      ]
+    },
+    "photographs/shop/adventitious.jpg": {
+      "source": {
+        "size": 1839733,
+        "mtime_ns": 1780071395230366356
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3267,
+      "height": 2656,
+      "variants": [
+        {
+          "src": "photographs/web/shop/adventitious.jpg-480.webp",
+          "width": 480,
+          "height": 390,
+          "bytes": 34996
+        },
+        {
+          "src": "photographs/web/shop/adventitious.jpg-960.webp",
+          "width": 960,
+          "height": 780,
+          "bytes": 124838
+        },
+        {
+          "src": "photographs/web/shop/adventitious.jpg-1600.webp",
+          "width": 1600,
+          "height": 1301,
+          "bytes": 297612
+        },
+        {
+          "src": "photographs/web/shop/adventitious.jpg-2000.webp",
+          "width": 2000,
+          "height": 1626,
+          "bytes": 419768
+        }
+      ]
+    },
+    "photographs/shop/after-the-fire.jpg": {
+      "source": {
+        "size": 1112016,
+        "mtime_ns": 1780071395231245446
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3216,
+      "height": 2656,
+      "variants": [
+        {
+          "src": "photographs/web/shop/after-the-fire.jpg-480.webp",
+          "width": 480,
+          "height": 396,
+          "bytes": 28810
+        },
+        {
+          "src": "photographs/web/shop/after-the-fire.jpg-960.webp",
+          "width": 960,
+          "height": 793,
+          "bytes": 73672
+        },
+        {
+          "src": "photographs/web/shop/after-the-fire.jpg-1600.webp",
+          "width": 1600,
+          "height": 1321,
+          "bytes": 137940
+        },
+        {
+          "src": "photographs/web/shop/after-the-fire.jpg-2000.webp",
+          "width": 2000,
+          "height": 1652,
+          "bytes": 183170
+        }
+      ]
+    },
+    "photographs/shop/august.jpg": {
+      "source": {
+        "size": 1301391,
+        "mtime_ns": 1780071395232142327
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3424,
+      "height": 2656,
+      "variants": [
+        {
+          "src": "photographs/web/shop/august.jpg-480.webp",
+          "width": 480,
+          "height": 372,
+          "bytes": 32008
+        },
+        {
+          "src": "photographs/web/shop/august.jpg-960.webp",
+          "width": 960,
+          "height": 745,
+          "bytes": 88604
+        },
+        {
+          "src": "photographs/web/shop/august.jpg-1600.webp",
+          "width": 1600,
+          "height": 1241,
+          "bytes": 171406
+        },
+        {
+          "src": "photographs/web/shop/august.jpg-2000.webp",
+          "width": 2000,
+          "height": 1551,
+          "bytes": 229824
+        }
+      ]
+    },
+    "photographs/shop/bull.jpg": {
+      "source": {
+        "size": 2102417,
+        "mtime_ns": 1780071395233415295
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3303,
+      "height": 2656,
+      "variants": [
+        {
+          "src": "photographs/web/shop/bull.jpg-480.webp",
+          "width": 480,
+          "height": 386,
+          "bytes": 42036
+        },
+        {
+          "src": "photographs/web/shop/bull.jpg-960.webp",
+          "width": 960,
+          "height": 772,
+          "bytes": 159966
+        },
+        {
+          "src": "photographs/web/shop/bull.jpg-1600.webp",
+          "width": 1600,
+          "height": 1287,
+          "bytes": 378500
+        },
+        {
+          "src": "photographs/web/shop/bull.jpg-2000.webp",
+          "width": 2000,
+          "height": 1608,
+          "bytes": 528720
+        }
+      ]
+    },
+    "photographs/shop/christmas-in-july.jpg": {
+      "source": {
+        "size": 914255,
+        "mtime_ns": 1780071395234383302
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3252,
+      "height": 2216,
+      "variants": [
+        {
+          "src": "photographs/web/shop/christmas-in-july.jpg-480.webp",
+          "width": 480,
+          "height": 327,
+          "bytes": 15980
+        },
+        {
+          "src": "photographs/web/shop/christmas-in-july.jpg-960.webp",
+          "width": 960,
+          "height": 654,
+          "bytes": 47584
+        },
+        {
+          "src": "photographs/web/shop/christmas-in-july.jpg-1600.webp",
+          "width": 1600,
+          "height": 1090,
+          "bytes": 99098
+        },
+        {
+          "src": "photographs/web/shop/christmas-in-july.jpg-2000.webp",
+          "width": 2000,
+          "height": 1363,
+          "bytes": 139972
+        }
+      ]
+    },
+    "photographs/shop/duck-in-creek.jpg": {
+      "source": {
+        "size": 1458584,
+        "mtime_ns": 1780071395235350600
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3420,
+      "height": 2571,
+      "variants": [
+        {
+          "src": "photographs/web/shop/duck-in-creek.jpg-480.webp",
+          "width": 480,
+          "height": 361,
+          "bytes": 31084
+        },
+        {
+          "src": "photographs/web/shop/duck-in-creek.jpg-960.webp",
+          "width": 960,
+          "height": 722,
+          "bytes": 93906
+        },
+        {
+          "src": "photographs/web/shop/duck-in-creek.jpg-1600.webp",
+          "width": 1600,
+          "height": 1203,
+          "bytes": 196668
+        },
+        {
+          "src": "photographs/web/shop/duck-in-creek.jpg-2000.webp",
+          "width": 2000,
+          "height": 1504,
+          "bytes": 269758
+        }
+      ]
+    },
+    "photographs/shop/encounter.jpg": {
+      "source": {
+        "size": 403602,
+        "mtime_ns": 1780071395236231606
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 2157,
+      "height": 1911,
+      "variants": [
+        {
+          "src": "photographs/web/shop/encounter.jpg-480.webp",
+          "width": 480,
+          "height": 425,
+          "bytes": 6516
+        },
+        {
+          "src": "photographs/web/shop/encounter.jpg-960.webp",
+          "width": 960,
+          "height": 851,
+          "bytes": 18572
+        },
+        {
+          "src": "photographs/web/shop/encounter.jpg-1600.webp",
+          "width": 1600,
+          "height": 1418,
+          "bytes": 42888
+        },
+        {
+          "src": "photographs/web/shop/encounter.jpg-2000.webp",
+          "width": 2000,
+          "height": 1772,
+          "bytes": 65198
+        }
+      ]
+    },
+    "photographs/shop/frozen-pond.jpg": {
+      "source": {
+        "size": 1207258,
+        "mtime_ns": 1780071395237348197
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3566,
+      "height": 2656,
+      "variants": [
+        {
+          "src": "photographs/web/shop/frozen-pond.jpg-480.webp",
+          "width": 480,
+          "height": 358,
+          "bytes": 19594
+        },
+        {
+          "src": "photographs/web/shop/frozen-pond.jpg-960.webp",
+          "width": 960,
+          "height": 715,
+          "bytes": 58872
+        },
+        {
+          "src": "photographs/web/shop/frozen-pond.jpg-1600.webp",
+          "width": 1600,
+          "height": 1192,
+          "bytes": 120030
+        },
+        {
+          "src": "photographs/web/shop/frozen-pond.jpg-2000.webp",
+          "width": 2000,
+          "height": 1490,
+          "bytes": 163112
+        }
+      ]
+    },
+    "photographs/shop/full.jpg": {
+      "source": {
+        "size": 900671,
+        "mtime_ns": 1780071395239197336
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3645,
+      "height": 2246,
+      "variants": [
+        {
+          "src": "photographs/web/shop/full.jpg-480.webp",
+          "width": 480,
+          "height": 296,
+          "bytes": 5406
+        },
+        {
+          "src": "photographs/web/shop/full.jpg-960.webp",
+          "width": 960,
+          "height": 592,
+          "bytes": 18606
+        },
+        {
+          "src": "photographs/web/shop/full.jpg-1600.webp",
+          "width": 1600,
+          "height": 986,
+          "bytes": 47092
+        },
+        {
+          "src": "photographs/web/shop/full.jpg-2000.webp",
+          "width": 2000,
+          "height": 1232,
+          "bytes": 69642
+        }
+      ]
+    },
+    "photographs/shop/home.jpg": {
+      "source": {
+        "size": 5196151,
+        "mtime_ns": 1780071395241610395
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3984,
+      "height": 2656,
+      "variants": [
+        {
+          "src": "photographs/web/shop/home.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 20982
+        },
+        {
+          "src": "photographs/web/shop/home.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 82524
+        },
+        {
+          "src": "photographs/web/shop/home.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 222260
+        },
+        {
+          "src": "photographs/web/shop/home.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 323954
+        }
+      ]
+    },
+    "photographs/shop/house-uphill.jpg": {
+      "source": {
+        "size": 1235955,
+        "mtime_ns": 1780071395242522401
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3087,
+      "height": 2656,
+      "variants": [
+        {
+          "src": "photographs/web/shop/house-uphill.jpg-480.webp",
+          "width": 480,
+          "height": 413,
+          "bytes": 31842
+        },
+        {
+          "src": "photographs/web/shop/house-uphill.jpg-960.webp",
+          "width": 960,
+          "height": 826,
+          "bytes": 95208
+        },
+        {
+          "src": "photographs/web/shop/house-uphill.jpg-1600.webp",
+          "width": 1600,
+          "height": 1377,
+          "bytes": 194220
+        },
+        {
+          "src": "photographs/web/shop/house-uphill.jpg-2000.webp",
+          "width": 2000,
+          "height": 1721,
+          "bytes": 259938
+        }
+      ]
+    },
+    "photographs/shop/pylons.jpg": {
+      "source": {
+        "size": 1831992,
+        "mtime_ns": 1780071395243524200
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3411,
+      "height": 2656,
+      "variants": [
+        {
+          "src": "photographs/web/shop/pylons.jpg-480.webp",
+          "width": 480,
+          "height": 374,
+          "bytes": 30092
+        },
+        {
+          "src": "photographs/web/shop/pylons.jpg-960.webp",
+          "width": 960,
+          "height": 748,
+          "bytes": 114620
+        },
+        {
+          "src": "photographs/web/shop/pylons.jpg-1600.webp",
+          "width": 1600,
+          "height": 1246,
+          "bytes": 272316
+        },
+        {
+          "src": "photographs/web/shop/pylons.jpg-2000.webp",
+          "width": 2000,
+          "height": 1557,
+          "bytes": 377468
+        }
+      ]
+    },
+    "photographs/shop/water-tower.jpg": {
+      "source": {
+        "size": 865162,
+        "mtime_ns": 1780071395245079044
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 2109,
+      "height": 2639,
+      "variants": [
+        {
+          "src": "photographs/web/shop/water-tower.jpg-480.webp",
+          "width": 480,
+          "height": 601,
+          "bytes": 36820
+        },
+        {
+          "src": "photographs/web/shop/water-tower.jpg-960.webp",
+          "width": 960,
+          "height": 1201,
+          "bytes": 108606
+        },
+        {
+          "src": "photographs/web/shop/water-tower.jpg-1598.webp",
+          "width": 1598,
+          "height": 2000,
+          "bytes": 219054
+        }
+      ]
+    },
+    "photographs/shop/yarvin.jpg": {
+      "source": {
+        "size": 2805084,
+        "mtime_ns": 1780071395250229164
+      },
+      "settings": {
+        "build_version": 2,
+        "widths": [
+          480,
+          960,
+          1600,
+          2400
+        ],
+        "max_edge": 2000,
+        "quality": 85,
+        "method": 6,
+        "metadata": "icc",
+        "encoder_version": "1.6.0\nlibsharpyuv: 0.4.2",
+        "pillow_version": "12.2.0"
+      },
+      "width": 3984,
+      "height": 2656,
+      "variants": [
+        {
+          "src": "photographs/web/shop/yarvin.jpg-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 7056
+        },
+        {
+          "src": "photographs/web/shop/yarvin.jpg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 18332
+        },
+        {
+          "src": "photographs/web/shop/yarvin.jpg-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 39916
+        },
+        {
+          "src": "photographs/web/shop/yarvin.jpg-2000.webp",
+          "width": 2000,
+          "height": 1333,
+          "bytes": 57638
+        }
+      ]
+    }
+  }
+}
