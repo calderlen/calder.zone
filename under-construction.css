@@ -34,8 +34,10 @@
     height: 64px;
 }
 
-.construction-back:hover { color: var(--accent-art); }
+.construction-back:is(:hover, :focus-visible) {
+    color: var(--accent, var(--accent-art));
+}
 .construction-back:focus-visible {
-    outline: 2px solid var(--accent-art);
+    outline: 2px solid var(--accent, var(--accent-art));
     outline-offset: 6px;
 }
