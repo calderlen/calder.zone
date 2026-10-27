@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrophysics research | Calder Lenhart</title>
+    <meta name="description" content="Calder Lenhart's research in galaxy evolution, compact objects, exoplanet atmospheres, and time-domain astronomy and survey science.">
+    <link rel="canonical" href="https://calder.zone/astrophysics-research.html">
+    <meta property="og:title" content="Calder Lenhart | Astrophysics research">
+    <meta property="og:description" content="Galaxy evolution, compact objects, exoplanet atmospheres, and time-domain astronomy and survey science.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://calder.zone/astrophysics-research.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="styles.css?v=20261027-page-bottom-toggle">
+    <link rel="stylesheet" href="research.css?v=20261027-wide-captions">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" rel="stylesheet">
+    <script>
+        MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <script src="site-navigation.js?v=20261027-single-row-header" defer></script>
+    <script src="research.js?v=20261026-audience-panels" defer></script>
+    <link rel="stylesheet" href="site-header.css?v=20261027-matching-external-arrows">
+</head>
+<body class="research-page">
+    <a class="skip-link" href="#research-content">Skip to research</a>
+    <header class="site-header">
+        <a class="site-name" href="index.html" aria-label="Calder Lenhart, home">Calder Lenhart</a>
+        <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+        <nav class="site-links" id="site-navigation" aria-label="Main navigation">
+            <a href="astrophysics-research.html" aria-current="page">Astrophysics research</a>
+            <a href="https://scixplorer.org/search?q=orcid%3A0009-0001-1459-3738&amp;sort=date%20desc">Publications<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a>
+            <a href="code.html">Code</a>
+            <a href="https://github.com/calderlen">GitHub<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a>
+            <a href="engineering-projects.html">Engineering projects</a>
+            <a href="cv.html">CV</a>
+            <a href="mailto:lenhart.106@osu.edu">lenhart.106[at]osu.edu</a>
+        </nav>
+    </header>
+
+    <div class="research-layout">
+        <nav class="research-nav" aria-label="Astrophysics research projects">
+            <details class="project-picker" open>
+                <summary><span class="project-picker-label">Choose project</span><span class="project-selection">Galactic fountains</span></summary>
+                <ul class="nav-tree nav-branches">
+                    <li>
+                        <span class="nav-method">Theoretical</span>
+                        <ul>
+                            <li><a class="project-link" href="#nuclear-fountains">Galactic fountains</a></li>
+                            <li><a class="project-link" href="#neutron-star-winds">Proto-neutron star winds</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="nav-method">Observational</span>
+                        <ul>
+                            <li>
+                                <span class="nav-topic">Time-domain astronomy</span>
+                                <ul>
+                                    <li><a class="project-link" href="#malca">ASAS-SN variability</a></li>
+                                    <li><a class="project-link" href="#survey-operations">Survey operations</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="nav-topic">Exoplanet atmospheres</span>
+                                <ul>
+                                    <li><a class="project-link" href="#atmo-retrieval">Retrievals</a></li>
+                                    <li><a class="project-link" href="#kelt-20b">Cross-correlation spectroscopy</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+        </nav>
+
+        <main id="research-content" tabindex="-1" aria-label="Astrophysics research">
+            <section class="research-area" id="galaxies" aria-label="Galaxy evolution">
+                <article class="research-project" id="nuclear-fountains" aria-labelledby="fountain-title">
+                    <div class="project-heading">
+                        <h2 id="fountain-title">Galactic fountains, disk accretion, and chemical evolution</h2>
+                    </div>
+                    <div class="audience-versions">
+                        <div class="audience-tabs" role="tablist" aria-label="Choose an audience" hidden>
+                            <button class="audience-tab" id="nuclear-fountains-researchers-tab" type="button" role="tab" aria-controls="nuclear-fountains-researchers-panel" aria-selected="true"><span class="audience-tab-label">For other researchers</span></button>
+                            <button class="audience-tab" id="nuclear-fountains-public-tab" type="button" role="tab" aria-controls="nuclear-fountains-public-panel" aria-selected="false" tabindex="-1"><span class="audience-tab-label">For the general public</span></button>
+                            <button class="audience-tab" id="nuclear-fountains-experts-tab" type="button" role="tab" aria-controls="nuclear-fountains-experts-panel" aria-selected="false" tabindex="-1"><span class="audience-tab-label">For experts</span></button>
+                        </div>
+                        <div class="audience-panel" id="nuclear-fountains-researchers-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For other researchers</h3>
+                                <p>Can outflows from nuclear star formation drive gas accretion and shape the star formation and metallicity profiles of galactic disks?</p>
+                                <p>Gas launched by a circumnuclear starburst can fall back onto a galaxy's outer disk. Because this gas carries less specific angular momentum than the disk material it joins, its return can drive radial inflow while supplying metals and fuel for star formation.</p>
+                                <p>Working with <a href="https://astronomy.osu.edu/people/thompson.1847" class="content-link">Todd Thompson</a>, I develop models connecting nuclear star formation to accretion, star formation, and chemical enrichment across galactic disks. I combine analytic and numerical calculations with observed gas, star formation, and metallicity profiles of nearby spiral galaxies to explore when this fountain driven picture is physically consistent.</p>
+                            </div>
+                            <div class="project-plots">
+                                <figure class="project-figure">
+                                    <a href="research-figures/web/nuclear-fountain-cartoon.pdf" target="_blank" rel="noopener" aria-label="Open fountain cartoon PDF at full size">
+                                        <img src="research-figures/web/nuclear-fountain-cartoon.svg" alt="Unmixed and mixed nuclear fountains returning gas to a galactic disk, with reference scalings for accretion rate, radial inflow speed, metallicity gradient, and star formation rate." width="540" height="306" loading="lazy" decoding="async">
+                                    </a>
+                                    <figcaption>Nuclear outflows return to the disk directly or after mixing with circumgalactic gas, driving radial inflow and chemical evolution.</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <a href="research-figures/web/nuclear-fountain-cloud-evolution.gif" target="_blank" rel="noopener" aria-label="Open PLUTO multiphase outflow animation">
+                                        <img src="research-figures/web/nuclear-fountain-cloud-evolution.gif" alt="Animated PLUTO simulation of a multiphase outflow with radiative cooling and thermal conduction, showing density, temperature, phase-space distributions, and cold gas mass over time." width="1400" height="850" loading="lazy" decoding="async">
+                                    </a>
+                                    <figcaption>A multiphase outflow simulation with PLUTO, including radiative cooling and thermal conduction. The panels track density, temperature, phase-space distributions, and cold gas mass over time.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="audience-panel" id="nuclear-fountains-public-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For the general public</h3>
+                                <!-- Add the general-public overview here. -->
+                            </div>
+                            <!-- Audience-specific figures can be added here. -->
+                        </div>
+                        <div class="audience-panel" id="nuclear-fountains-experts-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For experts</h3>
+                                <!-- Add expert-level text here. -->
+                            </div>
+                            <!-- Expert-specific figures can be added here. -->
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="research-area" id="compact-objects" aria-label="Compact objects">
+                <article class="research-project" id="neutron-star-winds" aria-labelledby="winds-title">
+                    <div class="project-heading">
+                        <h2 id="winds-title">Proto-neutron star winds</h2>
+                    </div>
+                    <div class="audience-versions">
+                        <div class="audience-tabs" role="tablist" aria-label="Choose an audience" hidden>
+                            <button class="audience-tab" id="neutron-star-winds-researchers-tab" type="button" role="tab" aria-controls="neutron-star-winds-researchers-panel" aria-selected="true"><span class="audience-tab-label">For other researchers</span></button>
+                            <button class="audience-tab" id="neutron-star-winds-public-tab" type="button" role="tab" aria-controls="neutron-star-winds-public-panel" aria-selected="false" tabindex="-1"><span class="audience-tab-label">For the general public</span></button>
+                            <button class="audience-tab" id="neutron-star-winds-experts-tab" type="button" role="tab" aria-controls="neutron-star-winds-experts-panel" aria-selected="false" tabindex="-1"><span class="audience-tab-label">For experts</span></button>
+                        </div>
+                        <div class="audience-panel" id="neutron-star-winds-researchers-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For other researchers</h3>
+                                <p>I use relativistic magnetohydrodynamic simulations in PLUTO to investigate outflows from proto-neutron stars. By varying the stellar mass, thermal conditions, magnetic field, and rotation, I examine how these ingredients affect the development of a sustained wind.</p>
+                                <p>The analysis follows the evolving mass and energy fluxes and the flow's critical points, connecting the numerical solutions to the physics of wind launching and acceleration.</p>
+                            </div>
+                            <!-- Audience-specific figures can be added here. -->
+                        </div>
+                        <div class="audience-panel" id="neutron-star-winds-public-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For the general public</h3>
+                                <!-- Add the general-public overview here. -->
+                            </div>
+                            <!-- Audience-specific figures can be added here. -->
+                        </div>
+                        <div class="audience-panel" id="neutron-star-winds-experts-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For experts</h3>
+                                <!-- Add expert-level text here. -->
+                            </div>
+                            <!-- Expert-specific figures can be added here. -->
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="research-area" id="time-domain-astronomy" aria-label="Time-domain astronomy">
+                <article class="research-project" id="malca" aria-labelledby="malca-title">
+                    <div class="project-heading">
+                        <span class="legacy-anchor" id="f01" aria-hidden="true"></span>
+                        <h2 id="malca-title">ASAS-SN variability searches</h2>
+                    </div>
+                    <div class="audience-versions">
+                        <div class="audience-tabs" role="tablist" aria-label="Choose an audience" hidden>
+                            <button class="audience-tab" id="malca-researchers-tab" type="button" role="tab" aria-controls="malca-researchers-panel" aria-selected="true"><span class="audience-tab-label">For other researchers</span></button>
+                            <button class="audience-tab" id="malca-public-tab" type="button" role="tab" aria-controls="malca-public-panel" aria-selected="false" tabindex="-1"><span class="audience-tab-label">For the general public</span></button>
+                            <button class="audience-tab" id="malca-experts-tab" type="button" role="tab" aria-controls="malca-experts-panel" aria-selected="false" tabindex="-1"><span class="audience-tab-label">For experts</span></button>
+                        </div>
+                        <div class="audience-panel" id="malca-researchers-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For other researchers</h3>
+                                <p>At Ohio State, I lead a search for stellar dimming events, gravitational microlensing, and long term variability using <a href="https://asas-sn.osu.edu/" class="content-link">ASAS-SN</a> (All Sky Automated Survey for Supernovae). This network of telescopes continuously monitors the entire sky, measuring how bright millions of stars appear over time. These measurements create what astronomers call "light curves": graphs showing how a star's brightness changes over days, months, and years.</p>
+                                <p>Long lasting dimming can reveal dust clouds moving across our view of a star. Gravitational microlensing produces a temporary brightening when the gravity of a foreground object magnifies light from a background star. Studying these events alongside long term and periodic changes in stellar brightness helps distinguish dust obscuration and lensing from variability caused by stellar activity.</p>
+                                <p>I built <strong>MALCA</strong> (Multi timescale ASAS-SN Light Curve Analysis), a parallel processing pipeline designed to analyze more than 17 million ASAS-SN light curves. It uses Gaussian process models to describe each star's ordinary variability and systematic trends, then Bayesian comparisons to identify significant dimmings and brightenings relative to that baseline.</p>
+                                <p>I inject synthetic events into real light curves to measure detection efficiency as a function of event amplitude, duration, and source brightness. I combine light curve properties with catalog crossmatches, infrared colors, and machine learning to classify candidates and distinguish microlensing, dusty dimming, and other kinds of variability.</p>
+                                <p>This work is being conducted in collaboration with <a href="https://www.asc.ohio-state.edu/kochanek.1/" class="content-link">Christopher Kochanek</a> and <a href="https://www.astronomy.ohio-state.edu/stanek.32/" class="content-link">Krzysztof Stanek</a> at Ohio State. The code is available on <a href="https://github.com/calderlen/MALCA" class="content-link">GitHub</a>.</p>
+                            </div>
+                            <div class="project-plots">
+                                <figure class="project-figure">
+                                    <a href="research-figures/web/malca-dimming-event.png" target="_blank" rel="noopener" aria-label="Open figure at full size">
+                                        <img src="research-figures/web/malca-dimming-event.png" alt="The dimming event in J084052.72+024044.7 compared across several baseline models." loading="lazy" decoding="async">
+                                    </a>
+                                    <figcaption>A long dimming event in J084052.72+024044.7, compared across several baseline models. Masking the dimming during the Gaussian process fit helps preserve its depth.</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <a href="research-figures/web/malca-microlensing.png" target="_blank" rel="noopener" aria-label="Open figure at full size">
+                                        <img src="research-figures/web/malca-microlensing.png" alt="Full light curves and event scale views of three MALCA microlensing candidates with lens model fits." loading="lazy" decoding="async">
+                                    </a>
+                                    <figcaption>Examples from the MALCA microlensing candidate search. Full light curves and event scale views compare the photometry with point source point lens fits.</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <a href="research-figures/web/malca-event-window.pdf" target="_blank" rel="noopener" aria-label="Open J235442+594344 dimming event PDF at full size">
+                                        <img src="research-figures/web/malca-event-window.svg" alt="Full light curve and close-up of the dimming event in J235442+594344, showing the event window, half-depth duration, and measured flux drop." width="518" height="230" loading="lazy" decoding="async">
+                                    </a>
+                                    <figcaption>Dimming event in J235442+594344. The full light curve and close-up show the event window, half-depth duration, and measured flux drop.</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <a href="research-figures/web/malca-classification.pdf" target="_blank" rel="noopener" aria-label="Open MALCA classification matrix PDF at full size">
+                                        <img src="research-figures/web/malca-classification.svg" alt="Confusion matrix comparing human and predicted classifications for dimming events, eclipsing binaries, junk, and other sources, with row fractions and counts." width="245" height="234" loading="lazy" decoding="async">
+                                    </a>
+                                    <figcaption>Comparison of human and model classifications for dimming events, eclipsing binaries, junk, and other sources. Cells show row fractions and counts in the held-out sample.</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <a href="research-figures/web/malca-sky-distribution.pdf" target="_blank" rel="noopener" aria-label="Open MALCA sky distribution PDF at full size">
+                                        <img src="research-figures/web/malca-sky-distribution.svg" alt="Galactic sky map showing 164 dipper, 67 long-term-variable, and 22 microlensing candidates." width="438" height="223" loading="lazy" decoding="async">
+                                    </a>
+                                    <figcaption>Sky distribution of reviewed dipper, long-term-variable, and microlensing candidates in Galactic coordinates.</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <a href="research-figures/web/malca-infrared-colors.pdf" target="_blank" rel="noopener" aria-label="Open MALCA infrared color comparison PDF at full size">
+                                        <img src="research-figures/web/malca-infrared-colors.svg" alt="Extinction-corrected H minus Ks versus W1 minus W2 colors for 176 MALCA dippers and comparison systems, with a blackbody reference track." width="529" height="360" loading="lazy" decoding="async">
+                                    </a>
+                                    <figcaption>Extinction-corrected infrared colors of MALCA dippers and comparison systems, with a blackbody reference track.</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <a href="research-figures/web/malca-disk-colors.png" target="_blank" rel="noopener" aria-label="Open MALCA disk-color diagram at full size">
+                                        <img src="research-figures/web/malca-disk-colors.png" alt="Ks minus W3 versus Ks minus W4 infrared colors of MALCA dippers, with diskless, debris, evolved, full, and transition disk regions and a blackbody reference track." width="1080" height="810" loading="lazy" decoding="async">
+                                    </a>
+                                    <figcaption>Infrared colors of MALCA dippers, with empirical disk-stage boundaries and a blackbody reference track.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="audience-panel" id="malca-public-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For the general public</h3>
+                                <!-- Add the general-public overview here. -->
+                            </div>
+                            <!-- Audience-specific figures can be added here. -->
+                        </div>
+                        <div class="audience-panel" id="malca-experts-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For experts</h3>
+                                <!-- Add expert-level text here. -->
+                            </div>
+                            <!-- Expert-specific figures can be added here. -->
+                        </div>
+                    </div>
+                </article>
+                <article class="research-project" id="survey-operations" aria-labelledby="operations-title">
+                    <div class="project-copy">
+                        <h2 id="operations-title">ASAS-SN survey operations and transient vetting</h2>
+
+                        <p>As a Research Technician I in Ohio State's Department of Astronomy, I perform daily image quality control for 20 cameras on five ASAS-SN telescopes, remotely recalibrate telescopes, and verify supernova and other transient candidates. I help release confirmed discoveries to the public, connecting the survey's observations to reliable transient reports.</p>
+                        <p>Examples include the Transient Name Server discovery reports for <a href="https://www.wis-tns.org/object/2026lru/discovery-cert" class="content-link">ASASSN-26df (AT 2026lru)</a> and <a href="https://www.wis-tns.org/object/2026osq" class="content-link">ASASSN-26dr (AT 2026osq)</a>, which credit Krzysztof Stanek and me on behalf of the ASAS-SN team.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="research-area" id="exoplanet-atmospheres" aria-label="Exoplanet atmospheres">
+                <article class="research-project" id="atmo-retrieval" aria-labelledby="retrieval-title">
+                    <div class="project-heading">
+                        <h2 id="retrieval-title">Retrievals</h2>
+                    </div>
+                    <div class="audience-versions">
+                        <div class="audience-tabs" role="tablist" aria-label="Choose an audience" hidden>
+                            <button class="audience-tab" id="atmo-retrieval-researchers-tab" type="button" role="tab" aria-controls="atmo-retrieval-researchers-panel" aria-selected="true"><span class="audience-tab-label">For other researchers</span></button>
+                            <button class="audience-tab" id="atmo-retrieval-public-tab" type="button" role="tab" aria-controls="atmo-retrieval-public-panel" aria-selected="false" tabindex="-1"><span class="audience-tab-label">For the general public</span></button>
+                            <button class="audience-tab" id="atmo-retrieval-experts-tab" type="button" role="tab" aria-controls="atmo-retrieval-experts-panel" aria-selected="false" tabindex="-1"><span class="audience-tab-label">For experts</span></button>
+                        </div>
+                        <div class="audience-panel" id="atmo-retrieval-researchers-panel"></div>
+                        <div class="audience-panel" id="atmo-retrieval-public-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For the general public</h3>
+                                <!-- Add the general-public overview here. -->
+                            </div>
+                            <!-- Audience-specific figures can be added here. -->
+                        </div>
+                        <div class="audience-panel" id="atmo-retrieval-experts-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For experts</h3>
+                                <!-- Add expert-level text here. -->
+                            </div>
+                            <!-- Expert-specific figures can be added here. -->
+                        </div>
+                    </div>
+                </article>
+                <article class="research-project" id="kelt-20b" aria-labelledby="kelt-title">
+                    <div class="project-heading">
+                        <span class="legacy-anchor" id="f02" aria-hidden="true"></span>
+                        <h2 id="kelt-title">Cross-correlation spectroscopy</h2>
+                    </div>
+                    <div class="audience-versions">
+                        <div class="audience-tabs" role="tablist" aria-label="Choose an audience" hidden>
+                            <button class="audience-tab" id="kelt-researchers-tab" type="button" role="tab" aria-controls="kelt-researchers-panel" aria-selected="true"><span class="audience-tab-label">For other researchers</span></button>
+                            <button class="audience-tab" id="kelt-public-tab" type="button" role="tab" aria-controls="kelt-public-panel" aria-selected="false" tabindex="-1"><span class="audience-tab-label">For the general public</span></button>
+                            <button class="audience-tab" id="kelt-experts-tab" type="button" role="tab" aria-controls="kelt-experts-panel" aria-selected="false" tabindex="-1"><span class="audience-tab-label">For experts</span></button>
+                        </div>
+                        <div class="audience-panel" id="kelt-researchers-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For other researchers</h3>
+                                <p>In my first author study of the ultra hot Jupiter KELT-20b, I used high resolution PEPSI/LBT transmission spectra to follow neutral and ionized iron absorption through a transit. Their different velocity patterns and transit asymmetries probe atmospheric winds and structure, while comparisons between studies show how adopted system parameters affect the inferred velocities.</p>
+                                <p>I built a processing pipeline to remove absorption from Earth's atmosphere and contamination from the host star, then cross correlate the remaining spectra with atmospheric models generated using petitRADTRANS. By injecting synthetic planetary signals into the data and measuring how well the pipeline recovers them, I test how the processing affects the atmospheric signal.</p>
+                                <p>This work grew out of my undergraduate research with <a href="https://captain-exoplanet.github.io/" class="content-link">Marshall Johnson</a> and <a href="https://www.jiwang.io/#/" class="content-link">Ji Wang</a>. I presented an early analysis as a <a href="https://aas243-aas.ipostersessions.com/Default.aspx?s=89-34-93-49-20-C4-FB-46-1F-28-CD-79-11-D0-C0-38" class="content-link">poster</a> at the 243rd American Astronomical Society meeting in January 2024 and defended my <a href="https://kb.osu.edu/handle/1811/105450" class="content-link">undergraduate thesis</a> in December 2024. The study is published as <a href="https://doi.org/10.3847/1538-3881/ae2252" class="content-link">PIRANGA II</a> in the <em>Astronomical Journal</em>; the <a href="https://arxiv.org/abs/2503.07719" class="content-link">preprint</a> is also available.</p>
+                            </div>
+                            <div class="project-plots">
+                                <figure class="project-figure">
+                                    <a href="research-figures/KELT-20b.Fe+.combined.phase-binned+RVs-1.png" target="_blank" rel="noopener" aria-label="Open figure at full size">
+                                        <img src="research-figures/KELT-20b.Fe+.combined.phase-binned+RVs-1.png" alt="Phase resolved ionized iron absorption and radial velocities across the transit of KELT-20b." loading="lazy" decoding="async">
+                                    </a>
+                                    <figcaption>Ionized iron absorption and radial velocities across the transit of KELT-20b, tracing the changing atmospheric signal with orbital phase.</figcaption>
+                                </figure>
+                                <figure class="research-figure">
+                                    <div class="img-container">
+                                        <img src="research-figures/spectraIndArms.Fe I.KELT-20b.inverted-transmission-better-1.png" alt="Neutral iron model spectrum in the blue and red PEPSI arms." loading="lazy" decoding="async">
+                                        <img src="research-figures/spectraIndArms.Fe II.KELT-20b.inverted-transmission-better-1.png" alt="Ionized iron model spectrum in the blue and red PEPSI arms." loading="lazy" decoding="async">
+                                    </div>
+                                    <figcaption>Model spectra for neutral iron (left) and ionized iron (right) across the two PEPSI arms.</figcaption>
+                                </figure>
+                                <figure class="research-figure">
+                                    <div class="img-container">
+                                        <img src="research-figures/KELT-20b.20190504.combined.Fe.CCFs-shifted-1.png" alt="Neutral iron cross correlation signal through the transit of KELT-20b." loading="lazy" decoding="async">
+                                        <img src="research-figures/KELT-20b.20190504.combined.Fe+.CCFs-shifted-1.png" alt="Ionized iron cross correlation signal through the transit of KELT-20b." loading="lazy" decoding="async">
+                                    </div>
+                                    <figcaption>Cross correlation signals for neutral iron (left) and ionized iron (right) during transit.</figcaption>
+                                </figure>
+                                <figure class="research-figure">
+                                    <div class="img-container">
+                                        <img src="research-figures/KELT-20b.20190504.combined.Fe..halves.SNR-Gaussian-Asymmetry-1.png" alt="Neutral iron absorption profiles compared between the first and second halves of transit." loading="lazy" decoding="async">
+                                        <img src="research-figures/KELT-20b.20190504.combined.Fe+..halves.SNR-Gaussian-Asymmetry (1)-1.png" alt="Ionized iron absorption profiles compared between the first and second halves of transit." loading="lazy" decoding="async">
+                                    </div>
+                                    <figcaption>Comparing the two halves of the transit reveals asymmetry in the iron absorption profiles.</figcaption>
+                                </figure>
+                                <figure class="research-figure">
+                                    <div class="img-container">
+                                        <img src="research-figures/no-fit-KELT-20b.Fe.combined.phase-binned+RVs-1.png" alt="Phase resolved neutral iron absorption and measured radial velocities." loading="lazy" decoding="async">
+                                        <img src="research-figures/KELT-20b.Fe+.combined.phase-binned+RVs-1.png" alt="Phase resolved ionized iron absorption and measured radial velocities." loading="lazy" decoding="async">
+                                    </div>
+                                    <figcaption>Phase resolved absorption and radial velocities trace how the atmospheric signal changes across the transit.</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <a href="https://iopscience.iop.org/article/10.3847/1538-3881/ae2252" target="_blank" rel="noopener" aria-label="Read the PIRANGA II abstract in the Astronomical Journal">
+                                        <img src="research-figures/web/piranga-ii-first-page.png" alt="First page of PIRANGA II: Phase-resolved Cross-correlation Transmission Spectroscopy of KELT-20b, by Calder Lenhart and collaborators." width="1391" height="1800" loading="lazy" decoding="async">
+                                    </a>
+                                    <figcaption><em>PIRANGA II</em>, Lenhart et al., <em>The Astronomical Journal</em>, 171, 81 (2026). <a href="https://iopscience.iop.org/article/10.3847/1538-3881/ae2252" target="_blank" rel="noopener" class="content-link">Read the journal abstract</a>.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="audience-panel" id="kelt-public-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For the general public</h3>
+                                <p>Ultra hot Jupiters are an exceptional class of <a href="https://en.wikipedia.org/wiki/Exoplanet" class="content-link">exoplanets</a>. They rapidly orbit their host stars in close proximity and have puffy atmospheres that reach more than 2,200 Kelvin. They are expected to be <a href="https://en.wikipedia.org/wiki/Tidal_locking" class="content-link">tidally locked</a>, meaning one hemisphere permanently faces the star, causing a large temperature gradient across the planet. With high quality observations, we can study the extreme physical processes governing these atmospheres. We observed one such exoplanet, KELT-20b, with the Potsdam Echelle Polarimetric and Spectroscopic Instrument (PEPSI) on the Large Binocular Telescope (LBT) located in Mt. Graham, Arizona.</p>
+                                <p>To examine the atmosphere, we collect the light from the host star that passes through the exoplanet's atmosphere during a <a href="https://en.wikipedia.org/wiki/Astronomical_transit" class="content-link">transit</a>, some of which is absorbed by constituent elements in the atmosphere. Due to the <a href="https://en.wikipedia.org/wiki/Quantum_mechanics" class="content-link">quantum</a> nature of electrons, each atom and molecule only absorbs photons at characteristic wavelengths, which allows us to identify the atmospheric constituents by examining the wavelengths where light is absorbed. Typically, exoplanet researchers take many exposures over the course of a transit, then combine their data to create a <a href="https://en.wikipedia.org/wiki/Absorption_spectroscopy#Absorption_spectrum" class="content-link">transmission spectrum</a> that shows how much light is absorbed at each wavelength. Instead of measuring the transmission spectrum exclusively, it is often advantageous to calculate the similarity between the observed spectrum and a computer generated spectrum with the <a href="https://en.wikipedia.org/wiki/Cross-correlation" class="content-link">cross correlation</a> method.</p>
+                                <p>By analyzing these absorption features in detail, we can not only pinpoint the chemical makeup of the exoplanet's atmosphere but also probe the underlying physical processes. We can infer temperature gradients, wind speeds, and circulation patterns. These inferences are strengthened through comparison to theoretical models.</p>
+                                <p>As the hot Jupiter transits, light from the star passes through different slices of the atmosphere, meaning that our transmission spectrum should evolve over time. As mentioned, observers commonly combine all exposures during transit together to maximize signal strength. In addition to the full transit spectrum, we examine how the absorption signatures change with orbital phase. This means that we can probe individual longitudinal slices of the atmosphere, gaining a considerably more detailed view of the atmospheric physics.</p>
+                            </div>
+                            <div class="project-plots">
+                                <figure class="project-figure">
+                                    <a href="research-figures/KELT-20b.Fe+.combined.phase-binned+RVs-1.png" target="_blank" rel="noopener" aria-label="Open figure at full size">
+                                        <img src="research-figures/KELT-20b.Fe+.combined.phase-binned+RVs-1.png" alt="Phase resolved ionized iron absorption and radial velocities across the transit of KELT-20b." loading="lazy" decoding="async">
+                                    </a>
+                                    <figcaption>Ionized iron absorption and radial velocities across the transit of KELT-20b, tracing the changing atmospheric signal with orbital phase.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="audience-panel" id="kelt-experts-panel">
+                            <div class="project-copy">
+                                <h3 class="audience-heading">For experts</h3>
+                                <!-- Add expert-level text here. -->
+                            </div>
+                            <!-- Expert-specific figures can be added here. -->
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
