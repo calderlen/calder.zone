@@ -57,8 +57,28 @@
         touch-action: manipulation;
         -webkit-tap-highlight-color: transparent;
     }
-    .mobile-home a:hover { color: var(--accent); }
+    .mobile-home a:is(:hover, :focus-visible, :active) { color: var(--accent); }
     .mobile-home a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+    .mobile-home-links a { position: relative; }
+    .mobile-home-links a::before,
+    .mobile-home-links a::after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .mobile-home-links a::before {
+        content: '[' / '';
+        left: -0.55em;
+    }
+    .mobile-home-links a::after {
+        content: ']' / '';
+        right: -0.55em;
+    }
+    .mobile-home-links a:is(:hover, :focus-visible, :active)::before,
+    .mobile-home-links a:is(:hover, :focus-visible, :active)::after { visibility: visible; }
 
     .mobile-home-links {
         display: grid;

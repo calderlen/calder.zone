@@ -184,6 +184,13 @@ h2 { line-height: 1.3; }
     max-width: 62ch;
 }
 
+.audience-placeholder { max-width: none; }
+.audience-placeholder .construction-content {
+    padding: 40px 0;
+    text-align: center;
+}
+.audience-placeholder .construction-content > p { font-size: 24px; }
+
 .project-plots {
     grid-column: 2;
     min-width: 0;
