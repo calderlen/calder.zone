@@ -14,7 +14,7 @@
     <meta name="description" content="Calder Lenhart, astrophysics researcher and photographer. Research in galaxy evolution, compact objects, exoplanet atmospheres, and time-domain astronomy.">
     <script src="theme.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="home-mobile.css?v=11">
+    <link rel="stylesheet" href="home-mobile.css?v=12">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
@@ -112,7 +112,7 @@
             text-transform: lowercase;
             display: inline-flex;
             align-items: center;
-            transition: color 0.3s, text-shadow 0.3s;
+            transition: color 3s ease, text-shadow 3s ease;
             white-space: nowrap;
         }
 
@@ -159,18 +159,21 @@
         }
 
         .panel:not(.research-panel) .nav-links a:hover::before,
-        .research-panel .nav-links a:hover::after {
+        .research-panel .nav-links a:hover::after,
+        .panel:not(.research-panel) .panel-image:hover ~ .nav-links .primary-nav-link::before,
+        .research-panel .panel-image:hover ~ .research-links .primary-nav-link::after {
             opacity: 1;
             transform: scale(1);
         }
 
-        .panel:not(.research-panel) .nav-links a:hover::before {
+        .panel:not(.research-panel) .nav-links a:hover::before,
+        .panel:not(.research-panel) .panel-image:hover ~ .nav-links .primary-nav-link::before {
             box-shadow: 0 0 8px var(--art-glow);
         }
 
         .research-links a {
             color: var(--text-strong);
-            transition: color 0.3s, text-shadow 0.3s;
+            transition: color 3s ease, text-shadow 3s ease;
         }
 
         .research-panel .panel-image:hover ~ .research-links a {
@@ -185,7 +188,8 @@
             transition: color 0.3s, text-shadow 0.3s;
         }
 
-        .research-links a:hover::after {
+        .research-links a:hover::after,
+        .research-panel .panel-image:hover ~ .research-links .primary-nav-link::after {
             box-shadow: 0 0 8px var(--research-glow);
         }
 
@@ -327,52 +331,6 @@
             text-align: center;
         }
 
-        /* Keep side menus inside narrower desktop windows. */
-        @media screen and (min-width: 1025px) and (max-width: 1560px) {
-            .main-section {
-                align-items: flex-start;
-            }
-
-            .panel,
-            .panel.research-panel {
-                flex-direction: column;
-            }
-
-            .research-panel .nav-links,
-            .panel:not(.research-panel) .nav-links {
-                position: static;
-                width: 100%;
-                padding-inline: 35px;
-                margin-top: 24px;
-            }
-
-            .nav-links a {
-                position: relative;
-            }
-
-            .research-panel .nav-links a::after {
-                position: absolute;
-                left: 100%;
-            }
-
-            .panel:not(.research-panel) .nav-links a::before {
-                position: absolute;
-                right: 100%;
-            }
-
-            .description-section .description {
-                padding-inline: 35px;
-            }
-
-            .description-section .description:first-child {
-                text-align: right;
-            }
-
-            .description-section .description:last-child {
-                text-align: left;
-            }
-        }
-
     </style>
 </head>
 <body class="home-page">
@@ -406,7 +364,7 @@
                 </a>
                 <nav class="nav-links">
                     <a href="gallery.html" class="primary-nav-link">artworks</a>
-                    <a href="#" class="exhibitions-link">exhibitions</a>
+                    <a href="exhibitions.html" class="exhibitions-link">exhibitions</a>
                     <a href="blog.html">blog</a>
                     <a href="cv-art.html">art cv</a>
                     <a href="mailto:calderlen@gmail.com" class="contact-link"><span class="desktop-label">calderlen[at]gmail.com</span><span class="mobile-label">Email</span></a>
@@ -444,15 +402,16 @@
                     <li class="mobile-home-research"><a href="research.html">Astrophysics research</a></li>
                     <li class="mobile-home-photography"><a href="gallery.html">Artworks</a></li>
                     <li class="mobile-home-research"><a href="https://scixplorer.org/search?q=orcid%3A0009-0001-1459-3738&amp;sort=date%20desc">Publications<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a></li>
-                    <li class="mobile-home-photography"><a href="blog.html">Blog</a></li>
+                    <li class="mobile-home-photography"><a href="exhibitions.html" class="exhibitions-link">Exhibitions</a></li>
                     <li class="mobile-home-research"><a href="software.html">Code</a></li>
-                    <li class="mobile-home-photography"><a href="https://www.instagram.com/calderlen">Instagram<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a></li>
+                    <li class="mobile-home-photography"><a href="blog.html">Blog</a></li>
                     <li class="mobile-home-research"><a href="https://github.com/calderlen">GitHub<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a></li>
+                    <li class="mobile-home-photography"><a href="https://www.instagram.com/calderlen">Instagram<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a></li>
                     <li class="mobile-home-research"><a href="projects.html">Engineering projects</a></li>
-                    <li class="mobile-home-research"><a href="cv.html">CV</a></li>
                     <li class="mobile-home-photography"><a href="cv-art.html">Art CV</a></li>
-                    <li class="mobile-home-research"><a href="mailto:lenhart.106@osu.edu">lenhart.106[at]osu.edu</a></li>
+                    <li class="mobile-home-research"><a href="cv.html">CV</a></li>
                     <li class="mobile-home-photography"><a href="mailto:calderlen@gmail.com">calderlen[at]gmail.com</a></li>
+                    <li class="mobile-home-research"><a href="mailto:lenhart.106@osu.edu">lenhart.106[at]osu.edu</a></li>
                 </ul>
             </nav>
         </main>

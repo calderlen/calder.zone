@@ -1,6 +1,6 @@
 .mobile-home { display: none; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1560px) {
     .home-page { position: relative; height: auto; min-height: 100dvh; }
     .home-page > .container { display: none; }
 
