@@ -314,15 +314,14 @@ body:not(.home-page):not(.construction-page):not(.photography-page) {
     }
 }
 
-.photo.fade-in img {
-    opacity: 0;
-    transform: translateY(15px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+.photo.fade-in::before {
+    background-color: var(--bg);
+    opacity: 1;
+    transition: opacity 1s ease-out;
 }
 
-.photo.fade-in.visible img {
-    opacity: 1;
-    transform: translateY(0);
+.photo.fade-in.visible::before {
+    opacity: 0;
 }
 
 .icon {
@@ -420,7 +419,8 @@ body:not(.home-page):not(.construction-page):not(.photography-page) {
     .gallery .photo img {
         width: 100%;
         height: auto;
-        max-height: 80svh;
+        /* Leave room for the header and caption on phones in landscape. */
+        max-height: min(80svh, calc(100svh - 120px));
         object-fit: contain;
     }
 
