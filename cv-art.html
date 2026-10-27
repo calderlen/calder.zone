@@ -13,7 +13,7 @@
     <title>Art CV | Calder Lenhart</title>
     <meta name="description" content="">
     <script src="theme.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css?v=20261027-photo-top-toggle">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
@@ -28,6 +28,7 @@
         }
 
         .container {
+            position: relative;
             display: grid;
             grid-template-columns: 260px minmax(0, 1fr);
             gap: 64px;
@@ -36,6 +37,8 @@
             padding: 80px 40px 60px 40px;
             align-items: start;
         }
+
+        .container > .home-link { left: 32px; }
 
         .cv-content {
             min-width: 0;
@@ -164,6 +167,8 @@
                 padding: 80px 24px 48px;
             }
 
+            .container > .home-link { left: 16px; }
+
             .cv-sidebar {
                 max-width: 320px;
             }
@@ -175,9 +180,9 @@
         }
     </style>
 </head>
-<body>
-    <a href="index.html" class="site-name home-link" aria-label="Calder Lenhart, home">Calder Lenhart</a>
+<body class="photography-page">
     <div class="container">
+        <a href="index.html" class="site-name home-link" aria-label="Calder Lenhart, home">Calder Lenhart</a>
         <header class="cv-sidebar">
             <p class="artist-statement">b. 2002 in Youngstown, OH. Lives and works in Columbus, OH. Graduate student in the Ohio State Department of Physics and staff member in the Ohio State Department of Astronomy.</p>
 

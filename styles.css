@@ -93,6 +93,21 @@ html {
     color: var(--text);
 }
 
+body {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+body:not(.home-page):not(.construction-page):not(.photography-page) {
+    padding-bottom: 66px;
+}
+
+.home-page { height: auto; }
+
+.photography-page { display: flow-root; }
+
 /* Color fades run on the root rather than restarting on nested elements. */
 :root.theme-changing {
     transition-property: --bg, --surface, --text, --text-strong,
@@ -119,7 +134,7 @@ html {
 }
 
 .theme-switcher {
-    position: fixed;
+    position: absolute;
     bottom: 15px;
     left: 15px;
     z-index: 10001;
@@ -138,6 +153,13 @@ html {
     font-family: 'IM Fell Double Pica', Georgia, serif;
     cursor: pointer;
     touch-action: manipulation;
+}
+
+.photography-page .theme-switcher {
+    top: 30px;
+    right: 30px;
+    bottom: auto;
+    left: auto;
 }
 
 .theme-switcher::before,
@@ -342,6 +364,11 @@ html {
     .theme-switcher {
         width: 36px;
         height: 36px;
+    }
+
+    .photography-page .theme-switcher {
+        top: 20px;
+        right: 12px;
     }
 
     .navbar, .navbar-dark {

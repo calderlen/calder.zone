@@ -4,98 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code | Calder Lenhart</title>
-    <meta name="description" content="Code by Calder Lenhart for astrophysics, data analysis, and other projects. Browse selected code and research tools.">
-    <link rel="canonical" href="https://calder.zone/software.html">
-    <meta property="og:title" content="Calder Lenhart | Code">
-    <meta property="og:description" content="Selected code for astrophysics, data analysis, and other projects.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://calder.zone/software.html">
-    <script src="theme.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="research.css">
-    <link rel="stylesheet" href="project-pages.css?v=20261025-small-arrows">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" rel="stylesheet">
-    <script src="site-navigation.js?v=20261027-single-row-header" defer></script>
-    <script src="research.js" defer></script>
-    <link rel="stylesheet" href="site-header.css?v=20261027-matching-external-arrows">
+    <link rel="canonical" href="https://calder.zone/code.html">
+    <script>
+        window.location.replace('code.html' + window.location.search + window.location.hash);
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url=code.html"></noscript>
 </head>
-<body class="software-page">
-    <a class="skip-link" href="#software-content">Skip to code</a>
-    <header class="site-header">
-        <a class="site-name" href="index.html" aria-label="Calder Lenhart, home">Calder Lenhart</a>
-        <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
-        <nav class="site-links" id="site-navigation" aria-label="Main navigation">
-            <a href="research.html">Astrophysics research</a>
-            <a href="https://scixplorer.org/search?q=orcid%3A0009-0001-1459-3738&amp;sort=date%20desc">Publications<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a>
-            <a href="software.html" aria-current="page">Code</a>
-            <a href="https://github.com/calderlen">GitHub<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a>
-            <a href="projects.html">Engineering projects</a>
-            <a href="cv.html">CV</a>
-            <a href="mailto:lenhart.106@osu.edu">lenhart.106[at]osu.edu</a>
-        </nav>
-    </header>
-    <div class="research-layout">
-        <nav class="research-nav" aria-label="Code">
-            <details class="project-picker" open>
-                <summary><span class="project-picker-label">Choose project</span><span class="project-selection">MALCA</span></summary>
-                <ul class="project-index">
-                    <li><a class="project-link" href="#malca">MALCA</a></li>
-                    <li><a class="project-link" href="#atmo-retrieval">atmo-retrieval</a></li>
-                    <li><a class="project-link" href="#galactic-nuclear-fountain">galactic-nuclear-fountain</a></li>
-                    <li><a class="project-link" href="#ns-wind">ns-wind</a></li>
-                    <li><a class="project-link" href="#dustycult">DustyCult.jl</a></li>
-                    <li><a class="project-link" href="#mlexo">mlexo</a></li>
-                    <li><a class="project-link" href="#writing-quality">LWP2WQ-kaggle</a></li>
-                </ul>
-            </details>
-        </nav>
-
-        <main id="software-content" tabindex="-1" aria-label="Code">
-            <article class="research-project software-project" id="malca" aria-labelledby="malca-title" data-repository="malca">
-                <div class="project-copy">
-                    <h2 id="malca-title"><a href="https://github.com/calderlen/malca">MALCA<svg class="repository-link-arrow" width="0.5em" height="0.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></h2>
-                </div>
-            </article>
-
-            <article class="research-project software-project" id="atmo-retrieval" aria-labelledby="atmo-retrieval-title" data-repository="atmo-retrieval">
-                <div class="project-copy">
-                    <h2 id="atmo-retrieval-title"><a href="https://github.com/calderlen/atmo-retrieval">atmo-retrieval<svg class="repository-link-arrow" width="0.5em" height="0.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></h2>
-                </div>
-            </article>
-
-            <article class="research-project software-project" id="galactic-nuclear-fountain" aria-labelledby="galactic-nuclear-fountain-title" data-repository="galactic-nuclear-fountain">
-                <div class="project-copy">
-                    <h2 id="galactic-nuclear-fountain-title"><a href="https://github.com/calderlen/galactic-nuclear-fountain">galactic-nuclear-fountain<svg class="repository-link-arrow" width="0.5em" height="0.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></h2>
-                </div>
-            </article>
-
-            <article class="research-project software-project" id="ns-wind" aria-labelledby="ns-wind-title" data-repository="ns-wind">
-                <div class="project-copy">
-                    <h2 id="ns-wind-title"><a href="https://github.com/calderlen/ns-wind">ns-wind<svg class="repository-link-arrow" width="0.5em" height="0.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></h2>
-                </div>
-            </article>
-
-            <article class="research-project software-project" id="dustycult" aria-labelledby="dustycult-title" data-repository="DustyCult.jl">
-                <div class="project-copy">
-                    <h2 id="dustycult-title"><a href="https://github.com/calderlen/DustyCult.jl">DustyCult.jl<svg class="repository-link-arrow" width="0.5em" height="0.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></h2>
-                </div>
-            </article>
-
-            <article class="research-project software-project" id="mlexo" aria-labelledby="mlexo-title" data-repository="mlexo">
-                <div class="project-copy">
-                    <h2 id="mlexo-title"><a href="https://github.com/calderlen/mlexo">mlexo<svg class="repository-link-arrow" width="0.5em" height="0.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></h2>
-                </div>
-            </article>
-
-            <article class="research-project software-project" id="writing-quality" aria-labelledby="writing-quality-title" data-repository="LWP2WQ-kaggle">
-                <div class="project-copy">
-                    <h2 id="writing-quality-title"><a href="https://github.com/calderlen/LWP2WQ-kaggle">LWP2WQ-kaggle<svg class="repository-link-arrow" width="0.5em" height="0.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></h2>
-                </div>
-            </article>
-        </main>
-    </div>
+<body>
+    <p>This page has moved to <a href="code.html">Code</a>.</p>
 </body>
 </html>

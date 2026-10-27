@@ -19,7 +19,7 @@
     .mobile-home-header h1 {
         width: fit-content;
         margin: 0 auto;
-        padding-bottom: min(1dvh, 8px);
+        padding-bottom: 2px;
         border-bottom: 1px solid currentColor;
         font-size: min(8vw, 4.4dvh, 34px);
         font-weight: 400;
@@ -71,6 +71,18 @@
         list-style: none;
     }
     .mobile-home-photography a { justify-content: flex-end; }
+
+    .mobile-home-links > .mobile-home-about {
+        justify-self: center;
+        text-align: center;
+    }
+    .mobile-home .mobile-about-link {
+        --accent: #90ee90;
+        justify-content: center;
+        text-align: center;
+    }
+    :root[data-theme="light"] .mobile-home .mobile-about-link { --accent: #2f7040; }
+    .mobile-home .mobile-about-link:is(:hover, :focus-visible, :active) { color: var(--accent); }
 
     .mobile-home footer {
         position: static;
