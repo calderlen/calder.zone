@@ -12,16 +12,17 @@
     <meta name="twitter:card" content="summary_large_image">
     <title></title>
     <meta name="description" content="">
+    <script src="theme.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #fdfbf7;
-            color: #333;
+            font-family: 'IM Fell Double Pica', Georgia, serif;
+            background-color: var(--bg);
+            color: var(--text);
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -31,17 +32,6 @@
             max-width: 1200px;
             margin: 160px auto 60px auto;
             padding: 0 20px;
-        }
-
-        .home-circle {
-            border-color: rgba(0, 0, 0, 0.15);
-            color: transparent;
-        }
-
-        .home-circle:hover {
-            background-color: rgba(0, 0, 0, 0.05);
-            border-color: rgba(0, 0, 0, 0.3);
-            color: transparent;
         }
 
         .sort-controls {
@@ -54,17 +44,17 @@
         }
 
         .sort-controls label {
-            color: #666;
+            color: var(--text-muted);
             font-size: 0.9em;
             letter-spacing: 1px;
         }
 
         .sort-controls select {
-            background-color: #fff;
-            border: 1px solid #ccc;
-            color: #333;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text);
             padding: 8px 12px;
-            font-family: 'Inter', sans-serif;
+            font-family: 'IM Fell Double Pica', Georgia, serif;
             font-size: 0.9em;
             letter-spacing: 0.5px;
             cursor: pointer;
@@ -72,12 +62,12 @@
         }
 
         .sort-controls select:hover {
-            border-color: #999;
+            border-color: var(--border-hover);
         }
 
         .sort-controls select:focus {
             outline: none;
-            border-color: #5c7c99;
+            border-color: var(--accent-research);
         }
 
         .shop-header {
@@ -89,12 +79,12 @@
             font-size: 2.5em;
             font-weight: 400;
             letter-spacing: 3px;
-            color: #222;
+            color: var(--text-strong);
             margin-bottom: 20px;
         }
 
         .shop-header p {
-            color: #555;
+            color: var(--text-secondary);
             font-size: 1em;
             line-height: 1.6;
             max-width: 600px;
@@ -111,8 +101,8 @@
         }
 
         .product-card {
-            border: 1px solid #eaeaea;
-            background-color: #fff;
+            border: 1px solid var(--border);
+            background-color: var(--surface);
             padding: 0;
             transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
             display: flex;
@@ -124,7 +114,7 @@
 
         .product-card:hover {
             transform: translateY(-4px);
-            border-color: #5c7c99;
+            border-color: var(--accent-research);
             box-shadow: 0 8px 24px rgba(92, 124, 153, 0.12);
         }
 
@@ -146,14 +136,14 @@
         .product-title {
             font-size: 1.1em;
             font-weight: 500;
-            color: #222;
+            color: var(--text-strong);
             margin: 0 0 8px 0;
             line-height: 1.4;
         }
 
         .product-details {
             font-size: 0.85em;
-            color: #666;
+            color: var(--text-muted);
             margin: 0 0 12px 0;
             line-height: 1.5;
         }
@@ -161,7 +151,7 @@
         .product-price {
             font-size: 1.1em;
             font-weight: 500;
-            color: #5c7c99;
+            color: var(--accent-research);
             margin: 12px 0;
         }
 
@@ -181,9 +171,9 @@
             position: absolute;
             top: 12px;
             right: 12px;
-            background-color: rgba(253, 251, 247, 0.9);
-            color: #333;
-            border: 1px solid #ccc;
+            background-color: var(--badge-bg);
+            color: var(--text);
+            border: 1px solid var(--border);
             padding: 6px 12px;
             font-size: 0.75em;
             letter-spacing: 1px;
@@ -195,7 +185,7 @@
         .modal-overlay {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
-            background-color: rgba(253, 251, 247, 0.95);
+            background-color: var(--overlay-bg);
             z-index: 1000;
             display: flex;
             align-items: center;
@@ -211,8 +201,8 @@
         }
 
         .modal-content {
-            background: #fff;
-            border: 1px solid #eaeaea;
+            background: var(--surface);
+            border: 1px solid var(--border);
             box-shadow: 0 20px 60px rgba(0,0,0,0.08);
             max-width: 1400px;
             width: 95%;
@@ -237,7 +227,7 @@
             background: transparent;
             border: none;
             font-size: 28px;
-            color: #888;
+            color: var(--text-faint);
             cursor: pointer;
             z-index: 10;
             transition: color 0.3s ease;
@@ -246,12 +236,12 @@
         }
 
         .modal-close:hover {
-            color: #222;
+            color: var(--text-strong);
         }
 
         .modal-image-container {
             flex: 1;
-            background-color: #fff;
+            background-color: var(--surface);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -282,7 +272,7 @@
         }
 
         .image-indicator {
-            color: #666;
+            color: var(--text-muted);
             font-size: 0.9em;
             letter-spacing: 2px;
             pointer-events: none;
@@ -297,7 +287,7 @@
         .nav-arrow {
             background: transparent;
             border: none;
-            color: #555;
+            color: var(--text-secondary);
             font-size: 36px;
             padding: 8px;
             cursor: pointer;
@@ -327,35 +317,35 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background: #fff;
+            background: var(--surface);
             border-left: none;
         }
 
         .modal-title {
             font-size: 2em;
             font-weight: 400;
-            color: #222;
+            color: var(--text-strong);
             margin: 0 0 16px 0;
             line-height: 1.2;
         }
 
         .modal-details {
             font-size: 1em;
-            color: #666;
+            color: var(--text-muted);
             margin: 0 0 32px 0;
             line-height: 1.6;
         }
 
         .modal-price {
             font-size: 1.5em;
-            color: #5c7c99;
+            color: var(--accent-research);
             margin: 0 0 40px 0;
         }
 
         .modal-buy-button {
             background-color: transparent;
-            border: 1px solid #5c7c99;
-            color: #5c7c99;
+            border: 1px solid var(--accent-research);
+            color: var(--accent-research);
             width: 48px;
             height: 48px;
             display: flex;
@@ -372,20 +362,20 @@
         }
 
         .modal-buy-button:hover {
-            background-color: #5c7c99;
-            color: #fff;
+            background-color: var(--accent-research);
+            color: var(--bg);
         }
 
         .modal-buy-button.disabled {
-            border-color: #ccc;
-            color: #ccc;
+            border-color: var(--border);
+            color: var(--border);
             cursor: not-allowed;
             background-color: transparent;
         }
         
         .modal-buy-button.disabled:hover {
             background-color: transparent;
-            color: #ccc;
+            color: var(--border);
         }
 
         @media screen and (max-width: 768px) {
@@ -412,7 +402,7 @@
                 width: auto;
                 padding: 30px;
                 border-left: none;
-                border-top: 1px solid #eaeaea;
+                border-top: 1px solid var(--border);
             }
             
             .modal-image-container {
@@ -433,7 +423,7 @@
     </style>
 </head>
 <body>
-    <a href="index.html" class="home-circle">Home</a>
+    <a href="index.html" class="site-name home-link" aria-label="Calder Lenhart, home">Calder Lenhart</a>
     
     <div class="container">
         <div class="sort-controls">

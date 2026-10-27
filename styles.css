@@ -1,5 +1,197 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=reply');
 
+/* Interpolate the palette once; every element inherits the same color values. */
+@property --bg { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --surface { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --text { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --text-strong { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --text-secondary { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --text-muted { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --text-faint { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --text-footer { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --border { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --border-strong { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --border-hover { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --scrollbar-hover { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --accent-art { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --accent-research { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --accent-alert { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --art-glow { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --research-glow { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --research-card-glow { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --card-shadow { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --surface-soft { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --surface-hover { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --home-border { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --control-bg { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --badge-bg { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --overlay-bg { syntax: '<color>'; inherits: true; initial-value: transparent; }
+
+:root {
+    color-scheme: dark;
+    --theme-transition-duration: 800ms;
+    --theme-transition-easing: ease-in-out;
+    --bg: #000;
+    --surface: #050505;
+    --text: #ddd;
+    --text-strong: #fff;
+    --text-secondary: #ccc;
+    --text-muted: #aaa;
+    --text-faint: #888;
+    --text-footer: #666;
+    --border: #333;
+    --border-strong: #444;
+    --border-hover: #666;
+    --scrollbar-hover: #555;
+    --accent-art: #ffd700;
+    --accent-research: #87ceeb;
+    --accent-alert: #ff1a1a;
+    --art-glow: rgba(255, 215, 0, 0.6);
+    --research-glow: rgba(135, 206, 235, 0.6);
+    --research-card-glow: rgba(135, 206, 235, 0.3);
+    --card-shadow: rgba(0, 0, 0, 0.8);
+    --surface-soft: rgba(255, 255, 255, 0.05);
+    --surface-hover: rgba(255, 255, 255, 0.1);
+    --home-border: rgba(255, 255, 255, 0.25);
+    --control-bg: rgba(0, 0, 0, 0.92);
+    --badge-bg: rgba(0, 0, 0, 0.9);
+    --overlay-bg: rgba(0, 0, 0, 0.95);
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+    --bg: #f2efe9;
+    --surface: #e8e4dd;
+    --text: #403d38;
+    --text-strong: #292724;
+    --text-secondary: #625f58;
+    --text-muted: #625f58;
+    --text-faint: #68645f;
+    --text-footer: #68645f;
+    --border: #d4cfc6;
+    --border-strong: #c4bdb2;
+    --border-hover: #8c877f;
+    --scrollbar-hover: #8c877f;
+    --accent-art: #795a35;
+    --accent-research: #3d6277;
+    --accent-alert: #a34239;
+    --art-glow: rgba(121, 90, 53, 0.16);
+    --research-glow: rgba(61, 98, 119, 0.16);
+    --research-card-glow: rgba(61, 98, 119, 0.14);
+    --card-shadow: rgba(41, 39, 36, 0.1);
+    --surface-soft: rgba(41, 39, 36, 0.04);
+    --surface-hover: rgba(41, 39, 36, 0.08);
+    --home-border: rgba(41, 39, 36, 0.3);
+    --control-bg: rgba(242, 239, 233, 0.95);
+    --badge-bg: rgba(242, 239, 233, 0.9);
+    --overlay-bg: rgba(242, 239, 233, 0.95);
+}
+
+html {
+    font-family: 'IM Fell Double Pica', Georgia, serif;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* Color fades run on the root rather than restarting on nested elements. */
+:root.theme-changing {
+    transition-property: --bg, --surface, --text, --text-strong,
+        --text-secondary, --text-muted, --text-faint, --text-footer,
+        --border, --border-strong, --border-hover, --scrollbar-hover,
+        --accent-art, --accent-research, --accent-alert, --art-glow,
+        --research-glow, --research-card-glow, --card-shadow,
+        --surface-soft, --surface-hover, --home-border, --control-bg,
+        --badge-bg, --overlay-bg;
+    transition-duration: var(--theme-transition-duration);
+    transition-timing-function: var(--theme-transition-easing);
+}
+
+:root.theme-changing *,
+:root.theme-changing *::before,
+:root.theme-changing *::after {
+    transition-property: opacity, transform, filter !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --theme-transition-duration: 0ms;
+    }
+}
+
+.theme-switcher {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    z-index: 10001;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    box-sizing: border-box;
+    width: 48px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--text-strong);
+    font-family: 'IM Fell Double Pica', Georgia, serif;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.theme-switcher::before,
+.theme-switcher::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: currentColor;
+    font-size: 18px;
+    line-height: 22px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.theme-switcher::before {
+    content: '[';
+    left: -3px;
+}
+
+.theme-switcher::after {
+    content: ']';
+    right: -3px;
+}
+
+.theme-switcher:is(:hover, :focus-visible)::before,
+.theme-switcher:is(:hover, :focus-visible)::after {
+    visibility: visible;
+}
+
+.theme-switcher:focus-visible {
+    outline: 2px solid var(--accent-research);
+    outline-offset: 2px;
+}
+
+.theme-switcher .theme-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    font-family: 'STIX Two Math', 'Cambria Math', 'Times New Roman', serif;
+    font-size: 17px;
+    line-height: 1;
+}
+
+.theme-switcher .theme-icon--moon {
+    width: 12px;
+}
+
+.theme-switcher .theme-switcher__slash {
+    width: 6px;
+}
+
 .navbar, .navbar-dark {
     position: fixed;
     top: 30px;
@@ -21,54 +213,77 @@
 
 .navbar a, .navbar-dark a {
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    color: #aaa;
+    font-family: 'IM Fell Double Pica', Georgia, serif;
+    color: var(--text-muted);
     letter-spacing: 1px;
     padding: 0;
     margin-right: 20px;
 }
 
 .navbar a:hover, .navbar-dark a:hover {
-    color: #ffd700;
+    color: var(--accent-art);
 }
 
 .research-page .navbar a:hover, .research-page .navbar-dark a:hover {
-    color: #87CEEB;
+    color: var(--accent-research);
 }
 
-.home-circle {
-    position: fixed;
+.site-name {
+    position: relative;
+    color: var(--text-strong);
+    font-family: 'IM Fell Double Pica', Georgia, serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.site-name:is(:hover, :focus-visible) {
+    text-decoration: none;
+}
+
+.site-name::before,
+.site-name::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.site-name::before {
+    content: '[' / '';
+    left: -0.65em;
+}
+
+.site-name::after {
+    content: ']' / '';
+    right: -0.65em;
+}
+
+.site-name:is(:hover, :focus-visible)::before,
+.site-name:is(:hover, :focus-visible)::after {
+    visibility: visible;
+}
+
+.site-name:focus-visible {
+    outline: 2px solid var(--accent-research);
+    outline-offset: 4px;
+}
+
+.home-link {
+    position: absolute;
     top: 30px;
-    right: 30px;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.25);
-    color: transparent;
-    display: flex;
+    left: 22px;
+    min-height: 48px;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 0;
-    text-decoration: none;
-    z-index: 100;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-    cursor: pointer;
-    font-size: 0;
-    text-indent: -9999px;
-    overflow: visible;
+    padding: 0 8px;
 }
 
-.home-circle:hover {
-    background-color: #fff;
-    border-color: #fff;
-    text-decoration: none;
-}
-
-.home-circle:active {
-    transform: scale(1);
-    width: 48px;
-    height: 48px;
+.gallery {
+    padding-top: 108px;
 }
 
 .photo.fade-in img {
@@ -120,10 +335,15 @@
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: #000 url('icons/loading-gif-black.gif') 50% 50% no-repeat;
+    background: var(--bg) url('icons/loading-gif-black.gif') 50% 50% no-repeat;
 }
 
 @media screen and (max-width: 600px) {
+    .theme-switcher {
+        width: 36px;
+        height: 36px;
+    }
+
     .navbar, .navbar-dark {
         top: 15px;
         left: 15px;
@@ -134,16 +354,52 @@
         margin: 0 8px;
     }
 
-    .home-circle {
-        width: 36px;
-        height: 36px;
+    .home-link {
+        min-height: 36px;
         top: 20px;
-        right: 20px;
+        left: 12px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .home-page .theme-switcher {
+        width: 40px;
+        height: 24px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .gallery {
+        box-sizing: border-box;
+        padding: 80px 12px 32px;
     }
 
-    .home-circle:active {
-        width: 36px;
-        height: 36px;
-        transform: scale(1);
+    .gallery .photo {
+        min-height: 0;
+        justify-content: flex-start;
+    }
+
+    .gallery .photo:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .gallery .photo img {
+        width: 100%;
+        height: auto;
+        max-height: 80svh;
+        object-fit: contain;
+    }
+
+    .gallery .photo .subtitle {
+        margin: 8px 0 0;
+        padding: 0 4px;
+        line-height: 1.5;
+    }
+}
+
+@media print {
+    .theme-switcher, .home-link {
+        display: none;
     }
 }

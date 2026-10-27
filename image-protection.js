@@ -19,10 +19,6 @@
                 pointer-events: auto;
                 cursor: default;
             }
-            .home-circle {
-                z-index: 10000 !important;
-                pointer-events: auto !important;
-            }
             .photo img, .pane img, .product-image, .panel-image img {
                 pointer-events: none;
                 -webkit-touch-callout: none;

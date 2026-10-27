@@ -10,60 +10,70 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://calder.zone/cv.html">
     <meta name="twitter:card" content="summary_large_image">
-    <title></title>
+    <title>CV | Calder Lenhart</title>
     <meta name="description" content="">
+    <script src="theme.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=reply">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward">
     <style>
         body, html {
             margin: 0;
             padding: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: #000;
-            color: #ccc;
+            font-family: 'IM Fell Double Pica', Georgia, serif;
+            background-color: var(--bg);
+            color: var(--text-secondary);
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 80px 40px 60px 40px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 190px minmax(0, 1fr);
+            gap: 46px;
+            max-width: 1760px;
+            margin: 26px auto 0;
+            padding: 0 40px 60px;
+            align-items: start;
         }
 
-        h1 {
-            font-size: 2em;
-            font-weight: 400;
-            color: #fff;
-            margin-bottom: 10px;
+        .cv-content {
+            min-width: 0;
+            container-type: inline-size;
+        }
+
+        .cv-content > h2:first-child {
+            margin-top: 0;
         }
 
         .contact-info {
             margin-bottom: 30px;
             font-size: 0.9em;
+            line-height: 1.6;
+            overflow-wrap: anywhere;
         }
 
         .contact-info a {
-            color: #87CEEB;
+            color: var(--accent-research);
         }
 
         h2 {
             font-size: 1.2em;
             font-weight: 700;
-            color: #87CEEB;
+            color: var(--accent-research);
             margin-top: 40px;
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 2px;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid var(--border);
             padding-bottom: 10px;
         }
 
         h3 {
             font-size: 1em;
             font-weight: 700;
-            color: #fff;
+            color: var(--text-strong);
             margin-bottom: 5px;
             margin-top: 20px;
         }
@@ -71,7 +81,7 @@
         h4 {
             font-size: 0.95em;
             font-weight: 700;
-            color: #ddd;
+            color: var(--text);
             margin-bottom: 10px;
             margin-top: 20px;
         }
@@ -80,15 +90,62 @@
             margin-bottom: 20px;
         }
 
-        .cv-item .date {
-            font-size: 0.85em;
-            color: #888;
-            margin-bottom: 5px;
-        }
-
         .cv-item p {
             margin: 5px 0;
             line-height: 1.6;
+        }
+
+        .education-summary {
+            display: grid;
+            grid-template-columns: 148px minmax(0, 1fr) max-content;
+            column-gap: 20px;
+            align-items: baseline;
+        }
+
+        .education-summary strong {
+            color: var(--text-strong);
+        }
+
+        .education-date,
+        .education-institution {
+            color: var(--text-muted);
+        }
+
+        .education-date {
+            white-space: nowrap;
+        }
+
+        .education-institution {
+            text-align: right;
+        }
+
+        .education-details {
+            margin-left: 168px;
+        }
+
+        .education-details .object-name {
+            white-space: nowrap;
+        }
+
+        @container (max-width: 640px) {
+            .education-summary {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px 16px;
+            }
+
+            .education-summary strong {
+                order: -1;
+                flex-basis: 100%;
+            }
+
+            .education-institution {
+                text-align: left;
+            }
+
+            .education-details {
+                margin-left: 0;
+            }
         }
 
         .publication {
@@ -99,11 +156,11 @@
         }
 
         .publication-number {
-            color: #888;
+            color: var(--text-faint);
         }
 
         a {
-            color: #87CEEB;
+            color: var(--accent-research);
             text-decoration: none;
         }
 
@@ -113,24 +170,25 @@
 
         .download-btn {
             display: inline-block;
-            background-color: #87CEEB;
-            color: #000;
+            box-sizing: border-box;
+            max-width: 100%;
+            background-color: var(--accent-research);
+            color: var(--bg);
             padding: 12px 24px;
-            font-family: 'Inter', sans-serif;
+            font-family: 'IM Fell Double Pica', Georgia, serif;
             font-size: 1em;
             border: none;
             cursor: pointer;
-            margin-bottom: 40px;
             text-decoration: none;
         }
 
         .download-btn:hover {
-            background-color: #fff;
+            background-color: var(--text-strong);
             text-decoration: none;
         }
 
         em {
-            color: #aaa;
+            color: var(--text-muted);
         }
 
         .inline-item {
@@ -146,104 +204,117 @@
         .awards-list li {
             margin-bottom: 8px;
         }
+
+        @media screen and (max-width: 1024px) {
+            .container {
+                grid-template-columns: minmax(0, 1fr);
+                max-width: 860px;
+                margin-top: 20px;
+                gap: 32px;
+                padding: 0 24px 48px;
+            }
+
+            .cv-sidebar {
+                max-width: 320px;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+            .cv-sidebar {
+                max-width: none;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr) auto;
+                column-gap: 32px;
+            }
+            .contact-info { grid-column: 1; margin-bottom: 0; }
+            .download-btn { grid-column: 2; grid-row: 1; align-self: start; }
+        }
+
+        @media screen and (max-width: 600px) {
+            .container { padding-inline: 20px; }
+        }
     </style>
+    <link rel="stylesheet" href="site-header.css?v=20261027-matching-external-arrows">
+    <script src="site-navigation.js?v=20261027-single-row-header" defer></script>
 </head>
 <body class="research-page">
-    <a href="index.html" class="home-circle">Home</a>
+    <header class="site-header">
+        <a class="site-name" href="index.html" aria-label="Calder Lenhart, home">Calder Lenhart</a>
+        <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+        <nav class="site-links" id="site-navigation" aria-label="Main navigation">
+            <a href="research.html">Astrophysics research</a>
+            <a href="https://scixplorer.org/search?q=orcid%3A0009-0001-1459-3738&amp;sort=date%20desc">Publications<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a>
+            <a href="software.html">Code</a>
+            <a href="https://github.com/calderlen">GitHub<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a>
+            <a href="projects.html">Engineering projects</a>
+            <a href="cv.html" aria-current="page">CV</a>
+            <a href="mailto:lenhart.106@osu.edu">lenhart.106[at]osu.edu</a>
+        </nav>
+    </header>
     <div class="container">
-        <h1>Calder Lenhart</h1>
-        <div class="contact-info">
-            lenhart dot 106 at osu dot edu<br>
-            <a href="https://calder.zone">calder.zone</a><br>
-            <a href="https://orcid.org/0009-0001-1459-3738">ORCID: 0009-0001-1459-3738</a><br>
-            <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
-        </div>
+        <header class="cv-sidebar">
+            <div class="contact-info">
+                lenhart dot 106 at osu dot edu<br>
+                <a href="https://calder.zone">calder.zone</a><br>
+                <a href="https://github.com/calderlen">GitHub</a><br>
+                <a href="https://orcid.org/0009-0001-1459-3738">ORCID: 0009-0001-1459-3738</a><br>
+                <a href="https://scholar.google.com/citations?user=yEDPKXgAAAAJ&amp;hl=en">Google Scholar</a>
+            </div>
 
-        <a href="documents/Calder-Lenhart-CV.pdf" download class="download-btn">Download Full CV</a>
+            <a href="documents/Calder-Lenhart-CV.pdf" download class="download-btn">Download Full CV</a>
+        </header>
 
-        <h2>Education</h2>
-        <div class="cv-item">
-            <h3>M.S. Physics</h3>
-            <div class="date">2025 – 2027</div>
-            <p>Ohio State University</p>
-        </div>
-        <div class="cv-item">
-            <h3>B.S. Physics, Astronomy & Astrophysics</h3>
-            <div class="date">2020 – 2024</div>
-            <p>Ohio State University</p>
-            <p>Minor in Mathematics, Minor in History</p>
-            <p><em>Magna cum laude</em>, with Research Distinction in Astronomy & Astrophysics</p>
-            <p>Thesis: Phase-Resolved Cross-Correlation Transmission Spectroscopy of KELT-20b</p>
-        </div>
+        <main class="cv-content">
+            <h2>Education</h2>
+            <div class="cv-item">
+                <p class="education-summary">
+                    <span class="education-date">2025–2027 (expected)</span>
+                    <strong>M.S. Physics</strong>
+                    <span class="education-institution">Ohio State University</span>
+                </p>
+            </div>
+            <div class="cv-item">
+                <p class="education-summary">
+                    <span class="education-date">2020–2024</span>
+                    <strong>B.S. Physics, Astronomy & Astrophysics</strong>
+                    <span class="education-institution">Ohio State University</span>
+                </p>
+                <div class="education-details">
+                    <p><em>Magna cum laude</em>, with Research Distinction in Astronomy & Astrophysics</p>
+                    <p>Thesis: <a href="https://kb.osu.edu/handle/1811/105450">Phase-Resolved Cross-Correlation Transmission Spectroscopy of <span class="object-name">KELT-20b</span></a></p>
+                </div>
+            </div>
 
-        <h2>Publications</h2>
+            <h2>Refereed Publications</h2>
+            <p class="publication">
+                <span class="publication-number">[1]</span> <strong>C. Lenhart</strong>, M. C. Johnson, J. Wang, A. P. Asnodkar, S. Petz, A. Duck, K. G. Strassmeier, and I. Ilyin. "PEPSI Investigation, Retrieval, and Atlas of Numerous Giant Atmospheres (PIRANGA). II. Phase-resolved Cross-correlation Transmission Spectroscopy of KELT-20b." <em>AJ</em> 171.2 (Jan. 2026), p. 81. <a href="https://doi.org/10.3847/1538-3881/ae2252">DOI</a>
+            </p>
+            <p class="publication">
+                <span class="publication-number">[2]</span> C. Basinger, M. C. Johnson, J. Wang, A. Duck, A. Pai Asnodkar, S. Petz, <strong>C. Lenhart</strong>, I. Ilyin, and K. Strassmeier. "PEPSI investigation, retrieval, and atlas of numerous giant atmospheres (PIRANGA) – III. Composition and winds in the atmosphere of TOI-1518 b." <em>MNRAS</em> 543.4 (Sept. 2025), pp. 4136–4143. <a href="https://doi.org/10.1093/mnras/staf1648">DOI</a>
+            </p>
+            <p class="publication">
+                <span class="publication-number">[3]</span> V. Bonidie, M. C. Johnson, J. Wang, S. Petz, J. Kamen, <strong>C. Lenhart</strong>, A. Duck, C. Badenes, K. Strassmeier, and I. Ilyin. "PEPSI Investigation, Retrieval, and Atlas of Numerous Giant Atmospheres (PIRANGA). IV. High-resolution Phased-resolved Spectroscopy of the Ultra-hot-Jupiter KELT-20 b." <em>AJ</em> 171.1 (Dec. 2025), p. 34. <a href="https://doi.org/10.3847/1538-3881/ae21be">DOI</a>
+            </p>
 
-        <h4>Journal Articles</h4>
-        <p class="publication">
-            <span class="publication-number">[1]</span> <strong>C. Lenhart</strong>, M. C. Johnson, J. Wang, A. P. Asnodkar, S. Petz, A. Duck, K. G. Strassmeier, and I. Ilyin. "PEPSI Investigation, Retrieval, and Atlas of Numerous Giant Atmospheres (PIRANGA). II. Phase-resolved Cross-correlation Transmission Spectroscopy of KELT-20b." <em>AJ</em> 171.2 (Jan. 2026). <a href="https://doi.org/10.3847/1538-3881/ae2252">DOI</a>
-        </p>
-        <p class="publication">
-            <span class="publication-number">[2]</span> C. Basinger, M. C. Johnson, J. Wang, A. Duck, A. Pai Asnodkar, S. Petz, <strong>C. Lenhart</strong>, I. Ilyin, and K. Strassmeier. "PEPSI investigation, retrieval, and atlas of numerous giant atmospheres (PIRANGA) – III. Composition and winds in the atmosphere of TOI-1518 b." <em>MNRAS</em> 543.4 (Sept. 2025). <a href="https://doi.org/10.1093/mnras/staf1648">DOI</a>
-        </p>
-        <p class="publication">
-            <span class="publication-number">[3]</span> V. Bonidie, M. C. Johnson, J. Wang, S. Petz, J. Kamen, <strong>C. Lenhart</strong>, A. Duck, C. Badenes, K. Strassmeier, and I. Ilyin. "PEPSI Investigation, Retrieval, and Atlas of Numerous Giant Atmospheres (PIRANGA). IV. High-resolution Phased-resolved Spectroscopy of the Ultra-hot-Jupiter KELT-20 b." <em>AJ</em> 171.1 (Dec. 2025). <a href="https://doi.org/10.3847/1538-3881/ae21be">DOI</a>
-        </p>
+            <h2>Manuscripts in Preparation</h2>
+            <p class="publication">
+                <span class="publication-number">[1]</span> <strong>C. Lenhart</strong> and C. S. Kochanek. "A Systematic Search for Dippers, Long-Term Variables, and Microlensing Events in ASAS-SN." Manuscript in preparation (2026).
+            </p>
+            <p class="publication">
+                <span class="publication-number">[2]</span> <strong>C. Lenhart</strong> and T. A. Thompson. "When Inside Out is Outside In: Fountain Flows Launched from Circumnuclear Starbursts Drive Accretion, Star Formation, and Enrichment in Outer Disks." Manuscript in preparation (2026).
+            </p>
 
-        <h4>Conference Abstracts</h4>
-        <p class="publication">
-            <span class="publication-number">[1]</span> C. Basinger, M. C. Johnson, J. Wang, A. Duck, A. Pai Asnodkar, S. Petz, <strong>C. Lenhart</strong>, and K. Strassmeier. "Composition and Winds in the Atmosphere of TOI-1518 b." <em>AAS Meeting Abstracts</em> 247 (Feb. 2026).
-        </p>
-        <p class="publication">
-            <span class="publication-number">[2]</span> J. Kamen, M. C. Johnson, V. Bonidie, S. Petz, <strong>C. Lenhart</strong>, J. Wang, and K. Strassmeier. "Chemistry and dynamics from high-resolution emission spectra of the ultra-hot Jupiters KELT-20b and TOI-1518b from the PIRANGA project." <em>AAS Meeting Abstracts</em> 247 (Feb. 2026).
-        </p>
-        <p class="publication">
-            <span class="publication-number">[3]</span> <strong>C. Lenhart</strong>, M. Johnson, S. Petz, J. Wang, A. Pai Asnodkar, K. Strassmeier, and I. Ilyin. "Analysis of KELT-20b's Atmospheric Dynamics Using PEPSI: Line Profiles During Transit and Velocity Offsets." <em>AAS Meeting Abstracts</em> 243 (Feb. 2024).
-        </p>
-
-        <h4>Theses</h4>
-        <p class="publication">
-            <span class="publication-number">[1]</span> <strong>C. Lenhart</strong>. "Phase-Resolved Cross-Correlation Transmission Spectroscopy of KELT-20b." Undergraduate Research Thesis. The Ohio State University, Dec. 2024.
-        </p>
-
-        <h4>TNS Discovery Reports</h4>
-        <p class="publication">
-            <span class="publication-number">[1]</span> K. Z. Stanek and <strong>C. Lenhart</strong>. "ASAS-SN Transient Discovery Report for AT 2026lru / ASASSN-26df." <em>Transient Name Server</em> (May 2026).
-        </p>
-        <p class="publication">
-            <span class="publication-number">[2]</span> K. Z. Stanek and <strong>C. Lenhart</strong>. "ASAS-SN Transient Discovery Report for AT 2026osq / ASASSN-26dr." <em>Transient Name Server</em> (June 2026).
-        </p>
-
-        <h2>Presentations</h2>
-
-        <h4>Talks</h4>
-        <div class="cv-item">
-            <div class="date">July 2023</div>
-            <p>"Analysis of an Ultra-Hot Jupiter's Atmosphere." OSU Department of Astronomy Summer Undergraduate Research Program Symposium, Columbus, OH.</p>
-        </div>
-
-        <h4>Posters</h4>
-        <div class="cv-item">
-            <div class="date">January 2024</div>
-            <p>"Analysis of KELT-20b's Atmospheric Dynamics Using PEPSI: Line Profiles During Transit and Velocity Offsets." <a href="https://aas243-aas.ipostersessions.com/Default.aspx?s=89-34-93-49-20-C4-FB-46-1F-28-CD-79-11-D0-C0-38">243rd AAS Meeting</a>, New Orleans, LA.</p>
-        </div>
-
-        <h2>Awards & Grants</h2>
-        <ul class="awards-list">
-            <li><strong>2026</strong> — Honorable Mention, NSF Graduate Research Fellowship Program, Astronomy & Astrophysics</li>
-            <li><strong>2025</strong> — Artist Grant, Greater Columbus Arts Council</li>
-            <li><strong>2024</strong> — Ann Slusher Tuttle Undergraduate Scholarship, OSU Astronomy</li>
-            <li><strong>2023</strong> — Undergraduate Research Scholarship, OSU Arts & Sciences</li>
-            <li><strong>2023</strong> — 1st Place, MakeOHI/O 2023</li>
-            <li><strong>2020</strong> — Eagle Scout, Boy Scouts of America</li>
-            <li><strong>2019</strong> — Youngstown CityScape Beautification Watch Award</li>
-        </ul>
-
-        <h2>Research Experience</h2>
-        <p class="inline-item"><strong>2025–</strong> Post-baccalaureate researcher, ASAS-SN, Department of Astronomy, Ohio State University (Advisors: Prof. Christopher Kochanek, Prof. Krzysztof Stanek)</p>
-        <p class="inline-item"><strong>2025–</strong> Post-baccalaureate researcher, Exoplanet Atmospheres, Department of Astronomy, Ohio State University (Advisor: Dr. Marshall C. Johnson, Co-advisor: Prof. Ji Wang)</p>
-        <p class="inline-item"><strong>2023–2024</strong> Undergraduate Researcher, Exoplanet Atmospheres, Department of Astronomy, Ohio State University (Advisor: Dr. Marshall C. Johnson, Co-advisor: Prof. Ji Wang)</p>
-        <p class="inline-item"><strong>2022–2023</strong> Undergraduate Research Assistant, Materials Science, Department of Materials Science and Engineering, Ohio State University (Advisor: Prof. Sheikh Akbar)</p>
-
+            <h2>Awards & Grants</h2>
+            <ul class="awards-list">
+                <li><strong>2026</strong> — Honorable Mention, NSF Graduate Research Fellowship Program, Astronomy & Astrophysics</li>
+                <li><strong>2025</strong> — Artist Grant, Greater Columbus Arts Council</li>
+                <li><strong>2024</strong> — Ann Slusher Tuttle Undergraduate Scholarship, OSU Astronomy</li>
+                <li><strong>2023</strong> — Undergraduate Research Scholarship, OSU Arts & Sciences</li>
+                <li><strong>2023</strong> — 1st Place, MakeOHI/O 2023</li>
+                <li><strong>2020</strong> — Eagle Scout, Boy Scouts of America</li>
+                <li><strong>2019</strong> — Youngstown CityScape Beautification Watch Award</li>
+            </ul>
+        </main>
     </div>
 
     

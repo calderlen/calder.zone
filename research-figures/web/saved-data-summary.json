@@ -1,0 +1,15 @@
+{
+  "progenitors": {
+    "initial_systems": 10000,
+    "valid_tracks": 9616,
+    "detached_ns_ms_survivors": 3,
+    "gaia_selection_applied": false
+  },
+  "dustycult": {
+    "rows": 21,
+    "synthetic": true,
+    "bands": [
+      "g"
+    ]
+  }
+}

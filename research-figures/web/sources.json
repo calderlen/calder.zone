@@ -1,0 +1,192 @@
+{
+  "nuclear-fountain-model.png": {
+    "project": "galactic-nuclear-fountain",
+    "source": "output/pdf/section3_prescribed_gas_combined_scans.pdf",
+    "page": 1,
+    "source_sha256": "ad362971d917f5c1245d2fe80209b957da2be6d43e7e70981f4c4653483a1556"
+  },
+  "neutron-star-winds.png": {
+    "project": "ns-wind",
+    "source": "runs/rmhd_analysis/matched_nonrotating_rotating_profiles_page_01.png",
+    "page": null,
+    "source_sha256": "ed88928bdcef34d3285cb8f932959bedf44767e61a3e42547331ccb1bc835368"
+  },
+  "retrieval-processing.png": {
+    "project": "atmo-retrieval",
+    "source": "diagnostics/spectroscopy_cleanup_comparison_20261017/raw_replays/toi1518b/20240628/blue/after/diagnostic/toi1518b/20240628/blue.pdf",
+    "page": 1,
+    "source_sha256": "9c2cc0a4652af60d7987546a56a2da1e3e00c14003b517f1f7f432843e1447e5"
+  },
+  "malca-dimming-event.png": {
+    "project": "malca",
+    "source": "output/pdf/baseline_methods/main_comparison/reviewed_dippers/individual/baseline_main_comparison_197569146752.pdf",
+    "page": 1,
+    "source_sha256": "0547aff3138c80ab3fd565a031216c3366f44b05eeb6569a3b099bdd43f83e60"
+  },
+  "malca-microlensing.png": {
+    "project": "malca",
+    "source": "output/pdf/microlensing_broad_pspl_winners_20260924.pdf",
+    "page": 2,
+    "source_sha256": "1a4c2f9db7b1c5a57967c0efc3ef0898cb3a29d269537de6c6120f7b8bdd1869"
+  },
+  "neutron-star-progenitors.png": {
+    "project": "ns-progenitors",
+    "source": "1e+00_Zsun_population.h5",
+    "description": "Plot of saved population data; failed tracks excluded; no Gaia selection applied.",
+    "source_sha256": "99afe0a1117b59010456d89e6da1d0712c59cfd3ec824007225123d3fda04186"
+  },
+  "dustycult-example.png": {
+    "project": "DustyCult.jl",
+    "source": "examples/synthetic_dip.csv",
+    "description": "Synthetic example data; no fitted model is implied.",
+    "source_sha256": "a08338b5207af03dff2c8157d29acc1b2b8d821d163282aaa17daec54aeee50f"
+  },
+  "nuclear-fountain-cartoon.svg": {
+    "project": "galactic-nuclear-fountain",
+    "source": "figures/fountain_cycle_steady_state.pdf",
+    "page": 1,
+    "description": "Steady-state unmixed and mixed fountain cartoon with all four reference scalings; vector SVG converted with pdftocairo.",
+    "source_sha256": "726da9d75f9a6b6624fa90163fa9c3797dbd0286fabc7b399fa375f4a794d053",
+    "full_size": "nuclear-fountain-cartoon.pdf"
+  },
+  "nuclear-fountain-angular-momentum.svg": {
+    "project": "galactic-nuclear-fountain",
+    "source": "output/kernel/sampled_10000000_fixed_angle_15/plots/kernel_angular_momentum.pdf",
+    "page": 1,
+    "description": "Returning fountain gas by landing radius and angular momentum relative to the local circular disk value. Vector SVG converted with pdftocairo.",
+    "source_sha256": "95a18db8bfa390ea4005ba7abdfd0b02736db0ef388ce55ac46ee3b5f239b5a3",
+    "full_size": "nuclear-fountain-angular-momentum.pdf"
+  },
+  "nuclear-fountain-absolute-displacement.svg": {
+    "project": "galactic-nuclear-fountain",
+    "source": "output/kernel/sampled_10000000_fixed_angle_15/plots/kernel_absolute_displacement.pdf",
+    "page": 1,
+    "description": "Absolute radial displacement between launch and return, with returning-mass coverage intervals. Vector SVG converted with pdftocairo.",
+    "source_sha256": "bbe8793de1712798e7e772d3c3c04d2d70ee798305ccbfa0b1e63da9c7fc044a",
+    "full_size": "nuclear-fountain-absolute-displacement.pdf"
+  },
+  "malca-event-window.svg": {
+    "project": "malca",
+    "source": "output/runs/dat3-full-extended_2026-07-01-v4/results/event_window_construction_examples/july1_dipper_event_window_construction_8591303502.pdf",
+    "page": 1,
+    "source_sha256": "2a3a29b9747b2b8f1aea9be05bc31595a22b03a275e08fc84a5af3c1a8a7ce20",
+    "full_size": "malca-event-window.pdf"
+  },
+  "malca-classification.svg": {
+    "project": "malca",
+    "source": "output/runs/dat3-full-extended_2026-07-01-v4/results/lightgbm_probability_tuned_20260802T232447Z/figures/smplotlib/parent_four_class_holdout_confusion_matrix.pdf",
+    "page": 1,
+    "source_sha256": "1ac5eae5acc15d609682a30d9481024799f5d6ec76a913952a6be77e681d6ff9",
+    "full_size": "malca-classification.pdf"
+  },
+  "malca-sky-distribution.svg": {
+    "project": "malca",
+    "source": "output/runs/dat3-full-extended_2026-07-01-v4/results/all_classes_mollweide.pdf",
+    "page": 1,
+    "source_sha256": "893d7d8ff011e3a5fcbe9c2f98ca3668ffc26c8419d1fe2ce22d1031cba93c65",
+    "full_size": "malca-sky-distribution.pdf"
+  },
+  "malca-infrared-colors.svg": {
+    "project": "malca",
+    "source": "output/runs/dat3-full-extended_2026-07-01-v4/results/dipper_wise_color_color.pdf",
+    "page": 1,
+    "source_sha256": "b2f73c382081fe47dd8d0321d97256db7f318b6d3c3abd55afd4c22de903659a",
+    "full_size": "malca-infrared-colors.pdf"
+  },
+  "malca-disk-colors.png": {
+    "project": "malca",
+    "source": "tmp/pdfs/blackbody_paired_labels_markers_final_20260827/10.png",
+    "page": null,
+    "source_sha256": "44cca3f3f9b5e087cda754739d9eebd61f2aa6465ee06d55fb4e6768afb61aea",
+    "full_size": "malca-disk-colors.png",
+    "description": "Saved local render matching the supplied disk-color diagram, including blackbody reference temperatures and disk-stage regions."
+  },
+  "nuclear-fountain-cloud-evolution.gif": {
+    "project": "galactic-nuclear-fountain",
+    "source": "multicloud-shielding/runs-local/previews/20261004-through-t250-final/figures/radiative_conductive_r16_d16/five_panel_animation.gif",
+    "description": "Cloud evolution with radiative cooling and thermal conduction; original five-panel animation.",
+    "source_sha256": "ae8f8f21322fc63d5f1410b58926f898a8a9fea90a30851290fb913c6e4ba4bb",
+    "frames": 251,
+    "dimensions": [
+      1400,
+      850
+    ]
+  },
+  "retrieval-spectral-processing.png": {
+    "project": "atmo-retrieval",
+    "sources": [
+      {
+        "source": "input/hrs/transmission/kelt20b/20250601/blue/timeseries/wavelength.npy",
+        "source_sha256": "31d73b100420678edaebd80c69837ed261ac968cff921298a70fcd4b75674f23"
+      },
+      {
+        "source": "input/hrs/transmission/kelt20b/20250601/blue/timeseries/phase.npy",
+        "source_sha256": "cd3c1bd4e9928a22320fc264172f182e8903594454c75f7d292f5968298f71b9"
+      },
+      {
+        "source": "input/hrs/transmission/kelt20b/20250601/blue/timeseries/pre_sysrem_data.npy",
+        "source_sha256": "293612898a6b8d8ec2b8171c3109455928bdc81ad0008d8546334aca1c96a130"
+      },
+      {
+        "source": "input/hrs/transmission/kelt20b/20250601/blue/timeseries/data.npy",
+        "source_sha256": "93d5beaadca8307e71973ca3d9fad62e478d086d2555a2eab6c2117220084527"
+      }
+    ],
+    "description": "Saved pre-SYSREM residuals, their difference from the processed data, and saved post-SYSREM residuals; common color scale, 12 adjacent pixels averaged for display only.",
+    "full_size": "retrieval-spectral-processing.svg"
+  },
+  "retrieval-emission-spectrum.png": {
+    "project": "atmo-retrieval",
+    "source": "output/cpu_quick_nuts_1d/kelt20b_20210518_fe_only/2026-08-13_22-47-23/figures/paper/planet_frame_spectrum_spectroscopy.pdf",
+    "source_sha256": "eed384eee387cb4e95197e7bd60c2d2cffa8966d03c5ef184f8389252dc236a0",
+    "page": 1,
+    "full_size": "retrieval-emission-spectrum.pdf",
+    "description": "Saved KELT-20b pre-eclipse emission development run: free Fe I with FastChem continuum; 100 warmup steps and 100 NUTS samples in one chain. Pipeline illustration, not a final atmospheric measurement.",
+    "run_config_sha256": "f2b216e4ca5f8407bee6fdb31717e39223b978c8e413a174a092e18586d4c349"
+  },
+  "retrieval-iron-lines.png": {
+    "project": "atmo-retrieval",
+    "source": "output/cpu_quick_nuts_1d/kelt20b_20210518_fe_only/2026-08-13_22-47-23/posthoc_fe_diagnostics/fe_rich_zoom_panels.pdf",
+    "source_sha256": "53373e1b1fb8da87791aad26532b45488bcff50bd57020d98f3d05243d0ade70",
+    "page": 1,
+    "full_size": "retrieval-iron-lines.pdf",
+    "description": "Saved KELT-20b pre-eclipse emission development run: free Fe I with FastChem continuum; 100 warmup steps and 100 NUTS samples in one chain. Pipeline illustration, not a final atmospheric measurement.",
+    "run_config_sha256": "f2b216e4ca5f8407bee6fdb31717e39223b978c8e413a174a092e18586d4c349"
+  },
+  "retrieval-velocity-check.png": {
+    "project": "atmo-retrieval",
+    "source": "output/cpu_quick_nuts_1d/kelt20b_20210518_fe_only/2026-08-13_22-47-23/posthoc_fe_diagnostics/velocity_template_ccf.pdf",
+    "source_sha256": "fa13c204336008dc97b1f98de4612d1ffc4196fa70dbe8b5cd6d9783cae5f8b3",
+    "page": 1,
+    "full_size": "retrieval-velocity-check.pdf",
+    "description": "Saved KELT-20b pre-eclipse emission development run: free Fe I with FastChem continuum; 100 warmup steps and 100 NUTS samples in one chain. Pipeline illustration, not a final atmospheric measurement.",
+    "run_config_sha256": "f2b216e4ca5f8407bee6fdb31717e39223b978c8e413a174a092e18586d4c349"
+  },
+  "retrieval-posteriors.png": {
+    "project": "atmo-retrieval",
+    "source": "output/cpu_quick_nuts_1d/kelt20b_20210518_fe_only/2026-08-13_22-47-23/figures/supplement/corner_plot_hmc.pdf",
+    "source_sha256": "44b073fb0f9bf75e44d392da3eadaa010445637860e96a00eab6632d03bf2feb",
+    "page": 1,
+    "full_size": "retrieval-posteriors.pdf",
+    "description": "Saved KELT-20b pre-eclipse emission development run: free Fe I with FastChem continuum; 100 warmup steps and 100 NUTS samples in one chain. Pipeline illustration, not a final atmospheric measurement.",
+    "run_config_sha256": "f2b216e4ca5f8407bee6fdb31717e39223b978c8e413a174a092e18586d4c349"
+  },
+  "retrieval-temperature-pressure.png": {
+    "project": "atmo-retrieval",
+    "source": "output/cpu_quick_nuts_1d/kelt20b_20210518_fe_only/2026-08-13_22-47-23/figures/paper/temperature_pressure_profile.pdf",
+    "source_sha256": "81586e560c574dbd43d416530dce3c7dc36019c7904f17536e1051cfad40744c",
+    "page": 1,
+    "full_size": "retrieval-temperature-pressure.pdf",
+    "description": "Saved KELT-20b pre-eclipse emission development run: free Fe I with FastChem continuum; 100 warmup steps and 100 NUTS samples in one chain. Pipeline illustration, not a final atmospheric measurement.",
+    "run_config_sha256": "f2b216e4ca5f8407bee6fdb31717e39223b978c8e413a174a092e18586d4c349"
+  },
+  "retrieval-abundances.png": {
+    "project": "atmo-retrieval",
+    "source": "output/cpu_quick_nuts_1d/kelt20b_20210518_fe_only/2026-08-13_22-47-23/figures/paper/abundance_constraints.pdf",
+    "source_sha256": "b524e30b9975e692be1a9f7d6dd9842cb89ca0e535783d2c5030c052df550953",
+    "page": 1,
+    "full_size": "retrieval-abundances.pdf",
+    "description": "Saved KELT-20b pre-eclipse emission development run: free Fe I with FastChem continuum; 100 warmup steps and 100 NUTS samples in one chain. Pipeline illustration, not a final atmospheric measurement.",
+    "run_config_sha256": "f2b216e4ca5f8407bee6fdb31717e39223b978c8e413a174a092e18586d4c349"
+  }
+}

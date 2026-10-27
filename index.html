@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://calder.zone/">
     <meta property="og:title" content="Calder Lenhart">
-    <meta property="og:description" content="Astrophysics researcher and photographer. Research on ultra-hot Jupiter atmospheres; selected projects and portfolio.">
+    <meta property="og:description" content="Astrophysics research spanning galaxy evolution, compact objects, exoplanet atmospheres, and time-domain astronomy; photography, engineering projects, and code.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://calder.zone/">
     <meta name="twitter:card" content="summary_large_image">
-    <title></title>
-    <meta name="description" content="">
+    <title>Calder Lenhart</title>
+    <meta name="description" content="Calder Lenhart, astrophysics researcher and photographer. Research in galaxy evolution, compact objects, exoplanet atmospheres, and time-domain astronomy.">
+    <script src="theme.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="home-mobile.css?v=11">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -26,9 +28,9 @@
             height: 100%;
             margin: 0;
             padding: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: #000;
-            color: #fff;
+            font-family: 'IM Fell Double Pica', Georgia, serif;
+            background-color: var(--bg);
+            color: var(--text-strong);
         }
 
         .container {
@@ -44,7 +46,7 @@
             font-size: 2.2em;
             font-weight: 400;
             letter-spacing: 3px;
-            margin-bottom: 50px;
+            margin-bottom: 24px;
             text-align: center;
         }
 
@@ -68,6 +70,11 @@
             flex-direction: row-reverse;
         }
 
+        .mobile-panel-title,
+        .mobile-label {
+            display: none;
+        }
+
         .nav-links {
             display: flex;
             flex-direction: column;
@@ -77,22 +84,7 @@
             min-width: 180px;
         }
 
-        .nav-group {
-            display: flex;
-            flex-direction: column;
-            align-items: inherit;
-            text-align: inherit;
-            gap: 4px;
-            max-width: 280px;
-        }
 
-        .mini-links {
-            display: flex;
-            flex-direction: column;
-            align-items: inherit;
-            text-align: inherit;
-            gap: 2px;
-        }
 
         .research-panel .nav-links {
             right: calc(100% + 60px);
@@ -100,20 +92,8 @@
             text-align: right;
         }
 
-        .research-panel .nav-group {
-            align-self: flex-end;
-            align-items: flex-start;
-            text-align: left;
-        }
 
-        .research-panel .mini-links {
-            align-items: flex-start;
-            text-align: left;
-        }
 
-        .research-panel .mini-links a {
-            margin-left: 12px;
-        }
 
         .panel:not(.research-panel) .nav-links {
             left: calc(100% + 60px);
@@ -121,22 +101,11 @@
             text-align: left;
         }
 
-        .panel:not(.research-panel) .nav-group {
-            align-items: flex-end;
-            text-align: right;
-        }
 
-        .panel:not(.research-panel) .mini-links {
-            align-items: flex-end;
-            text-align: right;
-        }
 
-        .panel:not(.research-panel) .mini-links a {
-            margin-right: 12px;
-        }
 
         .nav-links a {
-            color: #fff;
+            color: var(--text-strong);
             text-decoration: none;
             font-size: 1.3em;
             letter-spacing: 1px;
@@ -147,14 +116,13 @@
             white-space: nowrap;
         }
 
-        .mini-links a {
-            font-size: 0.74em;
-            letter-spacing: 0.04em;
-            line-height: 1.35;
-            text-transform: none;
-            white-space: normal;
-            max-width: 100%;
+        .external-link-icon {
+            font-size: 0.7em;
+            vertical-align: super;
+            margin-left: 4px;
+            display: inline-block;
         }
+
 
         .panel:not(.research-panel) .nav-links a::before,
         .research-panel .nav-links a::after {
@@ -179,14 +147,14 @@
         }
 
         .panel:not(.research-panel) .panel-image:hover ~ .nav-links a {
-            color: #ffd700;
-            text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+            color: var(--accent-art);
+            text-shadow: 0 0 8px var(--art-glow);
             transition: color 0.3s, text-shadow 0.3s;
         }
 
         .nav-links a:hover {
-            color: #ffd700;
-            text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+            color: var(--accent-art);
+            text-shadow: 0 0 8px var(--art-glow);
             transition: color 0.3s, text-shadow 0.3s;
         }
 
@@ -197,35 +165,28 @@
         }
 
         .panel:not(.research-panel) .nav-links a:hover::before {
-            box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+            box-shadow: 0 0 8px var(--art-glow);
         }
 
         .research-links a {
-            color: #fff;
+            color: var(--text-strong);
             transition: color 0.3s, text-shadow 0.3s;
         }
 
         .research-panel .panel-image:hover ~ .research-links a {
-            color: #87CEEB;
-            text-shadow: 0 0 8px rgba(135, 206, 235, 0.6);
+            color: var(--accent-research);
+            text-shadow: 0 0 8px var(--research-glow);
             transition: color 0.3s, text-shadow 0.3s;
         }
 
         .research-links a:hover {
-            color: #87CEEB;
-            text-shadow: 0 0 8px rgba(135, 206, 235, 0.6);
+            color: var(--accent-research);
+            text-shadow: 0 0 8px var(--research-glow);
             transition: color 0.3s, text-shadow 0.3s;
         }
 
         .research-links a:hover::after {
-            box-shadow: 0 0 8px rgba(135, 206, 235, 0.6);
-        }
-
-        .external-link-icon {
-            font-size: 0.7em;
-            vertical-align: super;
-            margin-left: 4px;
-            display: inline-block;
+            box-shadow: 0 0 8px var(--research-glow);
         }
 
         .panel-image {
@@ -262,12 +223,12 @@
             left: 0;
             right: 0;
             bottom: 0;
-            box-shadow: inset 0 0 25px 35px rgba(0,0,0,1);
+            box-shadow: inset 0 0 25px 35px var(--bg);
             pointer-events: none;
         }
 
         .panel-image.research::after {
-            box-shadow: inset 0 0 25px 35px rgba(0,0,0,1);
+            box-shadow: inset 0 0 25px 35px var(--bg);
         }
 
         .side-links {
@@ -281,21 +242,21 @@
         }
 
         .side-links a {
-            color: #fff;
+            color: var(--text-strong);
             text-decoration: none;
             letter-spacing: 1px;
             transition: color 3s ease;
         }
 
         .side-links a:hover {
-            color: #ff1a1a;
+            color: var(--accent-alert);
             transition: color 0.3s ease;
         }
 
         .side-links hr {
             width: 40px;
             border: none;
-            border-top: 1px solid #444;
+            border-top: 1px solid var(--border-strong);
             margin: 5px 0;
         }
 
@@ -310,11 +271,11 @@
             text-align: center;
             font-size: 0.9em;
             line-height: 1.8;
-            color: #ccc;
+            color: var(--text-secondary);
         }
 
         .description a {
-            color: #ffd700;
+            color: var(--accent-art);
             text-decoration: none;
         }
 
@@ -323,7 +284,7 @@
         }
 
         .description-section .description:first-child a {
-            color: #87CEEB;
+            color: var(--accent-research);
         }
 
         .panel-description {
@@ -337,290 +298,119 @@
         footer {
             position: absolute;
             bottom: 8px;
-            right: 15px;
+            right: 10px;
             margin: 0;
-            padding: 0 10px;
-            font-size: 0.65em;
-            color: #666;
-            text-align: left;
-            width: 320px;
+            padding: 0;
+            font-size: 0.85em;
+            color: var(--text-muted);
+            text-align: right;
         }
 
         .clock {
             position: absolute;
             bottom: 25px;
-            right: 15px;
+            right: 10px;
             font-size: 0.85em;
-            color: #aaa;
+            color: var(--text-muted);
             letter-spacing: 1px;
-            width: 320px;
-            padding: 6px 10px;
-            text-align: left;
+            padding: 0;
+            text-align: right;
             font-variant-numeric: tabular-nums;
         }
 
-        /* Mobile Responsive */
-        @media screen and (max-width: 900px) {
+        .clock-time { white-space: nowrap; }
+
+        .clock-digit {
+            display: inline-block;
+            width: 0.65em;
+            letter-spacing: 0;
+            text-align: center;
+        }
+
+        /* Keep side menus inside narrower desktop windows. */
+        @media screen and (min-width: 1025px) and (max-width: 1560px) {
             .main-section {
-                flex-direction: column;
-                gap: 40px;
+                align-items: flex-start;
             }
 
-            .panel {
-                flex-direction: column;
-            }
-
+            .panel,
             .panel.research-panel {
                 flex-direction: column;
             }
 
-            .nav-links {
+            .research-panel .nav-links,
+            .panel:not(.research-panel) .nav-links {
                 position: static;
-                align-items: center;
-                text-align: center;
-                gap: 12px;
                 width: 100%;
-                max-width: 300px;
-            }
-
-            .nav-group {
-                width: 100%;
-                max-width: 300px;
-                align-items: center;
-                text-align: center;
-                gap: 8px;
-            }
-
-            .research-panel .nav-group,
-            .panel:not(.research-panel) .nav-group {
-                align-items: center;
-                text-align: center;
-            }
-
-            .mini-links {
-                width: 100%;
-                gap: 6px;
-            }
-
-            .research-panel .mini-links,
-            .panel:not(.research-panel) .mini-links {
-                align-items: center;
-                text-align: center;
-            }
-
-            .research-panel .mini-links a,
-            .panel:not(.research-panel) .mini-links a {
-                margin-left: 0;
-                margin-right: 0;
+                padding-inline: 35px;
+                margin-top: 24px;
             }
 
             .nav-links a {
-                padding: 12px 20px;
-                border: 1px solid #444;
-                border-radius: 8px;
-                background-color: rgba(255, 255, 255, 0.05);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                text-align: center;
-                transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+                position: relative;
             }
 
-            .mini-links a {
-                font-size: 0.9em;
-                padding: 9px 12px;
+            .research-panel .nav-links a::after {
+                position: absolute;
+                left: 100%;
             }
 
-            .nav-links a:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-                border-color: #666;
+            .panel:not(.research-panel) .nav-links a::before {
+                position: absolute;
+                right: 100%;
             }
 
-            .research-panel .nav-links {
-                left: auto;
-                align-items: center;
-                text-align: center;
+            .description-section .description {
+                padding-inline: 35px;
             }
 
-            .panel:not(.research-panel) .nav-links {
-                right: auto;
-                align-items: center;
-                text-align: center;
+            .description-section .description:first-child {
+                text-align: right;
             }
 
-            .panel-image {
-                width: 400px;
-                height: 600px;
+            .description-section .description:last-child {
+                text-align: left;
             }
-
-            .site-title {
-                font-size: 1.6em;
-            }
-
-            .side-links {
-                position: static;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 40px;
-                margin-bottom: 20px;
-                gap: 12px;
-                width: 100%;
-                max-width: 300px;
-            }
-
-            .side-links a {
-                padding: 12px 20px;
-                border: 1px solid #444;
-                border-radius: 8px;
-                background-color: rgba(255, 255, 255, 0.05);
-                display: block;
-                width: 100%;
-                text-align: center;
-                transition: background-color 0.2s, border-color 0.2s;
-            }
-
-            .side-links a:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-                border-color: #666;
-            }
-
-            .side-links hr {
-                display: none;
-            }
-
-            .description-section {
-                display: none;
-            }
-
-            .panel-description {
-                display: block;
-                width: 100%;
-                max-width: 300px;
-                text-align: center;
-                font-size: 0.9em;
-                line-height: 1.8;
-                color: #ccc;
-                margin-top: 20px;
-            }
-
-            .panel-description a {
-                color: #ffd700;
-                text-decoration: none;
-            }
-
-            .panel-description a:hover {
-                text-decoration: underline;
-            }
-
-            .research-panel .panel-description a {
-                color: #87CEEB;
-            }
-
-            .scroll-indicator {
-                display: block;
-                position: fixed;
-                right: 15px;
-                width: 20px;
-                height: 20px;
-                z-index: 100;
-                opacity: 0.25;
-                transition: opacity 0.3s ease;
-                transform: translateY(-50%);
-            }
-
-            .scroll-indicator.scrolling {
-                opacity: 1;
-            }
-
-            .scroll-indicator-up.at-top {
-                opacity: 0 !important;
-            }
-
-            .scroll-indicator-down.at-top {
-                animation: pulseBottom 2s ease-in-out infinite;
-            }
-
-            .scroll-indicator-down.at-bottom {
-                opacity: 0 !important;
-            }
-
-            .scroll-indicator-up.at-bottom {
-                animation: pulseBottom 2s ease-in-out infinite;
-            }
-
-            .scroll-indicator-down {
-                top: calc(50% + 24px);
-            }
-
-            .scroll-indicator-down svg {
-                width: 100%;
-                height: 100%;
-            }
-
-            .scroll-indicator-up {
-                top: calc(50% - 24px);
-            }
-
-            .scroll-indicator-up svg {
-                width: 100%;
-                height: 100%;
-            }
-
-            @keyframes pulseBottom {
-                0%, 100% {
-                    opacity: 0;
-                }
-                50% {
-                    opacity: 0.25;
-                }
-            }
-
-
         }
+
     </style>
 </head>
-<body>
+<body class="home-page">
     <div class="container">
         <h1 class="site-title">Calder Lenhart</h1>
 
         <div class="main-section">
             <div class="panel research-panel">
-                <a href="research.html" class="panel-image research">
+                <a href="research.html" class="mobile-panel-title">Astrophysics research</a>
+                <a href="research.html" class="panel-image research" aria-label="Astrophysics research">
                     <img src="research-figures/KELT-20b.Fe.5.4e-05.inverted-transmission-better.blue.contribution_function.crop.rot90.png" alt="" loading="lazy" decoding="async">
                 </a>
                 <nav class="nav-links research-links">
-                    <div class="nav-group">
-                        <a href="research.html">research</a>
-                        <div class="mini-links">
-                            <a href="research.html#f04">mlexo</a>
-                            <a href="research.html#f02">atmo-retrieval</a>
-                            <a href="research.html#f01">malca</a>
-                            <a href="projects.html#f07">malcat</a>
-                            <a href="projects.html#f06">dustycult</a>
-                        </div>
-                    </div>
-                    <a href="projects.html">projects</a>
-                    <a href="https://github.com/calderlen">GitHub<span class="material-symbols-outlined external-link-icon">arrow_outward</span></a>
-                    <a href="mailto:lenhart.106@osu.edu">lenhart.106[at]osu.edu</a>
+                    <a href="research.html" class="primary-nav-link">astrophysics research</a>
+                    <a href="https://scixplorer.org/search?q=orcid%3A0009-0001-1459-3738&amp;sort=date%20desc">publications<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a>
+                    <a href="software.html" class="project-nav-link">code</a>
+                    <a href="https://github.com/calderlen">GitHub<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a>
+                    <a href="projects.html" class="project-nav-link">engineering projects</a>
                     <a href="cv.html">cv</a>
+                    <a href="mailto:lenhart.106@osu.edu" class="contact-link"><span class="desktop-label">lenhart.106[at]osu.edu</span><span class="mobile-label">Email</span></a>
                 </nav>
                 <p class="description panel-description">
-                    I'm a post-baccalaureate researcher and ASAS-SN Data Analyst at the Ohio State University Department of Astronomy.
+                    I'm a master's student in the Department of Physics and an ASAS-SN analyst in the Department of Astronomy at The Ohio State University.
                 </p>
             </div>
 
             <div class="panel">
-                <a href="gallery.html" class="panel-image">
-                    <img src="photographs/fs-guerrilla/home.jpg" alt=""" loading="lazy" decoding="async">
+                <a href="gallery.html" class="mobile-panel-title">Photography</a>
+                <a href="gallery.html" class="panel-image" aria-label="Photography">
+                    <img src="photographs/fs-guerrilla/home.jpg" alt="" loading="lazy" decoding="async">
                 </a>
                 <nav class="nav-links">
-                    <a href="gallery.html">portfolio</a>
-                    <a href="#">exhibitions</a>
-                    <a href="shop.html">shop</a>
-                    <a href="https://www.instagram.com/calderlen">Instagram<span class="material-symbols-outlined external-link-icon">arrow_outward</span></a>
-                    <a href="mailto:calderlen@gmail.com">calderlen[at]gmail.com</a>
+                    <a href="gallery.html" class="primary-nav-link">artworks</a>
+                    <a href="#" class="exhibitions-link">exhibitions</a>
+                    <a href="blog.html">blog</a>
                     <a href="cv-art.html">art cv</a>
+                    <a href="mailto:calderlen@gmail.com" class="contact-link"><span class="desktop-label">calderlen[at]gmail.com</span><span class="mobile-label">Email</span></a>
+                    <a href="https://www.instagram.com/calderlen">Instagram<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a>
                 </nav>
                 <p class="description panel-description">
                     I'm a photographer based in Columbus, Ohio.
@@ -630,7 +420,7 @@
 
         <div class="description-section">
             <p class="description">
-                I'm a post-baccalaureate researcher and ASAS-SN Data Analyst at the Ohio State University Department of Astronomy.
+                I'm a master's student in the Department of Physics and an ASAS-SN analyst in the Department of Astronomy at The Ohio State University.
             </p>
             <p class="description">
                 I'm a photographer based in Columbus, Ohio.
@@ -646,14 +436,39 @@
 
         <div class="clock" id="clock"></div>
     </div>
+    <div class="mobile-home">
+        <header class="mobile-home-header"><h1>Calder Lenhart</h1></header>
+        <main>
+            <nav aria-label="Homepage links">
+                <ul class="mobile-home-links">
+                    <li class="mobile-home-research"><a href="research.html">Astrophysics research</a></li>
+                    <li class="mobile-home-photography"><a href="gallery.html">Artworks</a></li>
+                    <li class="mobile-home-research"><a href="https://scixplorer.org/search?q=orcid%3A0009-0001-1459-3738&amp;sort=date%20desc">Publications<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a></li>
+                    <li class="mobile-home-photography"><a href="blog.html">Blog</a></li>
+                    <li class="mobile-home-research"><a href="software.html">Code</a></li>
+                    <li class="mobile-home-photography"><a href="https://www.instagram.com/calderlen">Instagram<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a></li>
+                    <li class="mobile-home-research"><a href="https://github.com/calderlen">GitHub<span class="material-symbols-outlined external-link-icon" aria-hidden="true">arrow_outward</span></a></li>
+                    <li class="mobile-home-research"><a href="projects.html">Engineering projects</a></li>
+                    <li class="mobile-home-research"><a href="cv.html">CV</a></li>
+                    <li class="mobile-home-photography"><a href="cv-art.html">Art CV</a></li>
+                    <li class="mobile-home-research"><a href="mailto:lenhart.106@osu.edu">lenhart.106[at]osu.edu</a></li>
+                    <li class="mobile-home-photography"><a href="mailto:calderlen@gmail.com">calderlen[at]gmail.com</a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+            <div class="mobile-clock" id="mobile-clock"></div>
+            <div>© 2023-2026 Calder Lenhart. All rights reserved.</div>
+        </footer>
+    </div>
     <div class="scroll-indicator scroll-indicator-up">
         <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 0 L2 12 M10 0 L18 12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M10 0 L2 12 M10 0 L18 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
         </svg>
     </div>
     <div class="scroll-indicator scroll-indicator-down">
         <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 20 L2 8 M10 20 L18 8" stroke="#fff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M10 20 L2 8 M10 20 L18 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
         </svg>
     </div>
 
@@ -669,6 +484,7 @@
                 hour: '2-digit',
                 minute: '2-digit',
                 second: '2-digit',
+                timeZoneName: 'short',
                 hour12: false
             };
             const formatter = new Intl.DateTimeFormat('en-US', options);
@@ -681,9 +497,12 @@
             const hour = parts.find(p => p.type === 'hour').value;
             const minute = parts.find(p => p.type === 'minute').value;
             const second = parts.find(p => p.type === 'second').value;
+            const timeZone = parts.find(p => p.type === 'timeZoneName').value;
             
-            document.getElementById('clock').textContent = 
-                `${weekday} ${month} ${day} ${year} ${hour}:${minute}:${second}`;
+            const timeMarkup = `${hour}:${minute}:${second}`.replace(/\d/g, '<span class="clock-digit">$&</span>');
+            const clockMarkup = `${weekday} ${month} ${day} ${year} <span class="clock-time">${timeMarkup} ${timeZone}</span>`;
+            document.getElementById('clock').innerHTML = clockMarkup;
+            document.getElementById('mobile-clock').innerHTML = clockMarkup;
         }
         
         updateClock();

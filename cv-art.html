@@ -10,67 +10,64 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://calder.zone/cv-art.html">
     <meta name="twitter:card" content="summary_large_image">
-    <title></title>
+    <title>Art CV | Calder Lenhart</title>
     <meta name="description" content="">
+    <script src="theme.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=reply">
     <style>
         body, html {
             margin: 0;
             padding: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: #000;
-            color: #ccc;
+            font-family: 'IM Fell Double Pica', Georgia, serif;
+            background-color: var(--bg);
+            color: var(--text-secondary);
         }
 
         .container {
-            max-width: 800px;
+            display: grid;
+            grid-template-columns: 260px minmax(0, 1fr);
+            gap: 64px;
+            max-width: 1140px;
             margin: 0 auto;
             padding: 80px 40px 60px 40px;
+            align-items: start;
         }
 
-        h1 {
-            font-size: 2em;
-            font-weight: 400;
-            color: #fff;
-            margin-bottom: 10px;
+        .cv-content {
+            min-width: 0;
         }
 
-        .contact-info {
-            margin-bottom: 20px;
-            font-size: 0.9em;
-        }
-
-        .contact-info a {
-            color: #ffd700;
+        .cv-content > h2:first-child {
+            margin-top: 0;
         }
 
         .artist-statement {
             font-style: italic;
-            color: #aaa;
-            margin-bottom: 30px;
+            color: var(--text-muted);
+            margin: 0 0 30px;
             line-height: 1.8;
         }
 
         h2 {
             font-size: 1.2em;
             font-weight: 700;
-            color: #ffd700;
+            color: var(--accent-art);
             margin-top: 40px;
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 2px;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid var(--border);
             padding-bottom: 10px;
         }
 
         h3 {
             font-size: 1em;
             font-weight: 700;
-            color: #fff;
+            color: var(--text-strong);
             margin-bottom: 5px;
         }
 
@@ -80,7 +77,7 @@
 
         .cv-item .date {
             font-size: 0.85em;
-            color: #888;
+            color: var(--text-faint);
             display: inline;
             margin-right: 15px;
         }
@@ -94,6 +91,28 @@
             line-height: 1.6;
         }
 
+        .education-item {
+            display: grid;
+            grid-template-columns: 5rem minmax(0, 1fr);
+            gap: 16px;
+            align-items: baseline;
+        }
+
+        .education-item .date {
+            margin-right: 0;
+            white-space: nowrap;
+        }
+
+        .education-details p {
+            margin: 4px 0 0;
+            line-height: 1.5;
+        }
+
+        .education-details .education-honors {
+            font-size: 0.9em;
+            color: var(--text-muted);
+        }
+
         .cv-item ul {
             margin: 10px 0;
             padding-left: 20px;
@@ -105,110 +124,141 @@
         }
 
         a {
-            color: #ffd700;
+            color: var(--accent-art);
             text-decoration: none;
         }
 
-        a:hover {
+        a:not(.site-name):hover {
             text-decoration: underline;
         }
 
         .download-btn {
             display: inline-block;
-            background-color: #ffd700;
-            color: #000;
+            box-sizing: border-box;
+            max-width: 100%;
+            background-color: var(--accent-art);
+            color: var(--bg);
             padding: 12px 24px;
-            font-family: 'Inter', sans-serif;
+            font-family: 'IM Fell Double Pica', Georgia, serif;
             font-size: 1em;
             border: none;
             cursor: pointer;
-            margin-bottom: 40px;
             text-decoration: none;
         }
 
         .download-btn:hover {
-            background-color: #fff;
+            background-color: var(--text-strong);
             text-decoration: none;
         }
 
         em {
             font-style: italic;
         }
+
+        @media screen and (max-width: 1024px) {
+            .container {
+                grid-template-columns: minmax(0, 1fr);
+                max-width: 860px;
+                box-sizing: border-box;
+                gap: 32px;
+                padding: 80px 24px 48px;
+            }
+
+            .cv-sidebar {
+                max-width: 320px;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+            .cv-sidebar { max-width: none; }
+            .artist-statement { max-width: 68ch; }
+        }
     </style>
 </head>
 <body>
-    <a href="index.html" class="home-circle">Home</a>
+    <a href="index.html" class="site-name home-link" aria-label="Calder Lenhart, home">Calder Lenhart</a>
     <div class="container">
-        <h1>Calder Lenhart</h1>
-        <div class="contact-info">
-            <a href="https://calder.zone">calder.zone</a><br>
-            calderlen at gmail dot com
-        </div>
+        <header class="cv-sidebar">
+            <p class="artist-statement">b. 2002 in Youngstown, OH. Lives and works in Columbus, OH. Graduate student in the Ohio State Department of Physics and staff member in the Ohio State Department of Astronomy.</p>
 
-        <p class="artist-statement">b. 2002 in Youngstown, OH. Lives in Columbus, OH. Graduate student in the Ohio State Department of Physics and research scientist in the Ohio State Department of Astronomy.</p>
+            <a href="documents/Calder-Lenhart-CV-art.pdf" download class="download-btn">Download Full CV</a>
+        </header>
 
-        <a href="documents/Calder-Lenhart-CV-art.pdf" download class="download-btn">Download Full CV</a>
-         <h2>Solo Exhibitions</h2>
-         <div class="cv-item">
-             <span class="date">2027–2028</span>
-             <span class="title">Forthcoming Exhibition, McConnell Arts Center, Columbus, OH</span>
-         </div>
+        <main class="cv-content">
+            <h2>Solo Exhibitions</h2>
+            <div class="cv-item">
+                <span class="date">2027–2028</span>
+                <span class="title"><em>Forthcoming solo exhibition</em>, McConnell Arts Center, Columbus, OH</span>
+            </div>
 
+            <h2>Duo Exhibitions</h2>
+            <div class="cv-item">
+                <span class="date">2025</span>
+                <span class="title"><em>Exposure</em>, Wild Gallery, Columbus, OH</span>
+            </div>
 
-        <h2>Two-Person Exhibitions</h2>
-        <div class="cv-item">
-            <span class="date">2025</span>
-            <span class="title"><em>Exposure</em>, Wild Gallery, Columbus, OH</span>
-        </div>
+            <h2>Group Exhibitions</h2>
+            <div class="cv-item">
+                <span class="date">2025</span>
+                <span class="title"><em>ImageOHIO 2025</em>, ROY G BIV Gallery, Columbus, OH</span>
+            </div>
+            <div class="cv-item">
+                <span class="date">2024</span>
+                <span class="title"><em>Ohio Art League: 2024 Fall Juried Exhibition</em>, Ross Art Museum, Delaware, OH</span>
+            </div>
+            <div class="cv-item">
+                <span class="date">2024</span>
+                <span class="title"><em>WSA Art Show</em>, WSA Studio, Columbus, OH</span>
+            </div>
+            <div class="cv-item">
+                <span class="date">2020</span>
+                <span class="title"><em>2019 Northeastern Ohio Scholastic Art Awards Exhibition</em>, Judith Rae Solomon Gallery, Youngstown, OH</span>
+            </div>
 
-        <h2>Group Exhibitions</h2>
-        <div class="cv-item">
-            <span class="date">2025</span>
-            <span class="title"><em>ImageOHIO 2025</em>, ROY G BIV Gallery, Columbus, OH</span>
-        </div>
-        <div class="cv-item">
-            <span class="date">2024</span>
-            <span class="title"><em>Ohio Art League: 2024 Fall Juried Exhibition</em>, Ross Art Museum, Delaware, OH</span>
-        </div>
-        <div class="cv-item">
-            <span class="date">2024</span>
-            <span class="title"><em>WSA Art Show</em>, WSA Studio, Columbus, OH</span>
-        </div>
-        <div class="cv-item">
-            <span class="date">2020</span>
-            <span class="title"><em>2019 Northeastern Ohio Scholastic Art Awards Exhibition</em>, Judith Rae Solomon Gallery, Youngstown, OH</span>
-        </div>
+            <h2>Grants and Awards</h2>
+            <div class="cv-item">
+                <span class="date">2026</span>
+                <span class="title">Honorable Mention, NSF Graduate Research Fellowship Program, Astronomy &amp; Astrophysics</span>
+            </div>
+            <div class="cv-item">
+                <span class="date">2025</span>
+                <span class="title">Funds for Artists Grant, Greater Columbus Arts Council</span>
+            </div>
+            <div class="cv-item">
+                <span class="date">2024</span>
+                <span class="title">Ann Slusher Tuttle Scholarship, Ohio State University</span>
+            </div>
+            <div class="cv-item">
+                <span class="date">2023</span>
+                <span class="title">Undergraduate Research Scholarship, Ohio State University</span>
+            </div>
+            <div class="cv-item">
+                <span class="date">2023</span>
+                <span class="title">1st Place, MakeOHI/O</span>
+            </div>
+            <div class="cv-item">
+                <span class="date">2019</span>
+                <span class="title">Beautification Award, Youngstown CityScape</span>
+            </div>
 
-        <h2>Grants and Awards</h2>
-        <div class="cv-item">
-            <span class="date">2025</span>
-            <span class="title">Funds for Artists Grant, Greater Columbus Arts Council</span>
-        </div>
-        <div class="cv-item">
-            <span class="date">2024</span>
-            <span class="title">Ann Slusher Tuttle Scholarship, Ohio State University</span>
-        </div>
-        <div class="cv-item">
-            <span class="date">2023</span>
-            <span class="title">Undergraduate Research Scholarship, Ohio State University</span>
-        </div>
-        <div class="cv-item">
-            <span class="date">2023</span>
-            <span class="title">1st Place, MakeOHI/O</span>
-        </div>
-        <div class="cv-item">
-            <span class="date">2019</span>
-            <span class="title">Beautification Award, Youngstown CityScape</span>
-        </div>
-
-        <h2>Education</h2>
-        <div class="cv-item">
-            <span class="date">2024</span>
-            <span class="title">B.S., Physics, Astronomy and Astrophysics</span>
-            <p>Minors in Mathematics and History</p>
-            <p><em>Magna Cum Laude</em>, with Research Distinction in Astronomy and Astrophysics</p>
-            <p>Ohio State University, Columbus, OH</p>
-        </div>
+            <h2>Education</h2>
+            <div class="cv-item education-item">
+                <span class="date">2025–2027</span>
+                <div class="education-details">
+                    <span class="title">M.S., Physics</span>
+                    <p>Ohio State University, Columbus, OH</p>
+                </div>
+            </div>
+            <div class="cv-item education-item">
+                <span class="date">2020–2024</span>
+                <div class="education-details">
+                    <span class="title">B.S., Physics, Astronomy and Astrophysics</span>
+                    <p>Ohio State University, Columbus, OH</p>
+                    <p>Minors in Mathematics and History</p>
+                    <p class="education-honors">Magna Cum Laude, with Research Distinction in Astronomy and Astrophysics</p>
+                </div>
+            </div>
+        </main>
     </div>
 
     

@@ -12,16 +12,17 @@
     <meta name="twitter:card" content="summary_large_image">
     <title></title>
     <meta name="description" content="">
+    <script src="theme.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=reply">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #000;
-            color: #ddd;
+            font-family: 'IM Fell Double Pica', Georgia, serif;
+            background-color: var(--bg);
+            color: var(--text);
             margin: 0;
             padding: 0;
         }
@@ -37,8 +38,8 @@
 
         .pane {
             position: relative;
-            border: 1px solid #333;
-            background-color: #050505;
+            border: 1px solid var(--border);
+            background-color: var(--surface);
             padding: 6px 6px 10px 6px;
             text-align: left;
             transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
@@ -50,8 +51,8 @@
 
         .pane:hover {
             transform: scale(1.02);
-            border-color: #666;
-            box-shadow: 0 0 12px rgba(0,0,0,0.8);
+            border-color: var(--border-hover);
+            box-shadow: 0 0 12px var(--card-shadow);
         }
 
         .pane img {
@@ -78,13 +79,13 @@
 
         .pane h3 {
             margin: 6px 2px 2px 0;
-            color: #fff;
+            color: var(--text-strong);
             font-weight: 500;
         }
 
         .pane .date-range {
             font-size: 0.75em;
-            color: #888;
+            color: var(--text-faint);
             margin: 0;
         }
 
@@ -104,7 +105,7 @@
     </style>
 </head>
 <body>
-    <a href="index.html" class="home-circle">Home</a>
+    <a href="index.html" class="site-name home-link" aria-label="Calder Lenhart, home">Calder Lenhart</a>
     <div class="grid">
         <div class="pane" data-frame="f01">
             <a href="hegemony.html">

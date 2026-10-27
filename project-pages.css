@@ -1,0 +1,18 @@
+.project-index > li + li { margin-top: 12px; }
+
+.project-index .project-link { margin-bottom: 0; }
+
+.software-project h2 a { text-decoration: none; }
+.software-project h2 a:hover { color: var(--accent); }
+.software-project .repository-link-arrow {
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-left: 0.2em;
+    vertical-align: 0.125em;
+}
+
+/* Preserve the original colors of engineering images in either theme. */
+:root[data-theme] .projects-page .project-figure img {
+    filter: none;
+}
